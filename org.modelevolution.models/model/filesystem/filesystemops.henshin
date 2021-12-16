@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_O11uEDrDEeSQp6DBsCWp2w">
+  <imports href="filesystem.ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_QdgPcDrDEeSQp6DBsCWp2w" name="rmdir" checkDangling="false">
+    <lhs xmi:id="_Qdkg4DrDEeSQp6DBsCWp2w" name="Lhs">
+      <nodes xmi:id="_Twx-EDrDEeSQp6DBsCWp2w" name="D" outgoing="_g5aBMDrDEeSQp6DBsCWp2w">
+        <type href="filesystem.ecore#//Directory"/>
+      </nodes>
+      <nodes xmi:id="_g5Xk8DrDEeSQp6DBsCWp2w" name="DD" incoming="_g5aBMDrDEeSQp6DBsCWp2w">
+        <type href="filesystem.ecore#//Directory"/>
+      </nodes>
+      <edges xmi:id="_g5aBMDrDEeSQp6DBsCWp2w" source="_Twx-EDrDEeSQp6DBsCWp2w" target="_g5Xk8DrDEeSQp6DBsCWp2w">
+        <type href="filesystem.ecore#//Directory/subdirs"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_Qdkg4TrDEeSQp6DBsCWp2w" name="Rhs">
+      <nodes xmi:id="_c61S0DrDEeSQp6DBsCWp2w" name="D">
+        <type href="filesystem.ecore#//Directory"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_c63IADrDEeSQp6DBsCWp2w" origin="_Twx-EDrDEeSQp6DBsCWp2w" image="_c61S0DrDEeSQp6DBsCWp2w"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_buHYUDrUEeSQp6DBsCWp2w" name="rmfile">
+    <lhs xmi:id="_buLpwDrUEeSQp6DBsCWp2w" name="Lhs">
+      <nodes xmi:id="_dFv5oDrUEeSQp6DBsCWp2w" name="D" outgoing="_ePE5MjrUEeSQp6DBsCWp2w">
+        <type href="filesystem.ecore#//Directory"/>
+      </nodes>
+      <nodes xmi:id="_ePESIDrUEeSQp6DBsCWp2w" name="F" incoming="_ePE5MjrUEeSQp6DBsCWp2w">
+        <type href="filesystem.ecore#//File"/>
+      </nodes>
+      <edges xmi:id="_ePE5MjrUEeSQp6DBsCWp2w" source="_dFv5oDrUEeSQp6DBsCWp2w" target="_ePESIDrUEeSQp6DBsCWp2w">
+        <type href="filesystem.ecore#//Directory/files"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_buLpwTrUEeSQp6DBsCWp2w" name="Rhs">
+      <nodes xmi:id="_dFv5oTrUEeSQp6DBsCWp2w" name="D">
+        <type href="filesystem.ecore#//Directory"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_dFv5ojrUEeSQp6DBsCWp2w" origin="_dFv5oDrUEeSQp6DBsCWp2w" image="_dFv5oTrUEeSQp6DBsCWp2w"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_yC200FhkEeSpv8nG1AFRTw" name="rmAllSubdirsAndFiles">
+    <lhs xmi:id="_yD-2MFhkEeSpv8nG1AFRTw" name="Lhs">
+      <nodes xmi:id="_21KtQFhkEeSpv8nG1AFRTw" name="D1" incoming="_U9JNcFhlEeSpv8nG1AFRTw">
+        <type href="filesystem.ecore#//Directory"/>
+      </nodes>
+      <nodes xmi:id="_UdRakFhlEeSpv8nG1AFRTw" name="root" outgoing="_U9JNcFhlEeSpv8nG1AFRTw">
+        <type href="filesystem.ecore#//Root"/>
+      </nodes>
+      <edges xmi:id="_U9JNcFhlEeSpv8nG1AFRTw" source="_UdRakFhlEeSpv8nG1AFRTw" target="_21KtQFhkEeSpv8nG1AFRTw">
+        <type href="filesystem.ecore#//Root/dirs"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_-21IMF6nEeSU4ccH1YVTaA">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_-21IMV6nEeSU4ccH1YVTaA">
+          <conclusion xmi:id="_-21IMl6nEeSU4ccH1YVTaA">
+            <nodes xmi:id="_-21IM16nEeSU4ccH1YVTaA" name="D1" incoming="_-21IN16nEeSU4ccH1YVTaA" outgoing="_B6REAF6oEeSU4ccH1YVTaA">
+              <type href="filesystem.ecore#//Directory"/>
+            </nodes>
+            <nodes xmi:id="_-21INV6nEeSU4ccH1YVTaA" name="root" outgoing="_-21IN16nEeSU4ccH1YVTaA">
+              <type href="filesystem.ecore#//Root"/>
+            </nodes>
+            <nodes xmi:id="_-2zTAF6nEeSU4ccH1YVTaA" name="DF1" incoming="_B6REAF6oEeSU4ccH1YVTaA">
+              <type href="filesystem.ecore#//File"/>
+            </nodes>
+            <edges xmi:id="_-21IN16nEeSU4ccH1YVTaA" source="_-21INV6nEeSU4ccH1YVTaA" target="_-21IM16nEeSU4ccH1YVTaA">
+              <type href="filesystem.ecore#//Root/dirs"/>
+            </edges>
+            <edges xmi:id="_B6REAF6oEeSU4ccH1YVTaA" source="_-21IM16nEeSU4ccH1YVTaA" target="_-2zTAF6nEeSU4ccH1YVTaA">
+              <type href="filesystem.ecore#//Directory/files"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_-21INF6nEeSU4ccH1YVTaA" origin="_21KtQFhkEeSpv8nG1AFRTw" image="_-21IM16nEeSU4ccH1YVTaA"/>
+          <mappings xmi:id="_-21INl6nEeSU4ccH1YVTaA" origin="_UdRakFhlEeSpv8nG1AFRTw" image="_-21INV6nEeSU4ccH1YVTaA"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_yD-2MVhkEeSpv8nG1AFRTw" name="Rhs">
+      <nodes xmi:id="_21KtQVhkEeSpv8nG1AFRTw" name="D1" incoming="_U9JNcVhlEeSpv8nG1AFRTw">
+        <type href="filesystem.ecore#//Directory"/>
+      </nodes>
+      <nodes xmi:id="_UdRakVhlEeSpv8nG1AFRTw" name="root" outgoing="_U9JNcVhlEeSpv8nG1AFRTw">
+        <type href="filesystem.ecore#//Root"/>
+      </nodes>
+      <edges xmi:id="_U9JNcVhlEeSpv8nG1AFRTw" source="_UdRakVhlEeSpv8nG1AFRTw" target="_21KtQVhkEeSpv8nG1AFRTw">
+        <type href="filesystem.ecore#//Root/dirs"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_21KtQlhkEeSpv8nG1AFRTw" origin="_21KtQFhkEeSpv8nG1AFRTw" image="_21KtQVhkEeSpv8nG1AFRTw"/>
+    <mappings xmi:id="_UdRaklhlEeSpv8nG1AFRTw" origin="_UdRakFhlEeSpv8nG1AFRTw" image="_UdRakVhlEeSpv8nG1AFRTw"/>
+    <multiRules xmi:id="_4VR1IFhkEeSpv8nG1AFRTw">
+      <lhs xmi:id="_4VScMFhkEeSpv8nG1AFRTw" name="Lhs">
+        <nodes xmi:id="_4VTDQlhkEeSpv8nG1AFRTw" incoming="_U9J0gFhlEeSpv8nG1AFRTw" outgoing="_4VROEFhkEeSpv8nG1AFRTw">
+          <type href="filesystem.ecore#//Directory"/>
+        </nodes>
+        <nodes xmi:id="_4VP_8FhkEeSpv8nG1AFRTw" name="DD1" incoming="_4VROEFhkEeSpv8nG1AFRTw" outgoing="_66OeIFhkEeSpv8nG1AFRTw _V_HgcFhoEeSpv8nG1AFRTw">
+          <type href="filesystem.ecore#//Directory"/>
+        </nodes>
+        <nodes xmi:id="_5ZOlcFhkEeSpv8nG1AFRTw" name="DDF1" incoming="_66OeIFhkEeSpv8nG1AFRTw">
+          <type href="filesystem.ecore#//File"/>
+        </nodes>
+        <nodes xmi:id="_UdSBolhlEeSpv8nG1AFRTw" outgoing="_U9J0gFhlEeSpv8nG1AFRTw">
+          <type href="filesystem.ecore#//Root"/>
+        </nodes>
+        <nodes xmi:id="_UJ4dIFhoEeSpv8nG1AFRTw" name="DDD1" incoming="_V_HgcFhoEeSpv8nG1AFRTw">
+          <type href="filesystem.ecore#//Directory"/>
+        </nodes>
+        <edges xmi:id="_4VROEFhkEeSpv8nG1AFRTw" source="_4VTDQlhkEeSpv8nG1AFRTw" target="_4VP_8FhkEeSpv8nG1AFRTw">
+          <type href="filesystem.ecore#//Directory/subdirs"/>
+        </edges>
+        <edges xmi:id="_66OeIFhkEeSpv8nG1AFRTw" source="_4VP_8FhkEeSpv8nG1AFRTw" target="_5ZOlcFhkEeSpv8nG1AFRTw">
+          <type href="filesystem.ecore#//Directory/files"/>
+        </edges>
+        <edges xmi:id="_U9J0gFhlEeSpv8nG1AFRTw" source="_UdSBolhlEeSpv8nG1AFRTw" target="_4VTDQlhkEeSpv8nG1AFRTw">
+          <type href="filesystem.ecore#//Root/dirs"/>
+        </edges>
+        <edges xmi:id="_V_HgcFhoEeSpv8nG1AFRTw" source="_4VP_8FhkEeSpv8nG1AFRTw" target="_UJ4dIFhoEeSpv8nG1AFRTw">
+          <type href="filesystem.ecore#//Directory/subdirs"/>
+        </edges>
+        <formula xsi:type="henshin:Not" xmi:id="_5Ya-wF6nEeSU4ccH1YVTaA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_5Ya-wV6nEeSU4ccH1YVTaA">
+            <conclusion xmi:id="_5Ya-wl6nEeSU4ccH1YVTaA">
+              <nodes xmi:id="_5Ya-w16nEeSU4ccH1YVTaA" incoming="_5Ybl2l6nEeSU4ccH1YVTaA" outgoing="_5Ybl2F6nEeSU4ccH1YVTaA">
+                <type href="filesystem.ecore#//Directory"/>
+              </nodes>
+              <nodes xmi:id="_5Ya-xV6nEeSU4ccH1YVTaA" name="DD1" incoming="_5Ybl2F6nEeSU4ccH1YVTaA" outgoing="_5Ybl2V6nEeSU4ccH1YVTaA _5YcM4F6nEeSU4ccH1YVTaA">
+                <type href="filesystem.ecore#//Directory"/>
+              </nodes>
+              <nodes xmi:id="_5Ybl0F6nEeSU4ccH1YVTaA" name="F1" incoming="_5Ybl2V6nEeSU4ccH1YVTaA">
+                <type href="filesystem.ecore#//File"/>
+              </nodes>
+              <nodes xmi:id="_5Ybl0l6nEeSU4ccH1YVTaA" outgoing="_5Ybl2l6nEeSU4ccH1YVTaA">
+                <type href="filesystem.ecore#//Root"/>
+              </nodes>
+              <nodes xmi:id="_5Ybl1F6nEeSU4ccH1YVTaA" name="DDD1" incoming="_5YcM4F6nEeSU4ccH1YVTaA" outgoing="_Be4IgF6oEeSU4ccH1YVTaA">
+                <type href="filesystem.ecore#//Directory"/>
+              </nodes>
+              <nodes xmi:id="_7GT0gFhzEeSU4ccH1YVTaA" name="DDDF1" incoming="_Be4IgF6oEeSU4ccH1YVTaA">
+                <type href="filesystem.ecore#//File"/>
+              </nodes>
+              <edges xmi:id="_5Ybl2F6nEeSU4ccH1YVTaA" source="_5Ya-w16nEeSU4ccH1YVTaA" target="_5Ya-xV6nEeSU4ccH1YVTaA">
+                <type href="filesystem.ecore#//Directory/subdirs"/>
+              </edges>
+              <edges xmi:id="_5Ybl2V6nEeSU4ccH1YVTaA" source="_5Ya-xV6nEeSU4ccH1YVTaA" target="_5Ybl0F6nEeSU4ccH1YVTaA">
+                <type href="filesystem.ecore#//Directory/files"/>
+              </edges>
+              <edges xmi:id="_5Ybl2l6nEeSU4ccH1YVTaA" source="_5Ybl0l6nEeSU4ccH1YVTaA" target="_5Ya-w16nEeSU4ccH1YVTaA">
+                <type href="filesystem.ecore#//Root/dirs"/>
+              </edges>
+              <edges xmi:id="_5YcM4F6nEeSU4ccH1YVTaA" source="_5Ya-xV6nEeSU4ccH1YVTaA" target="_5Ybl1F6nEeSU4ccH1YVTaA">
+                <type href="filesystem.ecore#//Directory/subdirs"/>
+              </edges>
+              <edges xmi:id="_Be4IgF6oEeSU4ccH1YVTaA" source="_5Ybl1F6nEeSU4ccH1YVTaA" target="_7GT0gFhzEeSU4ccH1YVTaA">
+                <type href="filesystem.ecore#//Directory/files"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_5Ya-xF6nEeSU4ccH1YVTaA" origin="_4VTDQlhkEeSpv8nG1AFRTw" image="_5Ya-w16nEeSU4ccH1YVTaA"/>
+            <mappings xmi:id="_5Ya-xl6nEeSU4ccH1YVTaA" origin="_4VP_8FhkEeSpv8nG1AFRTw" image="_5Ya-xV6nEeSU4ccH1YVTaA"/>
+            <mappings xmi:id="_5Ybl0V6nEeSU4ccH1YVTaA" origin="_5ZOlcFhkEeSpv8nG1AFRTw" image="_5Ybl0F6nEeSU4ccH1YVTaA"/>
+            <mappings xmi:id="_5Ybl016nEeSU4ccH1YVTaA" origin="_UdSBolhlEeSpv8nG1AFRTw" image="_5Ybl0l6nEeSU4ccH1YVTaA"/>
+            <mappings xmi:id="_5Ybl1V6nEeSU4ccH1YVTaA" origin="_UJ4dIFhoEeSpv8nG1AFRTw" image="_5Ybl1F6nEeSU4ccH1YVTaA"/>
+          </child>
+        </formula>
+      </lhs>
+      <rhs xmi:id="_4VScMVhkEeSpv8nG1AFRTw" name="Rhs">
+        <nodes xmi:id="_4VTDQFhkEeSpv8nG1AFRTw" incoming="_U9JNclhlEeSpv8nG1AFRTw">
+          <type href="filesystem.ecore#//Directory"/>
+        </nodes>
+        <nodes xmi:id="_UdSBoFhlEeSpv8nG1AFRTw" outgoing="_U9JNclhlEeSpv8nG1AFRTw">
+          <type href="filesystem.ecore#//Root"/>
+        </nodes>
+        <edges xmi:id="_U9JNclhlEeSpv8nG1AFRTw" source="_UdSBoFhlEeSpv8nG1AFRTw" target="_4VTDQFhkEeSpv8nG1AFRTw">
+          <type href="filesystem.ecore#//Root/dirs"/>
+        </edges>
+      </rhs>
+      <mappings xmi:id="_4VTqUlhkEeSpv8nG1AFRTw" origin="_4VTDQlhkEeSpv8nG1AFRTw" image="_4VTDQFhkEeSpv8nG1AFRTw"/>
+      <mappings xmi:id="_UdSosVhlEeSpv8nG1AFRTw" origin="_UdSBolhlEeSpv8nG1AFRTw" image="_UdSBoFhlEeSpv8nG1AFRTw"/>
+      <multiMappings xmi:id="_4VTDQVhkEeSpv8nG1AFRTw" origin="_21KtQVhkEeSpv8nG1AFRTw" image="_4VTDQFhkEeSpv8nG1AFRTw"/>
+      <multiMappings xmi:id="_4VTDQ1hkEeSpv8nG1AFRTw" origin="_21KtQFhkEeSpv8nG1AFRTw" image="_4VTDQlhkEeSpv8nG1AFRTw"/>
+      <multiMappings xmi:id="_UdSBoVhlEeSpv8nG1AFRTw" origin="_UdRakVhlEeSpv8nG1AFRTw" image="_UdSBoFhlEeSpv8nG1AFRTw"/>
+      <multiMappings xmi:id="_UdSosFhlEeSpv8nG1AFRTw" origin="_UdRakFhlEeSpv8nG1AFRTw" image="_UdSBolhlEeSpv8nG1AFRTw"/>
+    </multiRules>
+  </units>
+</henshin:Module>

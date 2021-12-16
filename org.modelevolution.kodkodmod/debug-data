@@ -1,0 +1,251 @@
+;; This buffer is for notes you don't want to save, and for Lisp evaluation.
+;; If you want to create a file, visit that file with C-x C-f,
+;; then enter the text in that file's own buffer.
+
+| 'between'
+| 'upto'
+| 'while'
+| 'where'
+| 'before'
+| 'from'
+| 'current'
+| 'having'
+| 'range'
+| 'until'
+| 'with'
+| 'intersect'
+| 'without'
+| 'then'
+
+[18=(((!4|1)&((!5|!4)&(4|5)))&(((!2|4)&(!3|5))&((!4|2)&(!5|3))))]
+
+Relations and the primary variables associated with them:
+Field: 
+Pacman: 
+Player: 
+neighbors: 
+on: 1
+$on': 2, 3
+$n: 4, 5
+TreasureField: 
+
+relation bounds:
+ Field: [[<Field0>, <TreasureField0>]]
+ Pacman: [[<Pacman>]]
+ Player: [[<Pacman>]]
+ neighbors: [[<Field0, TreasureField0>, <TreasureField0, Field0>]]
+ on: [[<Pacman, Field0>], [<Pacman, Field0>, <Pacman, TreasureField0>]]
+ $on': [[], [<Pacman, Field0>, <Pacman, TreasureField0>]]
+ $n: [[], [<Field0>, <TreasureField0>]]
+
+Replaying the translation in detail...
+< node: on': set (Player -> Field), literal: 2147483647, env: {}>
+< node: n: one ((Pacman . on) . neighbors), literal: 6, env: {}>
+< node: n: one ((Pacman . on) . neighbors), literal: 9, env: {}>
+< node: n: one ((Pacman . on) . neighbors), literal: 10, env: {}>
+< node: (on' = ((on - (Pacman -> (Pacman . on))) + (Pacman -> n))), literal: 17, env: {}>
+< node: (some n: one ((Pacman . on) . neighbors) | (on' = ((on - (Pacman -> (Pacman . on))) + (Pacman -> n)))), literal: 18, env: {}>
+
+
+AFTER SKOLEMIZATION:  
+(read 'X ===> Y' as "Y is source-of X" or "X originates from Y")
+
+($on' = ((on - (Pacman -> (Pacman . on))) + (Pacman -> $n)))
+===>
+(on' = ((on - (Pacman -> (Pacman . on))) + (Pacman -> n)))
+
+(($n in ((Pacman . on) . neighbors)) && one $n)===>n: one ((Pacman . on) . neighbors)
+
+((($n in ((Pacman . on) . neighbors)) && one $n) && ($on' = ((on -
+(Pacman -> (Pacman . on))) + (Pacman -> $n))))
+===>
+(some n: one ((Pacman . on) . neighbors) | (on' = ((on - (Pacman -> (Pacman . on))) + (Pacman -> n))))
+
+($n in ((Pacman . on) . neighbors))===>n: one ((Pacman . on) . neighbors)
+
+*********************************************************************
+(($on' in (Player -> Field)) && ((($n in ((Pacman . on) . neighbors))
+&& one $n) && ($on' = ((on - (Pacman -> (Pacman . on))) + (Pacman ->
+$n)))))
+ ===> 
+(some on': set (Player -> Field) | (some n: one ((Pacman . on)
+. neighbors) | (on' = ((on - (Pacman -> (Pacman . on))) + (Pacman ->
+n)))))
+*********************************************************************
+($on' in (Player -> Field))===>on': set (Player -> Field)
+
+one $n=n: one ((Pacman . on) . neighbors)
+
+VARS:
+{on=[1..1], $on'=[2..3], $n=[4..5]}
+
+$on' is represented by 3x3 matrix whose upper bound is defined as follows
+ [- - -
+  - - -
+  T T -], i.e., the indices 6 and 7 are set, while the lower bounds are
+empty.  
+
+Another view onto the Boolean matrix of the upper bound of $on'; this
+time with the corresponding row and column labels, and the indices
+used index the flat matrix representation.  Note that the indices of
+each SparseSequence representation of a relation can be translated
+back to the original [row,column] index of the matrix representation
+because the dimensions of the matrix correspond to the arity of the
+relation and the size of each dimension correspond to size of the
+universe.
+
+                    T    
+                    r    
+                    e    
+                    a    
+                    s    
+                    u    
+                    r    
+                    e    
+                 F  f  P 
+                 i  i  a 
+                 e  e  c 
+                 l  l  m 
+                 d  d  a 
+                 0  0  n 
+                _________
+Field0         | 0  1  2 |
+TreasureField0 | 3  4  5 |
+Pacman         | 6* 7* 8 |
+
+
+For the above matrix we could also use the flat view given by
+[ - - -; - - -; T T -], where columns are space seperated and rows
+delimited by semicolons.  The Boolean matrix of $on' is hence defined
+ by an ArraySequence where index 6 is assigned to variable 2 and index 7
+ is assigned to variable 3.  Thus, if variable 2 is set, i.e.,
+ assigned to $true$, we know that _Pacman_ is on _Field0_:
+
+BooleanMatrix $on' = ArraySequence{6=2,7=3}
+
+Likewise, if variable 3 is set (to $true$) then _Pacman_ is on the
+_TreasureField0_.
+
+The translation process documented by hand
+------------------------------------------
+* $on' in (Player->Field)
+  Pattern: forall e1 \in $on' | e1 => e2 \in (Player->Field) == 
+           (!e1_0 OR e2_0) AND ... AND (!e1_n OR e2_n)
+
+** $on' results in a matrix with dimensions: [ 3 3 ] with elements
+   [6=2, 7=3] (x=y where x is the matrix index and y the variable)
+
+** (Player -> Field) results in a matrix with dimensions: [ 3 3 ] with
+   elements [6=T, 7=T]
+
+** Hence, $on' in (Player->Field) results in 
+   (!2 OR T) AND (!3 OR T) == T
+
+** The top-level accumulator is an AND-gate; thus, the above
+   translation result, i.e., _true_, is not added
+
+* $n in ((Pacman . on) . neighbors)
+  Pattern: forall e1 \in $n | 
+              e1 => (e2 \in ((Pacman . on) . neighbors)) ==
+              (!e1_0 OR e2_0) AND ... AND (!e1_n OR e2_n)
+  
+** $n represents possible neighboring fields with a matrix consisting
+   of dimension: [ 3 ] and elements:  [0=4, 1=5]
+   
+   (x=y where x is the matrix index and y the variable) [NB: the
+   matrix index refers to the element(s) in the universe, e.g., '0'
+   refers to 'Field0']
+
+** The 'Pacman' relation is represented by a [ 3 ] (=3x1)
+   matrix where index 2 is set to _true_, i.e., Pacman={2=T}
+
+** The 'on' relation is represented by a [ 3 3 ] (3x3) matrix where
+   index 6 is set to _true_ and index 7 is associated with variable 1,
+   i.e., on={6=T, 7=1}.  This expresses that Pacman (currently) stands
+   on 'Field0' and is able to move to the 'TreasureField0'.
+
+** The expression 'Pacman . on' generates a [ 3 ] matrix with values 
+   [ T 1 0 ].  Note how the JOIN operation removes the first dimension
+   from 'on' relation, namely 'Player' dimension, and collapses the
+   values column-wise, i.e., 
+   [ 0 0 T ] . [ 0 0 0; 0 0 0; T 1 0 ] = 
+     [ (0&0)|(0&0)|(T&T); (0&0)|..|(T&1); (0&0)|..|(T&0) ]
+   where the first column of matrix A is multiplied (&) with every
+   element of the first row of matrix B and added (|) columnwisely to
+   multiplications of the second, third, and so on rows,
+   respectively, thus generating the column entries of the resulting
+   matrix.
+
+   In general, the JOIN operation removes the last column of matrix A
+   and the first column of matrix B by ...
+
+** The 'neighbors' relation is again a [ 3 3 ] matrix with values
+   {1=T, 3=T}.
+
+** The expression '(Pacman . on) . neighbors' generates a [ 3 ] matrix
+   with values [ 1 T 0 ] 
+
+** Finally, the expression '$n in ((Pacman . on) . neighbors)' yields
+   a BooleanFormula (!5|T)&(!4|1)=(!4|1) with label 6, ie, 6=(!4|1).
+   Here var 4 refers to 'Field0' and var 1 to the 'on'-tuple
+   '(Pacman,TreasureField0)'.
+
+[0 1 -].[- 1 - =  
+         3 - -
+         - - -]
+
+* one $n: $n is represented by [0=4, 1=5] (see above).  The
+  multiplicity constraint 'one' is translated to an xor-formula over
+  the elements of the constrained relation; in this case the relation
+  is $n and 'one $n' results in the AND-gate '[7=(!5|!4), 8=(4|5)]'
+  which is equivalent to '(4|5) & (!4|!5)'.  Note that '7' and '8' are
+  new variables introduced for the OR-gates '(4|5)' and '(!4|!5)'.
+  The AND-gate is "assembled", i.e., simplified or reduced to an
+  equivalent formula, and stored as a new intermediate formula
+  '9=((!5|!4)&(4|5))', where '9' is fresh variable.
+
+* $n in ((Pacman . on) . neighbors) && one $n: Combine the last two
+  top-level formulas (see above) by simply conjoining them with and
+  AND-gate, from which a new formula is "assembled", i.e., the formula
+  '10=((!4|1)&((!5|!4)&(4|5)))' is created with a fresh variable '10'.
+
+* The final translation is concerned with the ComparisonFormula 
+  '($on' = ((on - (Pacman -> (Pacman . on))) + (Pacman -> $n)))'.
+
+** $on': The relation is again interpreted by a (Leaf)Interpreter
+   that has previously (see above before the documentation of the
+   translation) overapproximated the lower and upper bound during the
+   skolemization step.  The BooleanMatrix returned is '[6=2, 7=3]'.
+
+** The right side of the ComparisonFormula, 
+   '((on - (Pacman -> (Pacman . on))) + (Pacman -> $n))', 
+   is a bit more involved.
+
+** Again, the BinaryExpression, a UNION (+) is split into a left, 
+   '(on - (Pacman -> (Pacman . on)))', and a right side, 
+   '(Pacman -> $n)'.
+
+*** For the left side, an empty BooleanMatrix is returned, '[]'.
+
+*** The right side evaluates to the BooleanMatrix '[6=4, 7=5]'.
+
+*** The UNION is thus a copy of the right side, '[6=4, 7=5]'.
+
+** The translation of the ComparisonFormula is split into two parts,
+   i.e., we check whether the left hand is a subset of the right hand
+   relation, and vice versa.  The first SUBSET check yields an
+   AND-gate with sub-formulas '[11=(!2|4), 12=(!3|5)]' which are
+   "accumulated" into the formula '13=((!2|4)&(!3|5))'.  The second
+   SUBSET check yields an AND-gate with sub-formulas '[14=(!4|2),
+   15=(!5|3)] which are accumulated into the formula
+   '16=((!4|2)&(!5|3))'.  Finally, the two SUBSET-formulas are
+   conjoined into the formula '17=(((!2|4)&(!3|5))&((!4|2)&(!5|3)))'.
+
+* Now, the two sub-formulas, '(($n in ((Pacman . on) . neighbors)) &&
+  one $n)' and '($on' = ((on - (Pacman -> (Pacman . on))) + (Pacman ->
+  $n)))', are conjoined into the formula
+  '18=(((!4|1)&((!5|!4)&(4|5)))&(((!2|4)&(!3|5))&((!4|2)&(!5|3))))'
+
+
+1 (!1|(2&(!4&3)))
+2 (!1|(1&(!3&4)))

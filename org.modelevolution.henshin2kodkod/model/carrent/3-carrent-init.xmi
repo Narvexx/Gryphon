@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<carrent:Building xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:carrent="http://carrent.at" xsi:schemaLocation="http://carrent.at carrent.ecore">
+  <cars remainingDays="-100" id="0"/>
+  <cars remainingDays="-100" id="1"/>
+  <cars remainingDays="-100" id="2"/>
+</carrent:Building>

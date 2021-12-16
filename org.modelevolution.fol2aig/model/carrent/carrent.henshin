@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_ZBiCcHbMEeKY7PXMidRG_w">
+  <imports href="carrent.ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_jprF0HbMEeKY7PXMidRG_w" name="lend">
+    <parameters xmi:id="_w3HLAHqmEeGha8YiNsL7gw" name="car"/>
+    <parameters xmi:id="_w3HLAHqmEeGha8YiNsL7gw" name="days"/>
+    <lhs xmi:id="_jpuJIHbMEeKY7PXMidRG_w" name="Lhs">
+      <nodes xmi:id="_kwBC0HbMEeKY7PXMidRG_w" outgoing="_buzPEHbOEeKY7PXMidRG_w">
+        <type href="carrent.ecore#//Building"/>
+      </nodes>
+      <nodes xmi:id="_k_H10HbMEeKY7PXMidRG_w" name="car" incoming="_buzPEHbOEeKY7PXMidRG_w">
+        <type href="carrent.ecore#//Car"/>
+        <attributes xmi:id="_9UuuwHbMEeKY7PXMidRG_w" value="-100">
+          <type href="carrent.ecore#//Car/remainingDays"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_buzPEHbOEeKY7PXMidRG_w" source="_kwBC0HbMEeKY7PXMidRG_w" target="_k_H10HbMEeKY7PXMidRG_w">
+        <type href="carrent.ecore#//Building/cars"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_jpuJIXbMEeKY7PXMidRG_w" name="Rhs">
+      <nodes xmi:id="_kwBC0XbMEeKY7PXMidRG_w" outgoing="_buz2IHbOEeKY7PXMidRG_w">
+        <type href="carrent.ecore#//Building"/>
+      </nodes>
+      <nodes xmi:id="_k_H10XbMEeKY7PXMidRG_w" name="car" incoming="_buz2IHbOEeKY7PXMidRG_w">
+        <type href="carrent.ecore#//Car"/>
+        <attributes xmi:id="_9UvV0HbMEeKY7PXMidRG_w" value="3">
+          <type href="carrent.ecore#//Car/remainingDays"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_buz2IHbOEeKY7PXMidRG_w" source="_kwBC0XbMEeKY7PXMidRG_w" target="_k_H10XbMEeKY7PXMidRG_w">
+        <type href="carrent.ecore#//Building/cars"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_kwBC0nbMEeKY7PXMidRG_w" origin="_kwBC0HbMEeKY7PXMidRG_w" image="_kwBC0XbMEeKY7PXMidRG_w"/>
+    <mappings xmi:id="_k_Ic4HbMEeKY7PXMidRG_w" origin="_k_H10HbMEeKY7PXMidRG_w" image="_k_H10XbMEeKY7PXMidRG_w"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_kP0f0HbMEeKY7PXMidRG_w" name="back">
+    <parameters xmi:id="_PflDsHbPEeKY7PXMidRG_w" name="car"/>
+    <parameters xmi:id="_9HVEkHbPEeKY7PXMidRG_w" name="x"/>
+    <lhs xmi:id="_kP28EHbMEeKY7PXMidRG_w" name="Lhs">
+      <nodes xmi:id="_g-2MYHbOEeKY7PXMidRG_w" outgoing="_jBxtcHbOEeKY7PXMidRG_w">
+        <type href="carrent.ecore#//Building"/>
+      </nodes>
+      <nodes xmi:id="_hdrdcHbOEeKY7PXMidRG_w" name="car" incoming="_jBxtcHbOEeKY7PXMidRG_w">
+        <type href="carrent.ecore#//Car"/>
+        <attributes xmi:id="_tM754HbOEeKY7PXMidRG_w" value="1">
+          <type href="carrent.ecore#//Car/remainingDays"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_jBxtcHbOEeKY7PXMidRG_w" source="_g-2MYHbOEeKY7PXMidRG_w" target="_hdrdcHbOEeKY7PXMidRG_w">
+        <type href="carrent.ecore#//Building/cars"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_kP28EXbMEeKY7PXMidRG_w" name="Rhs">
+      <nodes xmi:id="_g-2zcHbOEeKY7PXMidRG_w" outgoing="_jBy7kHbOEeKY7PXMidRG_w">
+        <type href="carrent.ecore#//Building"/>
+      </nodes>
+      <nodes xmi:id="_hdsEgHbOEeKY7PXMidRG_w" name="car" incoming="_jBy7kHbOEeKY7PXMidRG_w">
+        <type href="carrent.ecore#//Car"/>
+        <attributes xmi:id="_tM8g8HbOEeKY7PXMidRG_w" value="-100">
+          <type href="carrent.ecore#//Car/remainingDays"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_jBy7kHbOEeKY7PXMidRG_w" source="_g-2zcHbOEeKY7PXMidRG_w" target="_hdsEgHbOEeKY7PXMidRG_w">
+        <type href="carrent.ecore#//Building/cars"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_g-2zcXbOEeKY7PXMidRG_w" origin="_g-2MYHbOEeKY7PXMidRG_w" image="_g-2zcHbOEeKY7PXMidRG_w"/>
+    <mappings xmi:id="_hdsrkHbOEeKY7PXMidRG_w" origin="_hdrdcHbOEeKY7PXMidRG_w" image="_hdsEgHbOEeKY7PXMidRG_w"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_S4WWUHbPEeKY7PXMidRG_w" name="incrnow">
+    <parameters xmi:id="_9HVEkHbPEeKY7PXMidRG_w" name="x"/>
+    <lhs xmi:id="_S4b14HbPEeKY7PXMidRG_w" name="Lhs">
+      <nodes xmi:id="_UwRhQHbPEeKY7PXMidRG_w" outgoing="_dWmd4HbPEeKY7PXMidRG_w">
+        <type href="carrent.ecore#//Building"/>
+      </nodes>
+      <nodes xmi:id="_aWdtsHbPEeKY7PXMidRG_w" incoming="_dWmd4HbPEeKY7PXMidRG_w">
+        <type href="carrent.ecore#//Car"/>
+        <attributes xmi:id="_e42TwHbPEeKY7PXMidRG_w" value="3">
+          <type href="carrent.ecore#//Car/remainingDays"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_dWmd4HbPEeKY7PXMidRG_w" source="_UwRhQHbPEeKY7PXMidRG_w" target="_aWdtsHbPEeKY7PXMidRG_w">
+        <type href="carrent.ecore#//Building/cars"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_S4b14XbPEeKY7PXMidRG_w" name="Rhs">
+      <nodes xmi:id="_UwSIUHbPEeKY7PXMidRG_w" outgoing="_dWoTEHbPEeKY7PXMidRG_w">
+        <type href="carrent.ecore#//Building"/>
+      </nodes>
+      <nodes xmi:id="_aWeUwHbPEeKY7PXMidRG_w" incoming="_dWoTEHbPEeKY7PXMidRG_w">
+        <type href="carrent.ecore#//Car"/>
+        <attributes xmi:id="_e43h4HbPEeKY7PXMidRG_w" value="1">
+          <type href="carrent.ecore#//Car/remainingDays"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_dWoTEHbPEeKY7PXMidRG_w" source="_UwSIUHbPEeKY7PXMidRG_w" target="_aWeUwHbPEeKY7PXMidRG_w">
+        <type href="carrent.ecore#//Building/cars"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_UwSvYHbPEeKY7PXMidRG_w" origin="_UwRhQHbPEeKY7PXMidRG_w" image="_UwSIUHbPEeKY7PXMidRG_w"/>
+    <mappings xmi:id="_aWe70HbPEeKY7PXMidRG_w" origin="_aWdtsHbPEeKY7PXMidRG_w" image="_aWeUwHbPEeKY7PXMidRG_w"/>
+  </units>
+</henshin:Module>

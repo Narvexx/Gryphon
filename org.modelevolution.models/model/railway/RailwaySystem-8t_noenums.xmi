@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ASCII"?>
+<rw_noenums:RailwaySystem
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:rw_noenums="http://rw.modelevolution.org/1.0/noenums"
+    xsi:schemaLocation="http://rw.modelevolution.org/1.0/noenums railwaysystem_noenums.ecore">
+  <trains route="//@routes.0"/>
+  <trains route="//@routes.1"/>
+  <trains route="//@routes.0"/>
+  <trains route="//@routes.1"/>
+  <trains route="//@routes.0"/>
+  <trains route="//@routes.1"/>
+  <trains route="//@routes.0"/>
+  <trains route="//@routes.1"/>
+  <tracks xsi:type="rw_noenums:Entry"
+      id="ENTRY"
+      next="//@tracks.1">
+    <signal
+        id="S10"/>
+  </tracks>
+  <tracks xsi:type="rw_noenums:Track"
+      id="AA"
+      next="//@tracks.2"/>
+  <tracks xsi:type="rw_noenums:Point"
+      id="P101"
+      next="//@tracks.3 //@tracks.5">
+    <lock release="//@tracks.3 //@tracks.5"/>
+  </tracks>
+  <tracks xsi:type="rw_noenums:Track"
+      id="AC"
+      next="//@tracks.4">
+    <signal
+        id="S12"/>
+  </tracks>
+  <tracks xsi:type="rw_noenums:Track"
+      id="AD"
+      next="//@tracks.7"/>
+  <tracks xsi:type="rw_noenums:Track"
+      id="BC"
+      next="//@tracks.6">
+    <signal
+        id="S112"/>
+  </tracks>
+  <tracks xsi:type="rw_noenums:Track"
+      id="BD"
+      next="//@tracks.7"/>
+  <tracks xsi:type="rw_noenums:Point"
+      id="P102"
+      next="//@tracks.8">
+    <lock release="//@tracks.8"/>
+  </tracks>
+  <tracks xsi:type="rw_noenums:Track"
+      id="AF"
+      next="//@tracks.9"/>
+  <tracks xsi:type="rw_noenums:Exit"
+      id="EXIT"/>
+  <routes tracks="//@tracks.0 //@tracks.1 //@tracks.2 //@tracks.3 //@tracks.4 //@tracks.8 //@tracks.9 //@tracks.7"
+      id="R10A_R12">
+    <controls
+        sig="//@tracks.0/@signal"
+        point="//@tracks.2"
+        clear="//@tracks.1 //@tracks.2 //@tracks.3 //@tracks.4"/>
+    <controls
+        sig="//@tracks.3/@signal"
+        point="//@tracks.7"
+        clear="//@tracks.4 //@tracks.7 //@tracks.8"/>
+  </routes>
+  <routes tracks="//@tracks.0 //@tracks.1 //@tracks.2 //@tracks.5 //@tracks.6 //@tracks.7 //@tracks.8 //@tracks.9"
+      id="R10B_R112">
+    <controls
+        sig="//@tracks.0/@signal"
+        point="//@tracks.2"
+        reqPos="1"
+        clear="//@tracks.1 //@tracks.2 //@tracks.5 //@tracks.6"/>
+    <controls
+        sig="//@tracks.5/@signal"
+        point="//@tracks.7"
+        reqPos="1"
+        clear="//@tracks.6 //@tracks.7 //@tracks.8"/>
+  </routes>
+</rw_noenums:RailwaySystem>

@@ -1,0 +1,1159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_1WRwUMICEeS9KbtX1pF4vA">
+  <imports href="railwaysystem.ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_M8XQ0MIDEeS9KbtX1pF4vA" name="enterTrain">
+    <lhs xmi:id="_M-0H4MIDEeS9KbtX1pF4vA" name="Lhs">
+      <nodes xmi:id="_QekMQMIDEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Entry"/>
+      </nodes>
+      <nodes xmi:id="_R5qRQMIDEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <formula xsi:type="henshin:And" xmi:id="_zVyCwMIDEeS9KbtX1pF4vA">
+        <left xsi:type="henshin:And" xmi:id="_tZAiUMIDEeS9KbtX1pF4vA">
+          <left xsi:type="henshin:Not" xmi:id="_rtmJYcIDEeS9KbtX1pF4vA">
+            <child xsi:type="henshin:NestedCondition" xmi:id="_rtmJYsIDEeS9KbtX1pF4vA">
+              <conclusion xmi:id="_rtmJY8IDEeS9KbtX1pF4vA" name="2">
+                <nodes xmi:id="_rtmJZMIDEeS9KbtX1pF4vA" outgoing="_oFR-4MIDEeS9KbtX1pF4vA">
+                  <type href="railwaysystem.ecore#//Train"/>
+                </nodes>
+                <nodes xmi:id="_kmSvgMIDEeS9KbtX1pF4vA" incoming="_oFR-4MIDEeS9KbtX1pF4vA">
+                  <type href="railwaysystem.ecore#//TrackElement"/>
+                </nodes>
+                <nodes xmi:id="_GJVBUcIEEeS9KbtX1pF4vA">
+                  <type href="railwaysystem.ecore#//Entry"/>
+                </nodes>
+                <edges xmi:id="_oFR-4MIDEeS9KbtX1pF4vA" source="_rtmJZMIDEeS9KbtX1pF4vA" target="_kmSvgMIDEeS9KbtX1pF4vA">
+                  <type href="railwaysystem.ecore#//Train/occupies"/>
+                </edges>
+              </conclusion>
+              <mappings xmi:id="_rtmJZcIDEeS9KbtX1pF4vA" origin="_R5qRQMIDEeS9KbtX1pF4vA" image="_rtmJZMIDEeS9KbtX1pF4vA"/>
+              <mappings xmi:id="_GJVBUsIEEeS9KbtX1pF4vA" origin="_QekMQMIDEeS9KbtX1pF4vA" image="_GJVBUcIEEeS9KbtX1pF4vA"/>
+            </child>
+          </left>
+          <right xsi:type="henshin:Not" xmi:id="_tZAiUcIDEeS9KbtX1pF4vA">
+            <child xsi:type="henshin:NestedCondition" xmi:id="_tZAiUsIDEeS9KbtX1pF4vA">
+              <conclusion xmi:id="_tZAiU8IDEeS9KbtX1pF4vA" name="3">
+                <nodes xmi:id="_tZAiVsIDEeS9KbtX1pF4vA">
+                  <type href="railwaysystem.ecore#//Train"/>
+                </nodes>
+                <nodes xmi:id="_tZBJYMIDEeS9KbtX1pF4vA" incoming="_WXrUsMIDEeS9KbtX1pF4vA">
+                  <type href="railwaysystem.ecore#//Entry"/>
+                </nodes>
+                <nodes xmi:id="_TDN6UMIDEeS9KbtX1pF4vA" outgoing="_WXrUsMIDEeS9KbtX1pF4vA">
+                  <type href="railwaysystem.ecore#//Train"/>
+                </nodes>
+                <edges xmi:id="_WXrUsMIDEeS9KbtX1pF4vA" source="_TDN6UMIDEeS9KbtX1pF4vA" target="_tZBJYMIDEeS9KbtX1pF4vA">
+                  <type href="railwaysystem.ecore#//Train/occupies"/>
+                </edges>
+              </conclusion>
+              <mappings xmi:id="_tZAiV8IDEeS9KbtX1pF4vA" origin="_R5qRQMIDEeS9KbtX1pF4vA" image="_tZAiVsIDEeS9KbtX1pF4vA"/>
+              <mappings xmi:id="_tZBJYcIDEeS9KbtX1pF4vA" origin="_QekMQMIDEeS9KbtX1pF4vA" image="_tZBJYMIDEeS9KbtX1pF4vA"/>
+            </child>
+          </right>
+        </left>
+        <right xsi:type="henshin:Not" xmi:id="_zVyCwcIDEeS9KbtX1pF4vA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_zVyCwsIDEeS9KbtX1pF4vA">
+            <conclusion xmi:id="_zVyCw8IDEeS9KbtX1pF4vA" name="1">
+              <nodes xmi:id="_zVyCxMIDEeS9KbtX1pF4vA" outgoing="_vuE8QMIDEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train"/>
+              </nodes>
+              <nodes xmi:id="_zVyCxsIDEeS9KbtX1pF4vA" incoming="_vuE8QMIDEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Entry"/>
+              </nodes>
+              <edges xmi:id="_vuE8QMIDEeS9KbtX1pF4vA" source="_zVyCxMIDEeS9KbtX1pF4vA" target="_zVyCxsIDEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train/occupies"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_zVyCxcIDEeS9KbtX1pF4vA" origin="_R5qRQMIDEeS9KbtX1pF4vA" image="_zVyCxMIDEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_zVyCx8IDEeS9KbtX1pF4vA" origin="_QekMQMIDEeS9KbtX1pF4vA" image="_zVyCxsIDEeS9KbtX1pF4vA"/>
+          </child>
+        </right>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_M-0H4cIDEeS9KbtX1pF4vA" name="Rhs">
+      <nodes xmi:id="_QekzUMIDEeS9KbtX1pF4vA" incoming="_1UQhoMIDEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Entry"/>
+      </nodes>
+      <nodes xmi:id="_R5qRQcIDEeS9KbtX1pF4vA" outgoing="_1UQhoMIDEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <edges xmi:id="_1UQhoMIDEeS9KbtX1pF4vA" source="_R5qRQcIDEeS9KbtX1pF4vA" target="_QekzUMIDEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/occupies"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_QekzUcIDEeS9KbtX1pF4vA" origin="_QekMQMIDEeS9KbtX1pF4vA" image="_QekzUMIDEeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_R5qRQsIDEeS9KbtX1pF4vA" origin="_R5qRQMIDEeS9KbtX1pF4vA" image="_R5qRQcIDEeS9KbtX1pF4vA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_PGw2YMIEEeS9KbtX1pF4vA" name="exitTrain">
+    <lhs xmi:id="_PGyrkMIEEeS9KbtX1pF4vA" name="Lhs">
+      <nodes xmi:id="_Rv-UUMIEEeS9KbtX1pF4vA" outgoing="_TCCZIMIEEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <nodes xmi:id="_SfnokMIEEeS9KbtX1pF4vA" incoming="_TCCZIMIEEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Exit"/>
+      </nodes>
+      <edges xmi:id="_TCCZIMIEEeS9KbtX1pF4vA" source="_Rv-UUMIEEeS9KbtX1pF4vA" target="_SfnokMIEEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/occupies"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_PGzSoMIEEeS9KbtX1pF4vA" name="Rhs">
+      <nodes xmi:id="_Rv-UUcIEEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <nodes xmi:id="_SfoPoMIEEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Exit"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_Rv-UUsIEEeS9KbtX1pF4vA" origin="_Rv-UUMIEEeS9KbtX1pF4vA" image="_Rv-UUcIEEeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_SfoPocIEEeS9KbtX1pF4vA" origin="_SfnokMIEEeS9KbtX1pF4vA" image="_SfoPoMIEEeS9KbtX1pF4vA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_XIgfQMIEEeS9KbtX1pF4vA" name="moveTrain">
+    <lhs xmi:id="_XIi7gMIEEeS9KbtX1pF4vA" name="Lhs">
+      <nodes xmi:id="_Y3zAsMIGEeS9KbtX1pF4vA" incoming="_g0_gwMIGEeS9KbtX1pF4vA _i6qz0MIGEeS9KbtX1pF4vA" outgoing="_lqMVIMIGEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//TrackElement"/>
+      </nodes>
+      <nodes xmi:id="_ZXfNYMIGEeS9KbtX1pF4vA" incoming="_ff5WEMIGEeS9KbtX1pF4vA _lqMVIMIGEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//TrackElement"/>
+      </nodes>
+      <nodes xmi:id="_aDwdgMIGEeS9KbtX1pF4vA" outgoing="_fHhSUMIGEeS9KbtX1pF4vA _i6qz0MIGEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <nodes xmi:id="_bGyAwMIGEeS9KbtX1pF4vA" incoming="_fHhSUMIGEeS9KbtX1pF4vA" outgoing="_ff5WEMIGEeS9KbtX1pF4vA _g0_gwMIGEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Route"/>
+      </nodes>
+      <edges xmi:id="_fHhSUMIGEeS9KbtX1pF4vA" source="_aDwdgMIGEeS9KbtX1pF4vA" target="_bGyAwMIGEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/route"/>
+      </edges>
+      <edges xmi:id="_ff5WEMIGEeS9KbtX1pF4vA" source="_bGyAwMIGEeS9KbtX1pF4vA" target="_ZXfNYMIGEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Route/tracks"/>
+      </edges>
+      <edges xmi:id="_g0_gwMIGEeS9KbtX1pF4vA" source="_bGyAwMIGEeS9KbtX1pF4vA" target="_Y3zAsMIGEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Route/tracks"/>
+      </edges>
+      <edges xmi:id="_i6qz0MIGEeS9KbtX1pF4vA" source="_aDwdgMIGEeS9KbtX1pF4vA" target="_Y3zAsMIGEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/occupies"/>
+      </edges>
+      <edges xmi:id="_lqMVIMIGEeS9KbtX1pF4vA" source="_Y3zAsMIGEeS9KbtX1pF4vA" target="_ZXfNYMIGEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//TrackElement/next"/>
+      </edges>
+      <formula xsi:type="henshin:And" xmi:id="_kLrTQMIHEeS9KbtX1pF4vA">
+        <left xsi:type="henshin:Not" xmi:id="_jLvgQcIHEeS9KbtX1pF4vA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_jLvgQsIHEeS9KbtX1pF4vA">
+            <conclusion xmi:id="_jLvgQ8IHEeS9KbtX1pF4vA" name="2">
+              <nodes xmi:id="_jLvgRMIHEeS9KbtX1pF4vA" incoming="_jLvgSMIHEeS9KbtX1pF4vA _jLwHUsIHEeS9KbtX1pF4vA _hsFrYMIHEeS9KbtX1pF4vA" outgoing="_jLwHWMIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//TrackElement"/>
+              </nodes>
+              <nodes xmi:id="_jLvgRsIHEeS9KbtX1pF4vA" incoming="_jLwuYcIHEeS9KbtX1pF4vA" outgoing="_jLvgSMIHEeS9KbtX1pF4vA _jLwuYMIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Route"/>
+              </nodes>
+              <nodes xmi:id="_jLwHUMIHEeS9KbtX1pF4vA" outgoing="_jLwHUsIHEeS9KbtX1pF4vA _jLwuYcIHEeS9KbtX1pF4vA _g_frIMIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train"/>
+              </nodes>
+              <nodes xmi:id="_eioAEMIHEeS9KbtX1pF4vA" incoming="_g_frIMIHEeS9KbtX1pF4vA" outgoing="_hsFrYMIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Lock"/>
+              </nodes>
+              <nodes xmi:id="_jLwHVsIHEeS9KbtX1pF4vA" incoming="_jLwHWMIHEeS9KbtX1pF4vA _jLwuYMIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//TrackElement"/>
+              </nodes>
+              <edges xmi:id="_jLvgSMIHEeS9KbtX1pF4vA" source="_jLvgRsIHEeS9KbtX1pF4vA" target="_jLvgRMIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Route/tracks"/>
+              </edges>
+              <edges xmi:id="_jLwHUsIHEeS9KbtX1pF4vA" source="_jLwHUMIHEeS9KbtX1pF4vA" target="_jLvgRMIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train/occupies"/>
+              </edges>
+              <edges xmi:id="_jLwHWMIHEeS9KbtX1pF4vA" source="_jLvgRMIHEeS9KbtX1pF4vA" target="_jLwHVsIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//TrackElement/next"/>
+              </edges>
+              <edges xmi:id="_jLwuYMIHEeS9KbtX1pF4vA" source="_jLvgRsIHEeS9KbtX1pF4vA" target="_jLwHVsIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Route/tracks"/>
+              </edges>
+              <edges xmi:id="_jLwuYcIHEeS9KbtX1pF4vA" source="_jLwHUMIHEeS9KbtX1pF4vA" target="_jLvgRsIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train/route"/>
+              </edges>
+              <edges xmi:id="_g_frIMIHEeS9KbtX1pF4vA" source="_jLwHUMIHEeS9KbtX1pF4vA" target="_eioAEMIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train/holds"/>
+              </edges>
+              <edges xmi:id="_hsFrYMIHEeS9KbtX1pF4vA" source="_eioAEMIHEeS9KbtX1pF4vA" target="_jLvgRMIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Lock/release"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_jLvgRcIHEeS9KbtX1pF4vA" origin="_Y3zAsMIGEeS9KbtX1pF4vA" image="_jLvgRMIHEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_jLvgR8IHEeS9KbtX1pF4vA" origin="_bGyAwMIGEeS9KbtX1pF4vA" image="_jLvgRsIHEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_jLwHUcIHEeS9KbtX1pF4vA" origin="_aDwdgMIGEeS9KbtX1pF4vA" image="_jLwHUMIHEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_jLwHV8IHEeS9KbtX1pF4vA" origin="_ZXfNYMIGEeS9KbtX1pF4vA" image="_jLwHVsIHEeS9KbtX1pF4vA"/>
+          </child>
+        </left>
+        <right xsi:type="henshin:Not" xmi:id="_kLrTQcIHEeS9KbtX1pF4vA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_kLrTQsIHEeS9KbtX1pF4vA">
+            <conclusion xmi:id="_kLrTQ8IHEeS9KbtX1pF4vA" name="1">
+              <nodes xmi:id="_kLrTRMIHEeS9KbtX1pF4vA" incoming="_kLr6UcIHEeS9KbtX1pF4vA _kLr6VMIHEeS9KbtX1pF4vA" outgoing="_kLr6V8IHEeS9KbtX1pF4vA _OG4mYMIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//TrackElement"/>
+              </nodes>
+              <nodes xmi:id="_kLrTRsIHEeS9KbtX1pF4vA" incoming="_kLshZMIHEeS9KbtX1pF4vA" outgoing="_kLr6UcIHEeS9KbtX1pF4vA _kLshY8IHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Route"/>
+              </nodes>
+              <nodes xmi:id="_kLr6UsIHEeS9KbtX1pF4vA" outgoing="_kLr6VMIHEeS9KbtX1pF4vA _kLshZMIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train"/>
+              </nodes>
+              <nodes xmi:id="_kLr6VcIHEeS9KbtX1pF4vA" incoming="_kLr6V8IHEeS9KbtX1pF4vA _kLshY8IHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//TrackElement"/>
+              </nodes>
+              <nodes xmi:id="_LNewUMIHEeS9KbtX1pF4vA" incoming="_OG4mYMIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Signal"/>
+              </nodes>
+              <edges xmi:id="_kLr6UcIHEeS9KbtX1pF4vA" source="_kLrTRsIHEeS9KbtX1pF4vA" target="_kLrTRMIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Route/tracks"/>
+              </edges>
+              <edges xmi:id="_kLr6VMIHEeS9KbtX1pF4vA" source="_kLr6UsIHEeS9KbtX1pF4vA" target="_kLrTRMIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train/occupies"/>
+              </edges>
+              <edges xmi:id="_kLr6V8IHEeS9KbtX1pF4vA" source="_kLrTRMIHEeS9KbtX1pF4vA" target="_kLr6VcIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//TrackElement/next"/>
+              </edges>
+              <edges xmi:id="_kLshY8IHEeS9KbtX1pF4vA" source="_kLrTRsIHEeS9KbtX1pF4vA" target="_kLr6VcIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Route/tracks"/>
+              </edges>
+              <edges xmi:id="_kLshZMIHEeS9KbtX1pF4vA" source="_kLr6UsIHEeS9KbtX1pF4vA" target="_kLrTRsIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train/route"/>
+              </edges>
+              <edges xmi:id="_OG4mYMIHEeS9KbtX1pF4vA" source="_kLrTRMIHEeS9KbtX1pF4vA" target="_LNewUMIHEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//TrackElement/signal"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_kLrTRcIHEeS9KbtX1pF4vA" origin="_Y3zAsMIGEeS9KbtX1pF4vA" image="_kLrTRMIHEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_kLr6UMIHEeS9KbtX1pF4vA" origin="_bGyAwMIGEeS9KbtX1pF4vA" image="_kLrTRsIHEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_kLr6U8IHEeS9KbtX1pF4vA" origin="_aDwdgMIGEeS9KbtX1pF4vA" image="_kLr6UsIHEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_kLr6VsIHEeS9KbtX1pF4vA" origin="_ZXfNYMIGEeS9KbtX1pF4vA" image="_kLr6VcIHEeS9KbtX1pF4vA"/>
+          </child>
+        </right>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_XIi7gcIEEeS9KbtX1pF4vA" name="Rhs">
+      <nodes xmi:id="_Y3zAscIGEeS9KbtX1pF4vA" incoming="_g0_gwcIGEeS9KbtX1pF4vA" outgoing="_lqMVIcIGEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//TrackElement"/>
+      </nodes>
+      <nodes xmi:id="_ZXfNYcIGEeS9KbtX1pF4vA" incoming="_ff5WEcIGEeS9KbtX1pF4vA _lqMVIcIGEeS9KbtX1pF4vA _nZw1UMIGEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//TrackElement"/>
+      </nodes>
+      <nodes xmi:id="_aDwdgcIGEeS9KbtX1pF4vA" outgoing="_fHhSUcIGEeS9KbtX1pF4vA _nZw1UMIGEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <nodes xmi:id="_bGyAwcIGEeS9KbtX1pF4vA" incoming="_fHhSUcIGEeS9KbtX1pF4vA" outgoing="_ff5WEcIGEeS9KbtX1pF4vA _g0_gwcIGEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Route"/>
+      </nodes>
+      <edges xmi:id="_fHhSUcIGEeS9KbtX1pF4vA" source="_aDwdgcIGEeS9KbtX1pF4vA" target="_bGyAwcIGEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/route"/>
+      </edges>
+      <edges xmi:id="_ff5WEcIGEeS9KbtX1pF4vA" source="_bGyAwcIGEeS9KbtX1pF4vA" target="_ZXfNYcIGEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Route/tracks"/>
+      </edges>
+      <edges xmi:id="_g0_gwcIGEeS9KbtX1pF4vA" source="_bGyAwcIGEeS9KbtX1pF4vA" target="_Y3zAscIGEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Route/tracks"/>
+      </edges>
+      <edges xmi:id="_lqMVIcIGEeS9KbtX1pF4vA" source="_Y3zAscIGEeS9KbtX1pF4vA" target="_ZXfNYcIGEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//TrackElement/next"/>
+      </edges>
+      <edges xmi:id="_nZw1UMIGEeS9KbtX1pF4vA" source="_aDwdgcIGEeS9KbtX1pF4vA" target="_ZXfNYcIGEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/occupies"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_Y3zAssIGEeS9KbtX1pF4vA" origin="_Y3zAsMIGEeS9KbtX1pF4vA" image="_Y3zAscIGEeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_ZXfNYsIGEeS9KbtX1pF4vA" origin="_ZXfNYMIGEeS9KbtX1pF4vA" image="_ZXfNYcIGEeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_aDwdgsIGEeS9KbtX1pF4vA" origin="_aDwdgMIGEeS9KbtX1pF4vA" image="_aDwdgcIGEeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_bGyAwsIGEeS9KbtX1pF4vA" origin="_bGyAwMIGEeS9KbtX1pF4vA" image="_bGyAwcIGEeS9KbtX1pF4vA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_YV77sMIEEeS9KbtX1pF4vA" name="moveTrainPastPointSignal">
+    <lhs xmi:id="_YV-X8MIEEeS9KbtX1pF4vA" name="Lhs">
+      <nodes xmi:id="_CRJckMIJEeS9KbtX1pF4vA" incoming="_uIl9cMIJEeS9KbtX1pF4vA _zdIZMMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Signal"/>
+      </nodes>
+      <nodes xmi:id="_C92xkMIJEeS9KbtX1pF4vA" incoming="_wRoGgMIJEeS9KbtX1pF4vA __3Ta4MIJEeS9KbtX1pF4vA" outgoing="_zdIZMMIJEeS9KbtX1pF4vA _ETsGoMIKEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//TrackElement"/>
+      </nodes>
+      <nodes xmi:id="_DlBfQMIJEeS9KbtX1pF4vA" incoming="_BlvSoMIKEeS9KbtX1pF4vA _ETsGoMIKEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//TrackElement"/>
+      </nodes>
+      <nodes xmi:id="_ELPKsMIJEeS9KbtX1pF4vA" outgoing="_vhu6oMIJEeS9KbtX1pF4vA _v2GoIMIJEeS9KbtX1pF4vA _wRoGgMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <nodes xmi:id="_EuV3wMIJEeS9KbtX1pF4vA" incoming="_v2GoIMIJEeS9KbtX1pF4vA" outgoing="_tv5woMIJEeS9KbtX1pF4vA __3Ta4MIJEeS9KbtX1pF4vA _BlvSoMIKEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Route"/>
+      </nodes>
+      <nodes xmi:id="_FmKQkMIJEeS9KbtX1pF4vA" incoming="_tv5woMIJEeS9KbtX1pF4vA" outgoing="_uIl9cMIJEeS9KbtX1pF4vA _ul0E8MIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//SignalControl"/>
+      </nodes>
+      <nodes xmi:id="_GK-N0MIJEeS9KbtX1pF4vA" incoming="_ul0E8MIJEeS9KbtX1pF4vA" outgoing="_vMVSYMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Point"/>
+      </nodes>
+      <nodes xmi:id="_RW56wMIJEeS9KbtX1pF4vA" incoming="_vMVSYMIJEeS9KbtX1pF4vA _vhu6oMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Lock"/>
+      </nodes>
+      <edges xmi:id="_tv5woMIJEeS9KbtX1pF4vA" source="_EuV3wMIJEeS9KbtX1pF4vA" target="_FmKQkMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Route/controls"/>
+      </edges>
+      <edges xmi:id="_uIl9cMIJEeS9KbtX1pF4vA" source="_FmKQkMIJEeS9KbtX1pF4vA" target="_CRJckMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//SignalControl/sig"/>
+      </edges>
+      <edges xmi:id="_ul0E8MIJEeS9KbtX1pF4vA" source="_FmKQkMIJEeS9KbtX1pF4vA" target="_GK-N0MIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//SignalControl/point"/>
+      </edges>
+      <edges xmi:id="_vMVSYMIJEeS9KbtX1pF4vA" source="_GK-N0MIJEeS9KbtX1pF4vA" target="_RW56wMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Point/lock"/>
+      </edges>
+      <edges xmi:id="_vhu6oMIJEeS9KbtX1pF4vA" source="_ELPKsMIJEeS9KbtX1pF4vA" target="_RW56wMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/holds"/>
+      </edges>
+      <edges xmi:id="_v2GoIMIJEeS9KbtX1pF4vA" source="_ELPKsMIJEeS9KbtX1pF4vA" target="_EuV3wMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/route"/>
+      </edges>
+      <edges xmi:id="_wRoGgMIJEeS9KbtX1pF4vA" source="_ELPKsMIJEeS9KbtX1pF4vA" target="_C92xkMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/occupies"/>
+      </edges>
+      <edges xmi:id="_zdIZMMIJEeS9KbtX1pF4vA" source="_C92xkMIJEeS9KbtX1pF4vA" target="_CRJckMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//TrackElement/signal"/>
+      </edges>
+      <edges xmi:id="__3Ta4MIJEeS9KbtX1pF4vA" source="_EuV3wMIJEeS9KbtX1pF4vA" target="_C92xkMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Route/tracks"/>
+      </edges>
+      <edges xmi:id="_BlvSoMIKEeS9KbtX1pF4vA" source="_EuV3wMIJEeS9KbtX1pF4vA" target="_DlBfQMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Route/tracks"/>
+      </edges>
+      <edges xmi:id="_ETsGoMIKEeS9KbtX1pF4vA" source="_C92xkMIJEeS9KbtX1pF4vA" target="_DlBfQMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//TrackElement/next"/>
+      </edges>
+      <formula xsi:type="henshin:And" xmi:id="_2DooIMJbEeS9KbtX1pF4vA">
+        <left xsi:type="henshin:Not" xmi:id="_57A-0cJaEeS9KbtX1pF4vA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_57A-0sJaEeS9KbtX1pF4vA">
+            <conclusion xmi:id="_57A-08JaEeS9KbtX1pF4vA" name="1">
+              <nodes xmi:id="_57A-1MJaEeS9KbtX1pF4vA" incoming="_57A-2MJaEeS9KbtX1pF4vA _57Bl4MJaEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Signal"/>
+              </nodes>
+              <nodes xmi:id="_57A-1sJaEeS9KbtX1pF4vA" incoming="_57CM98JaEeS9KbtX1pF4vA" outgoing="_57A-2MJaEeS9KbtX1pF4vA _57C0AsJaEeS9KbtX1pF4vA _T0BdcMIJEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//SignalControl"/>
+              </nodes>
+              <nodes xmi:id="_57A-2cJaEeS9KbtX1pF4vA" incoming="_57Bl48JaEeS9KbtX1pF4vA _57Bl5sJaEeS9KbtX1pF4vA" outgoing="_57Bl4MJaEeS9KbtX1pF4vA _57CM8cJaEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//TrackElement"/>
+              </nodes>
+              <nodes xmi:id="_57Bl4cJaEeS9KbtX1pF4vA" outgoing="_57Bl48JaEeS9KbtX1pF4vA _57CM9cJaEeS9KbtX1pF4vA _57CM9sJaEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train"/>
+              </nodes>
+              <nodes xmi:id="_57Bl5MJaEeS9KbtX1pF4vA" incoming="_57CM9sJaEeS9KbtX1pF4vA" outgoing="_57Bl5sJaEeS9KbtX1pF4vA _57CM8sJaEeS9KbtX1pF4vA _57CM98JaEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Route"/>
+              </nodes>
+              <nodes xmi:id="_57Bl58JaEeS9KbtX1pF4vA" incoming="_57CM8cJaEeS9KbtX1pF4vA _57CM8sJaEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//TrackElement"/>
+              </nodes>
+              <nodes xmi:id="_57CM88JaEeS9KbtX1pF4vA" incoming="_57CM9cJaEeS9KbtX1pF4vA _57C0BsJaEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Lock"/>
+              </nodes>
+              <nodes xmi:id="_57C0AMJaEeS9KbtX1pF4vA" incoming="_57C0AsJaEeS9KbtX1pF4vA" outgoing="_57C0BsJaEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Point"/>
+              </nodes>
+              <nodes xmi:id="_SfiWwMIJEeS9KbtX1pF4vA" incoming="_T0BdcMIJEeS9KbtX1pF4vA _UiP1YMIJEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//TrackElement"/>
+              </nodes>
+              <nodes xmi:id="_57AXwMJaEeS9KbtX1pF4vA" outgoing="_UiP1YMIJEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train"/>
+              </nodes>
+              <edges xmi:id="_57A-2MJaEeS9KbtX1pF4vA" source="_57A-1sJaEeS9KbtX1pF4vA" target="_57A-1MJaEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//SignalControl/sig"/>
+              </edges>
+              <edges xmi:id="_57Bl4MJaEeS9KbtX1pF4vA" source="_57A-2cJaEeS9KbtX1pF4vA" target="_57A-1MJaEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//TrackElement/signal"/>
+              </edges>
+              <edges xmi:id="_57Bl48JaEeS9KbtX1pF4vA" source="_57Bl4cJaEeS9KbtX1pF4vA" target="_57A-2cJaEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train/occupies"/>
+              </edges>
+              <edges xmi:id="_57Bl5sJaEeS9KbtX1pF4vA" source="_57Bl5MJaEeS9KbtX1pF4vA" target="_57A-2cJaEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Route/tracks"/>
+              </edges>
+              <edges xmi:id="_57CM8cJaEeS9KbtX1pF4vA" source="_57A-2cJaEeS9KbtX1pF4vA" target="_57Bl58JaEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//TrackElement/next"/>
+              </edges>
+              <edges xmi:id="_57CM8sJaEeS9KbtX1pF4vA" source="_57Bl5MJaEeS9KbtX1pF4vA" target="_57Bl58JaEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Route/tracks"/>
+              </edges>
+              <edges xmi:id="_57CM9cJaEeS9KbtX1pF4vA" source="_57Bl4cJaEeS9KbtX1pF4vA" target="_57CM88JaEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train/holds"/>
+              </edges>
+              <edges xmi:id="_57CM9sJaEeS9KbtX1pF4vA" source="_57Bl4cJaEeS9KbtX1pF4vA" target="_57Bl5MJaEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train/route"/>
+              </edges>
+              <edges xmi:id="_57CM98JaEeS9KbtX1pF4vA" source="_57Bl5MJaEeS9KbtX1pF4vA" target="_57A-1sJaEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Route/controls"/>
+              </edges>
+              <edges xmi:id="_57C0AsJaEeS9KbtX1pF4vA" source="_57A-1sJaEeS9KbtX1pF4vA" target="_57C0AMJaEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//SignalControl/point"/>
+              </edges>
+              <edges xmi:id="_57C0BsJaEeS9KbtX1pF4vA" source="_57C0AMJaEeS9KbtX1pF4vA" target="_57CM88JaEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Point/lock"/>
+              </edges>
+              <edges xmi:id="_T0BdcMIJEeS9KbtX1pF4vA" source="_57A-1sJaEeS9KbtX1pF4vA" target="_SfiWwMIJEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//SignalControl/clear"/>
+              </edges>
+              <edges xmi:id="_UiP1YMIJEeS9KbtX1pF4vA" source="_57AXwMJaEeS9KbtX1pF4vA" target="_SfiWwMIJEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train/occupies"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_57A-1cJaEeS9KbtX1pF4vA" origin="_CRJckMIJEeS9KbtX1pF4vA" image="_57A-1MJaEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_57A-18JaEeS9KbtX1pF4vA" origin="_FmKQkMIJEeS9KbtX1pF4vA" image="_57A-1sJaEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_57A-2sJaEeS9KbtX1pF4vA" origin="_C92xkMIJEeS9KbtX1pF4vA" image="_57A-2cJaEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_57Bl4sJaEeS9KbtX1pF4vA" origin="_ELPKsMIJEeS9KbtX1pF4vA" image="_57Bl4cJaEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_57Bl5cJaEeS9KbtX1pF4vA" origin="_EuV3wMIJEeS9KbtX1pF4vA" image="_57Bl5MJaEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_57CM8MJaEeS9KbtX1pF4vA" origin="_DlBfQMIJEeS9KbtX1pF4vA" image="_57Bl58JaEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_57CM9MJaEeS9KbtX1pF4vA" origin="_RW56wMIJEeS9KbtX1pF4vA" image="_57CM88JaEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_57C0AcJaEeS9KbtX1pF4vA" origin="_GK-N0MIJEeS9KbtX1pF4vA" image="_57C0AMJaEeS9KbtX1pF4vA"/>
+          </child>
+        </left>
+        <right xsi:type="henshin:Not" xmi:id="_2DpPMMJbEeS9KbtX1pF4vA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_2DpPMcJbEeS9KbtX1pF4vA">
+            <conclusion xmi:id="_2DpPMsJbEeS9KbtX1pF4vA" name="2">
+              <nodes xmi:id="_2DpPM8JbEeS9KbtX1pF4vA" incoming="_2DpPN8JbEeS9KbtX1pF4vA _2DpPOsJbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Signal"/>
+              </nodes>
+              <nodes xmi:id="_2DpPNcJbEeS9KbtX1pF4vA" incoming="_2DrEYMJbEeS9KbtX1pF4vA" outgoing="_2DpPN8JbEeS9KbtX1pF4vA _2DrEY8JbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//SignalControl"/>
+              </nodes>
+              <nodes xmi:id="_2DpPOMJbEeS9KbtX1pF4vA" incoming="_2Dp2QcJbEeS9KbtX1pF4vA _2Dp2RMJbEeS9KbtX1pF4vA _0Mx0MMJbEeS9KbtX1pF4vA" outgoing="_2DpPOsJbEeS9KbtX1pF4vA _2DqdUcJbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//TrackElement"/>
+              </nodes>
+              <nodes xmi:id="_2DpPO8JbEeS9KbtX1pF4vA" outgoing="_2Dp2QcJbEeS9KbtX1pF4vA _2DqdVcJbEeS9KbtX1pF4vA _2DqdVsJbEeS9KbtX1pF4vA _1JjlgMJbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train"/>
+              </nodes>
+              <nodes xmi:id="_2Dp2QsJbEeS9KbtX1pF4vA" incoming="_2DqdVsJbEeS9KbtX1pF4vA" outgoing="_2Dp2RMJbEeS9KbtX1pF4vA _2DqdUsJbEeS9KbtX1pF4vA _2DrEYMJbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Route"/>
+              </nodes>
+              <nodes xmi:id="_zNycYMJbEeS9KbtX1pF4vA" incoming="_1JjlgMJbEeS9KbtX1pF4vA" outgoing="_0Mx0MMJbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Lock"/>
+              </nodes>
+              <nodes xmi:id="_2Dp2SMJbEeS9KbtX1pF4vA" incoming="_2DqdUcJbEeS9KbtX1pF4vA _2DqdUsJbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//TrackElement"/>
+              </nodes>
+              <nodes xmi:id="_2DqdU8JbEeS9KbtX1pF4vA" incoming="_2DqdVcJbEeS9KbtX1pF4vA _2DrEZMJbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Lock"/>
+              </nodes>
+              <nodes xmi:id="_2DrEYcJbEeS9KbtX1pF4vA" incoming="_2DrEY8JbEeS9KbtX1pF4vA" outgoing="_2DrEZMJbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Point"/>
+              </nodes>
+              <edges xmi:id="_2DpPN8JbEeS9KbtX1pF4vA" source="_2DpPNcJbEeS9KbtX1pF4vA" target="_2DpPM8JbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//SignalControl/sig"/>
+              </edges>
+              <edges xmi:id="_2DpPOsJbEeS9KbtX1pF4vA" source="_2DpPOMJbEeS9KbtX1pF4vA" target="_2DpPM8JbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//TrackElement/signal"/>
+              </edges>
+              <edges xmi:id="_2Dp2QcJbEeS9KbtX1pF4vA" source="_2DpPO8JbEeS9KbtX1pF4vA" target="_2DpPOMJbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train/occupies"/>
+              </edges>
+              <edges xmi:id="_2Dp2RMJbEeS9KbtX1pF4vA" source="_2Dp2QsJbEeS9KbtX1pF4vA" target="_2DpPOMJbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Route/tracks"/>
+              </edges>
+              <edges xmi:id="_2DqdUcJbEeS9KbtX1pF4vA" source="_2DpPOMJbEeS9KbtX1pF4vA" target="_2Dp2SMJbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//TrackElement/next"/>
+              </edges>
+              <edges xmi:id="_2DqdUsJbEeS9KbtX1pF4vA" source="_2Dp2QsJbEeS9KbtX1pF4vA" target="_2Dp2SMJbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Route/tracks"/>
+              </edges>
+              <edges xmi:id="_2DqdVcJbEeS9KbtX1pF4vA" source="_2DpPO8JbEeS9KbtX1pF4vA" target="_2DqdU8JbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train/holds"/>
+              </edges>
+              <edges xmi:id="_2DqdVsJbEeS9KbtX1pF4vA" source="_2DpPO8JbEeS9KbtX1pF4vA" target="_2Dp2QsJbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train/route"/>
+              </edges>
+              <edges xmi:id="_2DrEYMJbEeS9KbtX1pF4vA" source="_2Dp2QsJbEeS9KbtX1pF4vA" target="_2DpPNcJbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Route/controls"/>
+              </edges>
+              <edges xmi:id="_2DrEY8JbEeS9KbtX1pF4vA" source="_2DpPNcJbEeS9KbtX1pF4vA" target="_2DrEYcJbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//SignalControl/point"/>
+              </edges>
+              <edges xmi:id="_2DrEZMJbEeS9KbtX1pF4vA" source="_2DrEYcJbEeS9KbtX1pF4vA" target="_2DqdU8JbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Point/lock"/>
+              </edges>
+              <edges xmi:id="_1JjlgMJbEeS9KbtX1pF4vA" source="_2DpPO8JbEeS9KbtX1pF4vA" target="_zNycYMJbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train/holds"/>
+              </edges>
+              <edges xmi:id="_0Mx0MMJbEeS9KbtX1pF4vA" source="_zNycYMJbEeS9KbtX1pF4vA" target="_2DpPOMJbEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Lock/release"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_2DpPNMJbEeS9KbtX1pF4vA" origin="_CRJckMIJEeS9KbtX1pF4vA" image="_2DpPM8JbEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_2DpPNsJbEeS9KbtX1pF4vA" origin="_FmKQkMIJEeS9KbtX1pF4vA" image="_2DpPNcJbEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_2DpPOcJbEeS9KbtX1pF4vA" origin="_C92xkMIJEeS9KbtX1pF4vA" image="_2DpPOMJbEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_2Dp2QMJbEeS9KbtX1pF4vA" origin="_ELPKsMIJEeS9KbtX1pF4vA" image="_2DpPO8JbEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_2Dp2Q8JbEeS9KbtX1pF4vA" origin="_EuV3wMIJEeS9KbtX1pF4vA" image="_2Dp2QsJbEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_2DqdUMJbEeS9KbtX1pF4vA" origin="_DlBfQMIJEeS9KbtX1pF4vA" image="_2Dp2SMJbEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_2DqdVMJbEeS9KbtX1pF4vA" origin="_RW56wMIJEeS9KbtX1pF4vA" image="_2DqdU8JbEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_2DrEYsJbEeS9KbtX1pF4vA" origin="_GK-N0MIJEeS9KbtX1pF4vA" image="_2DrEYcJbEeS9KbtX1pF4vA"/>
+          </child>
+        </right>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_YV-X8cIEEeS9KbtX1pF4vA" name="Rhs">
+      <nodes xmi:id="_CRKDoMIJEeS9KbtX1pF4vA" incoming="_uIl9ccIJEeS9KbtX1pF4vA _zdIZMcIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Signal"/>
+      </nodes>
+      <nodes xmi:id="_C92xkcIJEeS9KbtX1pF4vA" incoming="__3Ta4cIJEeS9KbtX1pF4vA" outgoing="_zdIZMcIJEeS9KbtX1pF4vA _ETstsMIKEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//TrackElement"/>
+      </nodes>
+      <nodes xmi:id="_DlCGUMIJEeS9KbtX1pF4vA" incoming="_xy_yoMIJEeS9KbtX1pF4vA _BlvSocIKEeS9KbtX1pF4vA _ETstsMIKEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//TrackElement"/>
+      </nodes>
+      <nodes xmi:id="_ELPxwMIJEeS9KbtX1pF4vA" outgoing="_vhvhsMIJEeS9KbtX1pF4vA _v2HPMMIJEeS9KbtX1pF4vA _xy_yoMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <nodes xmi:id="_EuWe0MIJEeS9KbtX1pF4vA" incoming="_v2HPMMIJEeS9KbtX1pF4vA" outgoing="_tv5wocIJEeS9KbtX1pF4vA __3Ta4cIJEeS9KbtX1pF4vA _BlvSocIKEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Route"/>
+      </nodes>
+      <nodes xmi:id="_FmKQkcIJEeS9KbtX1pF4vA" incoming="_tv5wocIJEeS9KbtX1pF4vA" outgoing="_uIl9ccIJEeS9KbtX1pF4vA _ul0E8cIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//SignalControl"/>
+      </nodes>
+      <nodes xmi:id="_GK-N0cIJEeS9KbtX1pF4vA" incoming="_ul0E8cIJEeS9KbtX1pF4vA" outgoing="_vMVSYcIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Point"/>
+      </nodes>
+      <nodes xmi:id="_RW6h0MIJEeS9KbtX1pF4vA" incoming="_vMVSYcIJEeS9KbtX1pF4vA _vhvhsMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Lock"/>
+      </nodes>
+      <edges xmi:id="_tv5wocIJEeS9KbtX1pF4vA" source="_EuWe0MIJEeS9KbtX1pF4vA" target="_FmKQkcIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Route/controls"/>
+      </edges>
+      <edges xmi:id="_uIl9ccIJEeS9KbtX1pF4vA" source="_FmKQkcIJEeS9KbtX1pF4vA" target="_CRKDoMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//SignalControl/sig"/>
+      </edges>
+      <edges xmi:id="_ul0E8cIJEeS9KbtX1pF4vA" source="_FmKQkcIJEeS9KbtX1pF4vA" target="_GK-N0cIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//SignalControl/point"/>
+      </edges>
+      <edges xmi:id="_vMVSYcIJEeS9KbtX1pF4vA" source="_GK-N0cIJEeS9KbtX1pF4vA" target="_RW6h0MIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Point/lock"/>
+      </edges>
+      <edges xmi:id="_vhvhsMIJEeS9KbtX1pF4vA" source="_ELPxwMIJEeS9KbtX1pF4vA" target="_RW6h0MIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/holds"/>
+      </edges>
+      <edges xmi:id="_v2HPMMIJEeS9KbtX1pF4vA" source="_ELPxwMIJEeS9KbtX1pF4vA" target="_EuWe0MIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/route"/>
+      </edges>
+      <edges xmi:id="_xy_yoMIJEeS9KbtX1pF4vA" source="_ELPxwMIJEeS9KbtX1pF4vA" target="_DlCGUMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/occupies"/>
+      </edges>
+      <edges xmi:id="_zdIZMcIJEeS9KbtX1pF4vA" source="_C92xkcIJEeS9KbtX1pF4vA" target="_CRKDoMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//TrackElement/signal"/>
+      </edges>
+      <edges xmi:id="__3Ta4cIJEeS9KbtX1pF4vA" source="_EuWe0MIJEeS9KbtX1pF4vA" target="_C92xkcIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Route/tracks"/>
+      </edges>
+      <edges xmi:id="_BlvSocIKEeS9KbtX1pF4vA" source="_EuWe0MIJEeS9KbtX1pF4vA" target="_DlCGUMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Route/tracks"/>
+      </edges>
+      <edges xmi:id="_ETstsMIKEeS9KbtX1pF4vA" source="_C92xkcIJEeS9KbtX1pF4vA" target="_DlCGUMIJEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//TrackElement/next"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_CRKDocIJEeS9KbtX1pF4vA" origin="_CRJckMIJEeS9KbtX1pF4vA" image="_CRKDoMIJEeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_C92xksIJEeS9KbtX1pF4vA" origin="_C92xkMIJEeS9KbtX1pF4vA" image="_C92xkcIJEeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_DlCGUcIJEeS9KbtX1pF4vA" origin="_DlBfQMIJEeS9KbtX1pF4vA" image="_DlCGUMIJEeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_ELPxwcIJEeS9KbtX1pF4vA" origin="_ELPKsMIJEeS9KbtX1pF4vA" image="_ELPxwMIJEeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_EuWe0cIJEeS9KbtX1pF4vA" origin="_EuV3wMIJEeS9KbtX1pF4vA" image="_EuWe0MIJEeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_FmKQksIJEeS9KbtX1pF4vA" origin="_FmKQkMIJEeS9KbtX1pF4vA" image="_FmKQkcIJEeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_GK-N0sIJEeS9KbtX1pF4vA" origin="_GK-N0MIJEeS9KbtX1pF4vA" image="_GK-N0cIJEeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_RW6h0cIJEeS9KbtX1pF4vA" origin="_RW56wMIJEeS9KbtX1pF4vA" image="_RW6h0MIJEeS9KbtX1pF4vA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_aasBsMIEEeS9KbtX1pF4vA" name="acquireLock">
+    <parameters xmi:id="_GafX4MIGEeS9KbtX1pF4vA" name="p1"/>
+    <parameters xmi:id="_Gaf-8MIGEeS9KbtX1pF4vA" name="p2"/>
+    <lhs xmi:id="_aaud8MIEEeS9KbtX1pF4vA" name="Lhs">
+      <nodes xmi:id="_ATtcUMIFEeS9KbtX1pF4vA" outgoing="_LqCbYMIFEeS9KbtX1pF4vA _NAIEkMIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <nodes xmi:id="_BDtV4MIFEeS9KbtX1pF4vA" incoming="_LqCbYMIFEeS9KbtX1pF4vA" outgoing="_MJ4ZEMIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//TrackElement"/>
+      </nodes>
+      <nodes xmi:id="_BnjCwMIFEeS9KbtX1pF4vA" incoming="_MJ4ZEMIFEeS9KbtX1pF4vA _PPyaEMIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Signal"/>
+      </nodes>
+      <nodes xmi:id="_GeBpgMIFEeS9KbtX1pF4vA" incoming="_NAIEkMIFEeS9KbtX1pF4vA" outgoing="_OjCo0MIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Route"/>
+      </nodes>
+      <nodes xmi:id="_H-BcoMIFEeS9KbtX1pF4vA" incoming="_OjCo0MIFEeS9KbtX1pF4vA" outgoing="_PPyaEMIFEeS9KbtX1pF4vA _Qwgl8MIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//SignalControl"/>
+        <attributes xmi:id="_lbGlsMIFEeS9KbtX1pF4vA" value="p1">
+          <type href="railwaysystem.ecore#//SignalControl/reqPos"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_KgDUgMIFEeS9KbtX1pF4vA" incoming="_Qwgl8MIFEeS9KbtX1pF4vA" outgoing="_cfZ2AMIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Point"/>
+        <attributes xmi:id="_9BhdYMIFEeS9KbtX1pF4vA" value="p2">
+          <type href="railwaysystem.ecore#//Point/pos"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_K_4EEMIFEeS9KbtX1pF4vA" incoming="_cfZ2AMIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Lock"/>
+      </nodes>
+      <edges xmi:id="_LqCbYMIFEeS9KbtX1pF4vA" source="_ATtcUMIFEeS9KbtX1pF4vA" target="_BDtV4MIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/occupies"/>
+      </edges>
+      <edges xmi:id="_MJ4ZEMIFEeS9KbtX1pF4vA" source="_BDtV4MIFEeS9KbtX1pF4vA" target="_BnjCwMIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//TrackElement/signal"/>
+      </edges>
+      <edges xmi:id="_NAIEkMIFEeS9KbtX1pF4vA" source="_ATtcUMIFEeS9KbtX1pF4vA" target="_GeBpgMIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/route"/>
+      </edges>
+      <edges xmi:id="_OjCo0MIFEeS9KbtX1pF4vA" source="_GeBpgMIFEeS9KbtX1pF4vA" target="_H-BcoMIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Route/controls"/>
+      </edges>
+      <edges xmi:id="_PPyaEMIFEeS9KbtX1pF4vA" source="_H-BcoMIFEeS9KbtX1pF4vA" target="_BnjCwMIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//SignalControl/sig"/>
+      </edges>
+      <edges xmi:id="_Qwgl8MIFEeS9KbtX1pF4vA" source="_H-BcoMIFEeS9KbtX1pF4vA" target="_KgDUgMIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//SignalControl/point"/>
+      </edges>
+      <edges xmi:id="_cfZ2AMIFEeS9KbtX1pF4vA" source="_KgDUgMIFEeS9KbtX1pF4vA" target="_K_4EEMIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Point/lock"/>
+      </edges>
+      <formula xsi:type="henshin:And" xmi:id="_xskIkMILEeS9KbtX1pF4vA">
+        <left xsi:type="henshin:Not" xmi:id="_stGk8cILEeS9KbtX1pF4vA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_stGk8sILEeS9KbtX1pF4vA">
+            <conclusion xmi:id="_stGk88ILEeS9KbtX1pF4vA" name="1">
+              <nodes xmi:id="_stHMAMILEeS9KbtX1pF4vA" outgoing="_stHzEMILEeS9KbtX1pF4vA _stHzE8ILEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train"/>
+              </nodes>
+              <nodes xmi:id="_stHMAsILEeS9KbtX1pF4vA" incoming="_stHzEMILEeS9KbtX1pF4vA" outgoing="_stIaIsILEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//TrackElement"/>
+              </nodes>
+              <nodes xmi:id="_stHzEcILEeS9KbtX1pF4vA" incoming="_stHzE8ILEeS9KbtX1pF4vA" outgoing="_stJoQMILEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Route"/>
+              </nodes>
+              <nodes xmi:id="_stIaIMILEeS9KbtX1pF4vA" incoming="_stIaIsILEeS9KbtX1pF4vA _stJBM8ILEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Signal"/>
+              </nodes>
+              <nodes xmi:id="_stJBMMILEeS9KbtX1pF4vA" incoming="_stJoQMILEeS9KbtX1pF4vA" outgoing="_stJBM8ILEeS9KbtX1pF4vA _stKPUMILEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//SignalControl"/>
+                <attributes xmi:id="_stJBMcILEeS9KbtX1pF4vA" value="p1">
+                  <type href="railwaysystem.ecore#//SignalControl/reqPos"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_stJoQcILEeS9KbtX1pF4vA" incoming="_stKPUMILEeS9KbtX1pF4vA" outgoing="_stKPU8ILEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Point"/>
+                <attributes xmi:id="_stJoQsILEeS9KbtX1pF4vA" value="p2">
+                  <type href="railwaysystem.ecore#//Point/pos"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_stKPUcILEeS9KbtX1pF4vA" incoming="_stKPU8ILEeS9KbtX1pF4vA _g9wQoMIFEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Lock"/>
+              </nodes>
+              <nodes xmi:id="_eqOu0MIFEeS9KbtX1pF4vA" outgoing="_g9wQoMIFEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train"/>
+              </nodes>
+              <edges xmi:id="_stHzEMILEeS9KbtX1pF4vA" source="_stHMAMILEeS9KbtX1pF4vA" target="_stHMAsILEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train/occupies"/>
+              </edges>
+              <edges xmi:id="_stHzE8ILEeS9KbtX1pF4vA" source="_stHMAMILEeS9KbtX1pF4vA" target="_stHzEcILEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train/route"/>
+              </edges>
+              <edges xmi:id="_stIaIsILEeS9KbtX1pF4vA" source="_stHMAsILEeS9KbtX1pF4vA" target="_stIaIMILEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//TrackElement/signal"/>
+              </edges>
+              <edges xmi:id="_stJBM8ILEeS9KbtX1pF4vA" source="_stJBMMILEeS9KbtX1pF4vA" target="_stIaIMILEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//SignalControl/sig"/>
+              </edges>
+              <edges xmi:id="_stJoQMILEeS9KbtX1pF4vA" source="_stHzEcILEeS9KbtX1pF4vA" target="_stJBMMILEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Route/controls"/>
+              </edges>
+              <edges xmi:id="_stKPUMILEeS9KbtX1pF4vA" source="_stJBMMILEeS9KbtX1pF4vA" target="_stJoQcILEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//SignalControl/point"/>
+              </edges>
+              <edges xmi:id="_stKPU8ILEeS9KbtX1pF4vA" source="_stJoQcILEeS9KbtX1pF4vA" target="_stKPUcILEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Point/lock"/>
+              </edges>
+              <edges xmi:id="_g9wQoMIFEeS9KbtX1pF4vA" source="_eqOu0MIFEeS9KbtX1pF4vA" target="_stKPUcILEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train/holds"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_stHMAcILEeS9KbtX1pF4vA" origin="_ATtcUMIFEeS9KbtX1pF4vA" image="_stHMAMILEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_stHMA8ILEeS9KbtX1pF4vA" origin="_BDtV4MIFEeS9KbtX1pF4vA" image="_stHMAsILEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_stHzEsILEeS9KbtX1pF4vA" origin="_GeBpgMIFEeS9KbtX1pF4vA" image="_stHzEcILEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_stIaIcILEeS9KbtX1pF4vA" origin="_BnjCwMIFEeS9KbtX1pF4vA" image="_stIaIMILEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_stJBMsILEeS9KbtX1pF4vA" origin="_H-BcoMIFEeS9KbtX1pF4vA" image="_stJBMMILEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_stJoQ8ILEeS9KbtX1pF4vA" origin="_KgDUgMIFEeS9KbtX1pF4vA" image="_stJoQcILEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_stKPUsILEeS9KbtX1pF4vA" origin="_K_4EEMIFEeS9KbtX1pF4vA" image="_stKPUcILEeS9KbtX1pF4vA"/>
+          </child>
+        </left>
+        <right xsi:type="henshin:Not" xmi:id="_xskIkcILEeS9KbtX1pF4vA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_xskIksILEeS9KbtX1pF4vA">
+            <conclusion xmi:id="_xskIk8ILEeS9KbtX1pF4vA" name="2">
+              <nodes xmi:id="_xskIlMILEeS9KbtX1pF4vA" outgoing="_vDkGAMILEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train"/>
+              </nodes>
+              <nodes xmi:id="_xskIlsILEeS9KbtX1pF4vA" incoming="_vDkGAMILEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Lock"/>
+              </nodes>
+              <edges xmi:id="_vDkGAMILEeS9KbtX1pF4vA" source="_xskIlMILEeS9KbtX1pF4vA" target="_xskIlsILEeS9KbtX1pF4vA">
+                <type href="railwaysystem.ecore#//Train/holds"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_xskIlcILEeS9KbtX1pF4vA" origin="_ATtcUMIFEeS9KbtX1pF4vA" image="_xskIlMILEeS9KbtX1pF4vA"/>
+            <mappings xmi:id="_xskIl8ILEeS9KbtX1pF4vA" origin="_K_4EEMIFEeS9KbtX1pF4vA" image="_xskIlsILEeS9KbtX1pF4vA"/>
+          </child>
+        </right>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_aaud8cIEEeS9KbtX1pF4vA" name="Rhs">
+      <nodes xmi:id="_ATtcUcIFEeS9KbtX1pF4vA" outgoing="_LqCbYcIFEeS9KbtX1pF4vA _NAIEkcIFEeS9KbtX1pF4vA _1dHpEMILEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <nodes xmi:id="_BDtV4cIFEeS9KbtX1pF4vA" incoming="_LqCbYcIFEeS9KbtX1pF4vA" outgoing="_MJ4ZEcIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//TrackElement"/>
+      </nodes>
+      <nodes xmi:id="_Bnjp0MIFEeS9KbtX1pF4vA" incoming="_MJ4ZEcIFEeS9KbtX1pF4vA _PPyaEcIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Signal"/>
+      </nodes>
+      <nodes xmi:id="_GeBpgcIFEeS9KbtX1pF4vA" incoming="_NAIEkcIFEeS9KbtX1pF4vA" outgoing="_OjCo0cIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Route"/>
+      </nodes>
+      <nodes xmi:id="_H-BcocIFEeS9KbtX1pF4vA" incoming="_OjCo0cIFEeS9KbtX1pF4vA" outgoing="_PPyaEcIFEeS9KbtX1pF4vA _Qwgl8cIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//SignalControl"/>
+        <attributes xmi:id="_lbHMwMIFEeS9KbtX1pF4vA" value="p1">
+          <type href="railwaysystem.ecore#//SignalControl/reqPos"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_KgD7kMIFEeS9KbtX1pF4vA" incoming="_Qwgl8cIFEeS9KbtX1pF4vA" outgoing="_cfZ2AcIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Point"/>
+        <attributes xmi:id="_9BirgMIFEeS9KbtX1pF4vA" value="p1">
+          <type href="railwaysystem.ecore#//Point/pos"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_K_4EEcIFEeS9KbtX1pF4vA" incoming="_cfZ2AcIFEeS9KbtX1pF4vA _1dHpEMILEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Lock"/>
+      </nodes>
+      <edges xmi:id="_LqCbYcIFEeS9KbtX1pF4vA" source="_ATtcUcIFEeS9KbtX1pF4vA" target="_BDtV4cIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/occupies"/>
+      </edges>
+      <edges xmi:id="_MJ4ZEcIFEeS9KbtX1pF4vA" source="_BDtV4cIFEeS9KbtX1pF4vA" target="_Bnjp0MIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//TrackElement/signal"/>
+      </edges>
+      <edges xmi:id="_NAIEkcIFEeS9KbtX1pF4vA" source="_ATtcUcIFEeS9KbtX1pF4vA" target="_GeBpgcIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/route"/>
+      </edges>
+      <edges xmi:id="_OjCo0cIFEeS9KbtX1pF4vA" source="_GeBpgcIFEeS9KbtX1pF4vA" target="_H-BcocIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Route/controls"/>
+      </edges>
+      <edges xmi:id="_PPyaEcIFEeS9KbtX1pF4vA" source="_H-BcocIFEeS9KbtX1pF4vA" target="_Bnjp0MIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//SignalControl/sig"/>
+      </edges>
+      <edges xmi:id="_Qwgl8cIFEeS9KbtX1pF4vA" source="_H-BcocIFEeS9KbtX1pF4vA" target="_KgD7kMIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//SignalControl/point"/>
+      </edges>
+      <edges xmi:id="_cfZ2AcIFEeS9KbtX1pF4vA" source="_KgD7kMIFEeS9KbtX1pF4vA" target="_K_4EEcIFEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Point/lock"/>
+      </edges>
+      <edges xmi:id="_1dHpEMILEeS9KbtX1pF4vA" source="_ATtcUcIFEeS9KbtX1pF4vA" target="_K_4EEcIFEeS9KbtX1pF4vA" index="">
+        <type href="railwaysystem.ecore#//Train/holds"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_ATtcUsIFEeS9KbtX1pF4vA" origin="_ATtcUMIFEeS9KbtX1pF4vA" image="_ATtcUcIFEeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_BDtV4sIFEeS9KbtX1pF4vA" origin="_BDtV4MIFEeS9KbtX1pF4vA" image="_BDtV4cIFEeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_Bnjp0cIFEeS9KbtX1pF4vA" origin="_BnjCwMIFEeS9KbtX1pF4vA" image="_Bnjp0MIFEeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_GeCQkMIFEeS9KbtX1pF4vA" origin="_GeBpgMIFEeS9KbtX1pF4vA" image="_GeBpgcIFEeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_H-BcosIFEeS9KbtX1pF4vA" origin="_H-BcoMIFEeS9KbtX1pF4vA" image="_H-BcocIFEeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_KgD7kcIFEeS9KbtX1pF4vA" origin="_KgDUgMIFEeS9KbtX1pF4vA" image="_KgD7kMIFEeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_K_4EEsIFEeS9KbtX1pF4vA" origin="_K_4EEMIFEeS9KbtX1pF4vA" image="_K_4EEcIFEeS9KbtX1pF4vA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_bdHIAMIEEeS9KbtX1pF4vA" name="releaseLock">
+    <lhs xmi:id="_bdJkQMIEEeS9KbtX1pF4vA" name="Lhs">
+      <nodes xmi:id="_eYG5gMIEEeS9KbtX1pF4vA" outgoing="_il-oIMIEEeS9KbtX1pF4vA _jhqNQMIEEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <nodes xmi:id="_fZNKIMIEEeS9KbtX1pF4vA" incoming="_jhqNQMIEEeS9KbtX1pF4vA" outgoing="_i9Ij4MIEEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Lock"/>
+      </nodes>
+      <nodes xmi:id="_iDg0QMIEEeS9KbtX1pF4vA" incoming="_il-oIMIEEeS9KbtX1pF4vA _i9Ij4MIEEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//TrackElement"/>
+      </nodes>
+      <edges xmi:id="_il-oIMIEEeS9KbtX1pF4vA" source="_eYG5gMIEEeS9KbtX1pF4vA" target="_iDg0QMIEEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/occupies"/>
+      </edges>
+      <edges xmi:id="_i9Ij4MIEEeS9KbtX1pF4vA" source="_fZNKIMIEEeS9KbtX1pF4vA" target="_iDg0QMIEEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Lock/release"/>
+      </edges>
+      <edges xmi:id="_jhqNQMIEEeS9KbtX1pF4vA" source="_eYG5gMIEEeS9KbtX1pF4vA" target="_fZNKIMIEEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/holds"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_bdJkQcIEEeS9KbtX1pF4vA" name="Rhs">
+      <nodes xmi:id="_eYHgkMIEEeS9KbtX1pF4vA" outgoing="_il-oIcIEEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <nodes xmi:id="_fZNKIcIEEeS9KbtX1pF4vA" outgoing="_i9Ij4cIEEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Lock"/>
+      </nodes>
+      <nodes xmi:id="_iDg0QcIEEeS9KbtX1pF4vA" incoming="_il-oIcIEEeS9KbtX1pF4vA _i9Ij4cIEEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//TrackElement"/>
+      </nodes>
+      <edges xmi:id="_il-oIcIEEeS9KbtX1pF4vA" source="_eYHgkMIEEeS9KbtX1pF4vA" target="_iDg0QcIEEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/occupies"/>
+      </edges>
+      <edges xmi:id="_i9Ij4cIEEeS9KbtX1pF4vA" source="_fZNKIcIEEeS9KbtX1pF4vA" target="_iDg0QcIEEeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Lock/release"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_eYHgkcIEEeS9KbtX1pF4vA" origin="_eYG5gMIEEeS9KbtX1pF4vA" image="_eYHgkMIEEeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_fZNxMMIEEeS9KbtX1pF4vA" origin="_fZNKIMIEEeS9KbtX1pF4vA" image="_fZNKIcIEEeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_iDg0QsIEEeS9KbtX1pF4vA" origin="_iDg0QMIEEeS9KbtX1pF4vA" image="_iDg0QcIEEeS9KbtX1pF4vA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_SlCUkMM3EeS9KbtX1pF4vA" name="badCollisionOnTrack">
+    <lhs xmi:id="_SlEJwMM3EeS9KbtX1pF4vA" name="Lhs">
+      <nodes xmi:id="_l-_L0MM3EeS9KbtX1pF4vA" incoming="_oEcccMM3EeS9KbtX1pF4vA _oZL9YMM3EeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Track"/>
+      </nodes>
+      <nodes xmi:id="_m4PIAMM3EeS9KbtX1pF4vA" outgoing="_oEcccMM3EeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <nodes xmi:id="_nVY-EMM3EeS9KbtX1pF4vA" outgoing="_oZL9YMM3EeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <edges xmi:id="_oEcccMM3EeS9KbtX1pF4vA" source="_m4PIAMM3EeS9KbtX1pF4vA" target="_l-_L0MM3EeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/occupies"/>
+      </edges>
+      <edges xmi:id="_oZL9YMM3EeS9KbtX1pF4vA" source="_nVY-EMM3EeS9KbtX1pF4vA" target="_l-_L0MM3EeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/occupies"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_SlEw0MM3EeS9KbtX1pF4vA" name="Rhs">
+      <nodes xmi:id="_l-_L0cM3EeS9KbtX1pF4vA" incoming="_oEccccM3EeS9KbtX1pF4vA _oZL9YcM3EeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Track"/>
+      </nodes>
+      <nodes xmi:id="_m4PvEMM3EeS9KbtX1pF4vA" outgoing="_oEccccM3EeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <nodes xmi:id="_nVY-EcM3EeS9KbtX1pF4vA" outgoing="_oZL9YcM3EeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <edges xmi:id="_oEccccM3EeS9KbtX1pF4vA" source="_m4PvEMM3EeS9KbtX1pF4vA" target="_l-_L0cM3EeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/occupies"/>
+      </edges>
+      <edges xmi:id="_oZL9YcM3EeS9KbtX1pF4vA" source="_nVY-EcM3EeS9KbtX1pF4vA" target="_l-_L0cM3EeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/occupies"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_l-_L0sM3EeS9KbtX1pF4vA" origin="_l-_L0MM3EeS9KbtX1pF4vA" image="_l-_L0cM3EeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_m4PvEcM3EeS9KbtX1pF4vA" origin="_m4PIAMM3EeS9KbtX1pF4vA" image="_m4PvEMM3EeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_nVZlIMM3EeS9KbtX1pF4vA" origin="_nVY-EMM3EeS9KbtX1pF4vA" image="_nVY-EcM3EeS9KbtX1pF4vA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_sjjFAMM3EeS9KbtX1pF4vA" name="badCollisionOnPoint">
+    <lhs xmi:id="_sjmIUMM3EeS9KbtX1pF4vA" name="Lhs">
+      <nodes xmi:id="_uqSIAMM3EeS9KbtX1pF4vA" incoming="_wKn5YMM3EeS9KbtX1pF4vA _wcsg0MM3EeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Point"/>
+      </nodes>
+      <nodes xmi:id="_vIXLIMM3EeS9KbtX1pF4vA" outgoing="_wKn5YMM3EeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <nodes xmi:id="_vktv8MM3EeS9KbtX1pF4vA" outgoing="_wcsg0MM3EeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <edges xmi:id="_wKn5YMM3EeS9KbtX1pF4vA" source="_vIXLIMM3EeS9KbtX1pF4vA" target="_uqSIAMM3EeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/occupies"/>
+      </edges>
+      <edges xmi:id="_wcsg0MM3EeS9KbtX1pF4vA" source="_vktv8MM3EeS9KbtX1pF4vA" target="_uqSIAMM3EeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/occupies"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_sjmIUcM3EeS9KbtX1pF4vA" name="Rhs">
+      <nodes xmi:id="_uqSIAcM3EeS9KbtX1pF4vA" incoming="_wKogcMM3EeS9KbtX1pF4vA _wctH4MM3EeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Point"/>
+      </nodes>
+      <nodes xmi:id="_vIXyMMM3EeS9KbtX1pF4vA" outgoing="_wKogcMM3EeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <nodes xmi:id="_vktv8cM3EeS9KbtX1pF4vA" outgoing="_wctH4MM3EeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <edges xmi:id="_wKogcMM3EeS9KbtX1pF4vA" source="_vIXyMMM3EeS9KbtX1pF4vA" target="_uqSIAcM3EeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/occupies"/>
+      </edges>
+      <edges xmi:id="_wctH4MM3EeS9KbtX1pF4vA" source="_vktv8cM3EeS9KbtX1pF4vA" target="_uqSIAcM3EeS9KbtX1pF4vA">
+        <type href="railwaysystem.ecore#//Train/occupies"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_uqSIAsM3EeS9KbtX1pF4vA" origin="_uqSIAMM3EeS9KbtX1pF4vA" image="_uqSIAcM3EeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_vIXyMcM3EeS9KbtX1pF4vA" origin="_vIXLIMM3EeS9KbtX1pF4vA" image="_vIXyMMM3EeS9KbtX1pF4vA"/>
+    <mappings xmi:id="_vkuXAMM3EeS9KbtX1pF4vA" origin="_vktv8MM3EeS9KbtX1pF4vA" image="_vktv8cM3EeS9KbtX1pF4vA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_B0Z0kMwtEeSzlcOaP3tudQ" name="moveTrainPastSignal">
+    <lhs xmi:id="_B0qTQMwtEeSzlcOaP3tudQ" name="Lhs">
+      <nodes xmi:id="_GEslEMwtEeSzlcOaP3tudQ" incoming="_IUhAsMwvEeSzlcOaP3tudQ _A4awoMwxEeSzlcOaP3tudQ" outgoing="_HrhHAMwvEeSzlcOaP3tudQ _JC-CIMwvEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//TrackElement"/>
+      </nodes>
+      <nodes xmi:id="_G3svUMwtEeSzlcOaP3tudQ" incoming="_JC-CIMwvEeSzlcOaP3tudQ _LGgAIMwvEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//Signal"/>
+      </nodes>
+      <nodes xmi:id="_H3DTgMwtEeSzlcOaP3tudQ" outgoing="_GDAREMwvEeSzlcOaP3tudQ _A4awoMwxEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <nodes xmi:id="_JMhRoMwtEeSzlcOaP3tudQ" incoming="_EaA6AMwvEeSzlcOaP3tudQ _HrhHAMwvEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//TrackElement"/>
+      </nodes>
+      <nodes xmi:id="_KiMrIMwtEeSzlcOaP3tudQ" incoming="_GDAREMwvEeSzlcOaP3tudQ" outgoing="_EaA6AMwvEeSzlcOaP3tudQ _IUhAsMwvEeSzlcOaP3tudQ _MDsBIMwvEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//Route"/>
+      </nodes>
+      <nodes xmi:id="_iQMxgMwtEeSzlcOaP3tudQ" incoming="_MDsBIMwvEeSzlcOaP3tudQ" outgoing="_LGgAIMwvEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//SignalControl"/>
+      </nodes>
+      <edges xmi:id="_EaA6AMwvEeSzlcOaP3tudQ" source="_KiMrIMwtEeSzlcOaP3tudQ" target="_JMhRoMwtEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//Route/tracks"/>
+      </edges>
+      <edges xmi:id="_GDAREMwvEeSzlcOaP3tudQ" source="_H3DTgMwtEeSzlcOaP3tudQ" target="_KiMrIMwtEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//Train/route"/>
+      </edges>
+      <edges xmi:id="_HrhHAMwvEeSzlcOaP3tudQ" source="_GEslEMwtEeSzlcOaP3tudQ" target="_JMhRoMwtEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//TrackElement/next"/>
+      </edges>
+      <edges xmi:id="_IUhAsMwvEeSzlcOaP3tudQ" source="_KiMrIMwtEeSzlcOaP3tudQ" target="_GEslEMwtEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//Route/tracks"/>
+      </edges>
+      <edges xmi:id="_JC-CIMwvEeSzlcOaP3tudQ" source="_GEslEMwtEeSzlcOaP3tudQ" target="_G3svUMwtEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//TrackElement/signal"/>
+      </edges>
+      <edges xmi:id="_LGgAIMwvEeSzlcOaP3tudQ" source="_iQMxgMwtEeSzlcOaP3tudQ" target="_G3svUMwtEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//SignalControl/sig"/>
+      </edges>
+      <edges xmi:id="_MDsBIMwvEeSzlcOaP3tudQ" source="_KiMrIMwtEeSzlcOaP3tudQ" target="_iQMxgMwtEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//Route/controls"/>
+      </edges>
+      <edges xmi:id="_A4awoMwxEeSzlcOaP3tudQ" source="_H3DTgMwtEeSzlcOaP3tudQ" target="_GEslEMwtEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//Train/occupies"/>
+      </edges>
+      <formula xsi:type="henshin:And" xmi:id="_h4THgMwwEeSzlcOaP3tudQ">
+        <left xsi:type="henshin:And" xmi:id="__kHFkMwvEeSzlcOaP3tudQ">
+          <left xsi:type="henshin:Not" xmi:id="_BL5_QcwvEeSzlcOaP3tudQ">
+            <child xsi:type="henshin:NestedCondition" xmi:id="_BL5_QswvEeSzlcOaP3tudQ">
+              <conclusion xmi:id="_BL5_Q8wvEeSzlcOaP3tudQ" name="1">
+                <nodes xmi:id="_BL5_RMwvEeSzlcOaP3tudQ" incoming="_6G4n4MwvEeSzlcOaP3tudQ" outgoing="_6G4n4cwvEeSzlcOaP3tudQ _6G4n4swvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//TrackElement"/>
+                </nodes>
+                <nodes xmi:id="_BL5_RswvEeSzlcOaP3tudQ" incoming="_6G4n4swvEeSzlcOaP3tudQ _6G4n48wvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//Signal"/>
+                </nodes>
+                <nodes xmi:id="_BL6mUMwvEeSzlcOaP3tudQ" outgoing="_6G4n5MwvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//Train"/>
+                </nodes>
+                <nodes xmi:id="_BL6mUswvEeSzlcOaP3tudQ" incoming="_6G4n4cwvEeSzlcOaP3tudQ _6G5O8MwvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//TrackElement"/>
+                </nodes>
+                <nodes xmi:id="_BL6mVMwvEeSzlcOaP3tudQ" incoming="_6G4n5MwvEeSzlcOaP3tudQ" outgoing="_6G4n4MwvEeSzlcOaP3tudQ _6G5O8MwvEeSzlcOaP3tudQ _6G5O8cwvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//Route"/>
+                </nodes>
+                <nodes xmi:id="_BL6mVswvEeSzlcOaP3tudQ" incoming="_6G5O8cwvEeSzlcOaP3tudQ" outgoing="_CZnIgMwvEeSzlcOaP3tudQ _6G4n48wvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//SignalControl"/>
+                </nodes>
+                <nodes xmi:id="_lM1sUMwuEeSzlcOaP3tudQ" incoming="_CZnIgMwvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//Point"/>
+                </nodes>
+                <edges xmi:id="_CZnIgMwvEeSzlcOaP3tudQ" source="_BL6mVswvEeSzlcOaP3tudQ" target="_lM1sUMwuEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//SignalControl/point"/>
+                </edges>
+                <edges xmi:id="_6G4n4MwvEeSzlcOaP3tudQ" source="_BL6mVMwvEeSzlcOaP3tudQ" target="_BL5_RMwvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//Route/tracks"/>
+                </edges>
+                <edges xmi:id="_6G4n4cwvEeSzlcOaP3tudQ" source="_BL5_RMwvEeSzlcOaP3tudQ" target="_BL6mUswvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//TrackElement/next"/>
+                </edges>
+                <edges xmi:id="_6G4n4swvEeSzlcOaP3tudQ" source="_BL5_RMwvEeSzlcOaP3tudQ" target="_BL5_RswvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//TrackElement/signal"/>
+                </edges>
+                <edges xmi:id="_6G4n48wvEeSzlcOaP3tudQ" source="_BL6mVswvEeSzlcOaP3tudQ" target="_BL5_RswvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//SignalControl/sig"/>
+                </edges>
+                <edges xmi:id="_6G4n5MwvEeSzlcOaP3tudQ" source="_BL6mUMwvEeSzlcOaP3tudQ" target="_BL6mVMwvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//Train/route"/>
+                </edges>
+                <edges xmi:id="_6G5O8MwvEeSzlcOaP3tudQ" source="_BL6mVMwvEeSzlcOaP3tudQ" target="_BL6mUswvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//Route/tracks"/>
+                </edges>
+                <edges xmi:id="_6G5O8cwvEeSzlcOaP3tudQ" source="_BL6mVMwvEeSzlcOaP3tudQ" target="_BL6mVswvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//Route/controls"/>
+                </edges>
+              </conclusion>
+              <mappings xmi:id="_BL5_RcwvEeSzlcOaP3tudQ" origin="_GEslEMwtEeSzlcOaP3tudQ" image="_BL5_RMwvEeSzlcOaP3tudQ"/>
+              <mappings xmi:id="_BL5_R8wvEeSzlcOaP3tudQ" origin="_G3svUMwtEeSzlcOaP3tudQ" image="_BL5_RswvEeSzlcOaP3tudQ"/>
+              <mappings xmi:id="_BL6mUcwvEeSzlcOaP3tudQ" origin="_H3DTgMwtEeSzlcOaP3tudQ" image="_BL6mUMwvEeSzlcOaP3tudQ"/>
+              <mappings xmi:id="_BL6mU8wvEeSzlcOaP3tudQ" origin="_JMhRoMwtEeSzlcOaP3tudQ" image="_BL6mUswvEeSzlcOaP3tudQ"/>
+              <mappings xmi:id="_BL6mVcwvEeSzlcOaP3tudQ" origin="_KiMrIMwtEeSzlcOaP3tudQ" image="_BL6mVMwvEeSzlcOaP3tudQ"/>
+              <mappings xmi:id="_BL6mV8wvEeSzlcOaP3tudQ" origin="_iQMxgMwtEeSzlcOaP3tudQ" image="_BL6mVswvEeSzlcOaP3tudQ"/>
+            </child>
+          </left>
+          <right xsi:type="henshin:Not" xmi:id="__kHFkcwvEeSzlcOaP3tudQ">
+            <child xsi:type="henshin:NestedCondition" xmi:id="__kHFkswvEeSzlcOaP3tudQ">
+              <conclusion xmi:id="__kHFk8wvEeSzlcOaP3tudQ" name="2">
+                <nodes xmi:id="__kHFlMwvEeSzlcOaP3tudQ" incoming="__kHsoMwvEeSzlcOaP3tudQ" outgoing="__kHso8wvEeSzlcOaP3tudQ __kITsMwvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//TrackElement"/>
+                </nodes>
+                <nodes xmi:id="__kHFlswvEeSzlcOaP3tudQ" incoming="__kITtswvEeSzlcOaP3tudQ" outgoing="__kHsoMwvEeSzlcOaP3tudQ __kITt8wvEeSzlcOaP3tudQ __kI6wMwvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//Route"/>
+                </nodes>
+                <nodes xmi:id="__kHsocwvEeSzlcOaP3tudQ" incoming="__kHso8wvEeSzlcOaP3tudQ __kITt8wvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//TrackElement"/>
+                </nodes>
+                <nodes xmi:id="__kHspMwvEeSzlcOaP3tudQ" incoming="__kITsMwvEeSzlcOaP3tudQ __kITs8wvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//Signal"/>
+                </nodes>
+                <nodes xmi:id="__kITscwvEeSzlcOaP3tudQ" incoming="__kI6wMwvEeSzlcOaP3tudQ" outgoing="__kITs8wvEeSzlcOaP3tudQ _XkbrAMwwEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//SignalControl"/>
+                </nodes>
+                <nodes xmi:id="__kITtMwvEeSzlcOaP3tudQ" outgoing="__kITtswvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//Train"/>
+                </nodes>
+                <nodes xmi:id="_7l2gQMwvEeSzlcOaP3tudQ" outgoing="_WyxkkMwwEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//Train"/>
+                </nodes>
+                <nodes xmi:id="_6G3ZwMwvEeSzlcOaP3tudQ" incoming="_WyxkkMwwEeSzlcOaP3tudQ _XkbrAMwwEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//TrackElement"/>
+                </nodes>
+                <edges xmi:id="__kHsoMwvEeSzlcOaP3tudQ" source="__kHFlswvEeSzlcOaP3tudQ" target="__kHFlMwvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//Route/tracks"/>
+                </edges>
+                <edges xmi:id="__kHso8wvEeSzlcOaP3tudQ" source="__kHFlMwvEeSzlcOaP3tudQ" target="__kHsocwvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//TrackElement/next"/>
+                </edges>
+                <edges xmi:id="__kITsMwvEeSzlcOaP3tudQ" source="__kHFlMwvEeSzlcOaP3tudQ" target="__kHspMwvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//TrackElement/signal"/>
+                </edges>
+                <edges xmi:id="__kITs8wvEeSzlcOaP3tudQ" source="__kITscwvEeSzlcOaP3tudQ" target="__kHspMwvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//SignalControl/sig"/>
+                </edges>
+                <edges xmi:id="__kITtswvEeSzlcOaP3tudQ" source="__kITtMwvEeSzlcOaP3tudQ" target="__kHFlswvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//Train/route"/>
+                </edges>
+                <edges xmi:id="__kITt8wvEeSzlcOaP3tudQ" source="__kHFlswvEeSzlcOaP3tudQ" target="__kHsocwvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//Route/tracks"/>
+                </edges>
+                <edges xmi:id="__kI6wMwvEeSzlcOaP3tudQ" source="__kHFlswvEeSzlcOaP3tudQ" target="__kITscwvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//Route/controls"/>
+                </edges>
+                <edges xmi:id="_WyxkkMwwEeSzlcOaP3tudQ" source="_7l2gQMwvEeSzlcOaP3tudQ" target="_6G3ZwMwvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//Train/occupies"/>
+                </edges>
+                <edges xmi:id="_XkbrAMwwEeSzlcOaP3tudQ" source="__kITscwvEeSzlcOaP3tudQ" target="_6G3ZwMwvEeSzlcOaP3tudQ">
+                  <type href="railwaysystem.ecore#//SignalControl/clear"/>
+                </edges>
+              </conclusion>
+              <mappings xmi:id="__kHFlcwvEeSzlcOaP3tudQ" origin="_GEslEMwtEeSzlcOaP3tudQ" image="__kHFlMwvEeSzlcOaP3tudQ"/>
+              <mappings xmi:id="__kHFl8wvEeSzlcOaP3tudQ" origin="_KiMrIMwtEeSzlcOaP3tudQ" image="__kHFlswvEeSzlcOaP3tudQ"/>
+              <mappings xmi:id="__kHsoswvEeSzlcOaP3tudQ" origin="_JMhRoMwtEeSzlcOaP3tudQ" image="__kHsocwvEeSzlcOaP3tudQ"/>
+              <mappings xmi:id="__kHspcwvEeSzlcOaP3tudQ" origin="_G3svUMwtEeSzlcOaP3tudQ" image="__kHspMwvEeSzlcOaP3tudQ"/>
+              <mappings xmi:id="__kITsswvEeSzlcOaP3tudQ" origin="_iQMxgMwtEeSzlcOaP3tudQ" image="__kITscwvEeSzlcOaP3tudQ"/>
+              <mappings xmi:id="__kITtcwvEeSzlcOaP3tudQ" origin="_H3DTgMwtEeSzlcOaP3tudQ" image="__kITtMwvEeSzlcOaP3tudQ"/>
+            </child>
+          </right>
+        </left>
+        <right xsi:type="henshin:Not" xmi:id="_h4THgcwwEeSzlcOaP3tudQ">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_h4THgswwEeSzlcOaP3tudQ">
+            <conclusion xmi:id="_h4THg8wwEeSzlcOaP3tudQ" name="3">
+              <nodes xmi:id="_h4THhMwwEeSzlcOaP3tudQ" incoming="_h4Tuk8wwEeSzlcOaP3tudQ _jLvsYMwwEeSzlcOaP3tudQ" outgoing="_h4TulswwEeSzlcOaP3tudQ _h4UVoswwEeSzlcOaP3tudQ">
+                <type href="railwaysystem.ecore#//TrackElement"/>
+              </nodes>
+              <nodes xmi:id="_h4TukcwwEeSzlcOaP3tudQ" incoming="_h4U8sMwwEeSzlcOaP3tudQ" outgoing="_h4Tuk8wwEeSzlcOaP3tudQ _h4U8scwwEeSzlcOaP3tudQ _h4U8sswwEeSzlcOaP3tudQ">
+                <type href="railwaysystem.ecore#//Route"/>
+              </nodes>
+              <nodes xmi:id="_h4TulMwwEeSzlcOaP3tudQ" incoming="_h4TulswwEeSzlcOaP3tudQ _h4U8scwwEeSzlcOaP3tudQ">
+                <type href="railwaysystem.ecore#//TrackElement"/>
+              </nodes>
+              <nodes xmi:id="_h4UVoMwwEeSzlcOaP3tudQ" incoming="_h4UVoswwEeSzlcOaP3tudQ _h4UVpcwwEeSzlcOaP3tudQ">
+                <type href="railwaysystem.ecore#//Signal"/>
+              </nodes>
+              <nodes xmi:id="_h4UVo8wwEeSzlcOaP3tudQ" incoming="_h4U8sswwEeSzlcOaP3tudQ" outgoing="_h4UVpcwwEeSzlcOaP3tudQ">
+                <type href="railwaysystem.ecore#//SignalControl"/>
+              </nodes>
+              <nodes xmi:id="_h4UVpswwEeSzlcOaP3tudQ" outgoing="_h4U8sMwwEeSzlcOaP3tudQ _i2gcMMwwEeSzlcOaP3tudQ">
+                <type href="railwaysystem.ecore#//Train"/>
+              </nodes>
+              <nodes xmi:id="_gsrB4MwwEeSzlcOaP3tudQ" incoming="_i2gcMMwwEeSzlcOaP3tudQ" outgoing="_jLvsYMwwEeSzlcOaP3tudQ">
+                <type href="railwaysystem.ecore#//Lock"/>
+              </nodes>
+              <edges xmi:id="_h4Tuk8wwEeSzlcOaP3tudQ" source="_h4TukcwwEeSzlcOaP3tudQ" target="_h4THhMwwEeSzlcOaP3tudQ">
+                <type href="railwaysystem.ecore#//Route/tracks"/>
+              </edges>
+              <edges xmi:id="_h4TulswwEeSzlcOaP3tudQ" source="_h4THhMwwEeSzlcOaP3tudQ" target="_h4TulMwwEeSzlcOaP3tudQ">
+                <type href="railwaysystem.ecore#//TrackElement/next"/>
+              </edges>
+              <edges xmi:id="_h4UVoswwEeSzlcOaP3tudQ" source="_h4THhMwwEeSzlcOaP3tudQ" target="_h4UVoMwwEeSzlcOaP3tudQ">
+                <type href="railwaysystem.ecore#//TrackElement/signal"/>
+              </edges>
+              <edges xmi:id="_h4UVpcwwEeSzlcOaP3tudQ" source="_h4UVo8wwEeSzlcOaP3tudQ" target="_h4UVoMwwEeSzlcOaP3tudQ">
+                <type href="railwaysystem.ecore#//SignalControl/sig"/>
+              </edges>
+              <edges xmi:id="_h4U8sMwwEeSzlcOaP3tudQ" source="_h4UVpswwEeSzlcOaP3tudQ" target="_h4TukcwwEeSzlcOaP3tudQ">
+                <type href="railwaysystem.ecore#//Train/route"/>
+              </edges>
+              <edges xmi:id="_h4U8scwwEeSzlcOaP3tudQ" source="_h4TukcwwEeSzlcOaP3tudQ" target="_h4TulMwwEeSzlcOaP3tudQ">
+                <type href="railwaysystem.ecore#//Route/tracks"/>
+              </edges>
+              <edges xmi:id="_h4U8sswwEeSzlcOaP3tudQ" source="_h4TukcwwEeSzlcOaP3tudQ" target="_h4UVo8wwEeSzlcOaP3tudQ">
+                <type href="railwaysystem.ecore#//Route/controls"/>
+              </edges>
+              <edges xmi:id="_i2gcMMwwEeSzlcOaP3tudQ" source="_h4UVpswwEeSzlcOaP3tudQ" target="_gsrB4MwwEeSzlcOaP3tudQ">
+                <type href="railwaysystem.ecore#//Train/holds"/>
+              </edges>
+              <edges xmi:id="_jLvsYMwwEeSzlcOaP3tudQ" source="_gsrB4MwwEeSzlcOaP3tudQ" target="_h4THhMwwEeSzlcOaP3tudQ">
+                <type href="railwaysystem.ecore#//Lock/release"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_h4TukMwwEeSzlcOaP3tudQ" origin="_GEslEMwtEeSzlcOaP3tudQ" image="_h4THhMwwEeSzlcOaP3tudQ"/>
+            <mappings xmi:id="_h4TukswwEeSzlcOaP3tudQ" origin="_KiMrIMwtEeSzlcOaP3tudQ" image="_h4TukcwwEeSzlcOaP3tudQ"/>
+            <mappings xmi:id="_h4TulcwwEeSzlcOaP3tudQ" origin="_JMhRoMwtEeSzlcOaP3tudQ" image="_h4TulMwwEeSzlcOaP3tudQ"/>
+            <mappings xmi:id="_h4UVocwwEeSzlcOaP3tudQ" origin="_G3svUMwtEeSzlcOaP3tudQ" image="_h4UVoMwwEeSzlcOaP3tudQ"/>
+            <mappings xmi:id="_h4UVpMwwEeSzlcOaP3tudQ" origin="_iQMxgMwtEeSzlcOaP3tudQ" image="_h4UVo8wwEeSzlcOaP3tudQ"/>
+            <mappings xmi:id="_h4UVp8wwEeSzlcOaP3tudQ" origin="_H3DTgMwtEeSzlcOaP3tudQ" image="_h4UVpswwEeSzlcOaP3tudQ"/>
+          </child>
+        </right>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_B0q6UMwtEeSzlcOaP3tudQ" name="Rhs">
+      <nodes xmi:id="_GEtMIMwtEeSzlcOaP3tudQ" incoming="_IUhAscwvEeSzlcOaP3tudQ" outgoing="_HrhuEMwvEeSzlcOaP3tudQ _JC-CIcwvEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//TrackElement"/>
+      </nodes>
+      <nodes xmi:id="_G3svUcwtEeSzlcOaP3tudQ" incoming="_JC-CIcwvEeSzlcOaP3tudQ _LGgnMMwvEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//Signal"/>
+      </nodes>
+      <nodes xmi:id="_H3DTgcwtEeSzlcOaP3tudQ" outgoing="_GDAREcwvEeSzlcOaP3tudQ _BqNZ8MwxEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//Train"/>
+      </nodes>
+      <nodes xmi:id="_JMhRocwtEeSzlcOaP3tudQ" incoming="_EaA6AcwvEeSzlcOaP3tudQ _HrhuEMwvEeSzlcOaP3tudQ _BqNZ8MwxEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//TrackElement"/>
+      </nodes>
+      <nodes xmi:id="_KiMrIcwtEeSzlcOaP3tudQ" incoming="_GDAREcwvEeSzlcOaP3tudQ" outgoing="_EaA6AcwvEeSzlcOaP3tudQ _IUhAscwvEeSzlcOaP3tudQ _MDsBIcwvEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//Route"/>
+      </nodes>
+      <nodes xmi:id="_iQMxgcwtEeSzlcOaP3tudQ" incoming="_MDsBIcwvEeSzlcOaP3tudQ" outgoing="_LGgnMMwvEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//SignalControl"/>
+      </nodes>
+      <edges xmi:id="_EaA6AcwvEeSzlcOaP3tudQ" source="_KiMrIcwtEeSzlcOaP3tudQ" target="_JMhRocwtEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//Route/tracks"/>
+      </edges>
+      <edges xmi:id="_GDAREcwvEeSzlcOaP3tudQ" source="_H3DTgcwtEeSzlcOaP3tudQ" target="_KiMrIcwtEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//Train/route"/>
+      </edges>
+      <edges xmi:id="_HrhuEMwvEeSzlcOaP3tudQ" source="_GEtMIMwtEeSzlcOaP3tudQ" target="_JMhRocwtEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//TrackElement/next"/>
+      </edges>
+      <edges xmi:id="_IUhAscwvEeSzlcOaP3tudQ" source="_KiMrIcwtEeSzlcOaP3tudQ" target="_GEtMIMwtEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//Route/tracks"/>
+      </edges>
+      <edges xmi:id="_JC-CIcwvEeSzlcOaP3tudQ" source="_GEtMIMwtEeSzlcOaP3tudQ" target="_G3svUcwtEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//TrackElement/signal"/>
+      </edges>
+      <edges xmi:id="_LGgnMMwvEeSzlcOaP3tudQ" source="_iQMxgcwtEeSzlcOaP3tudQ" target="_G3svUcwtEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//SignalControl/sig"/>
+      </edges>
+      <edges xmi:id="_MDsBIcwvEeSzlcOaP3tudQ" source="_KiMrIcwtEeSzlcOaP3tudQ" target="_iQMxgcwtEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//Route/controls"/>
+      </edges>
+      <edges xmi:id="_BqNZ8MwxEeSzlcOaP3tudQ" source="_H3DTgcwtEeSzlcOaP3tudQ" target="_JMhRocwtEeSzlcOaP3tudQ">
+        <type href="railwaysystem.ecore#//Train/occupies"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_GEtMIcwtEeSzlcOaP3tudQ" origin="_GEslEMwtEeSzlcOaP3tudQ" image="_GEtMIMwtEeSzlcOaP3tudQ"/>
+    <mappings xmi:id="_G3svUswtEeSzlcOaP3tudQ" origin="_G3svUMwtEeSzlcOaP3tudQ" image="_G3svUcwtEeSzlcOaP3tudQ"/>
+    <mappings xmi:id="_H3DTgswtEeSzlcOaP3tudQ" origin="_H3DTgMwtEeSzlcOaP3tudQ" image="_H3DTgcwtEeSzlcOaP3tudQ"/>
+    <mappings xmi:id="_JMhRoswtEeSzlcOaP3tudQ" origin="_JMhRoMwtEeSzlcOaP3tudQ" image="_JMhRocwtEeSzlcOaP3tudQ"/>
+    <mappings xmi:id="_KiNSMMwtEeSzlcOaP3tudQ" origin="_KiMrIMwtEeSzlcOaP3tudQ" image="_KiMrIcwtEeSzlcOaP3tudQ"/>
+    <mappings xmi:id="_iQMxgswtEeSzlcOaP3tudQ" origin="_iQMxgMwtEeSzlcOaP3tudQ" image="_iQMxgcwtEeSzlcOaP3tudQ"/>
+  </units>
+</henshin:Module>

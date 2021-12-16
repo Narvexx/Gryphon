@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pacman:Game xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pacman="http://pacman/1.0">
+  <!-- Cold start always globally true: 66941 ms,  156 ms with warm start (state space generated), sometimes eventually false 134 ms -->
+  <!-- Cold start sometimes eventually pacman.on.treasure: 13647 ms, warm start 64 ms -->
+  <!-- Cold start sometimes eventually pacman.on.treasure and ghosts->forAll(g | g.on  <> pacman.on): 19104 ms, warm start 137 ms -->
+  <fields id="0" neighbor="//@fields.3" treasure="false"/>
+  <fields id="1" neighbor="//@fields.4" treasure="true"/>
+  <fields id="2" neighbor="//@fields.5" treasure="false"/>
+  <fields id="3" neighbor="//@fields.0 //@fields.6" treasure="false"/>
+  <fields id="4" neighbor="//@fields.1 //@fields.7" treasure="false"/>
+  <fields id="5" neighbor="//@fields.2 //@fields.8" treasure="false"/>
+  <fields id="6" neighbor="//@fields.3 //@fields.7" treasure="false"/>
+  <fields id="7" neighbor="//@fields.6 //@fields.4 //@fields.8" treasure="false"/>
+  <fields id="8" neighbor="//@fields.7 //@fields.5" treasure="false"/>
+  <pacman xsi:type="pacman:Pacman" on="//@fields.0"/>
+  <ghosts xsi:type="pacman:Ghost" on="//@fields.4"/>
+  <ghosts xsi:type="pacman:Ghost" on="//@fields.8"/>
+</pacman:Game>

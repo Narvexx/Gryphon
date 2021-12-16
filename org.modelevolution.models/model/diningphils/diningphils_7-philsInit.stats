@@ -1,0 +1,9 @@
+7-philsInit.xmi           413  100%
+  Signature Creation        3    1%
+  Rule Translation         13    3%
+  Property Translation      2    0%
+  AIG (in-memory)          85   21%
+  AIG File                  3    1%
+  Solver                  307   74%
+    TwoPhilsHoldSameFork  150   49%
+    PhilHoldsWrongFork    157   51%

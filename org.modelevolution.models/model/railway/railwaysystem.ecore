@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="railway" nsURI="http://rw.modelevolution.org/1.0" nsPrefix="rw">
+  <eClassifiers xsi:type="ecore:EClass" name="RailwaySystem">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="trains" upperBound="-1"
+        eType="#//Train" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tracks" upperBound="-1"
+        eType="#//TrackElement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="routes" upperBound="-1"
+        eType="#//Route" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Train">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="route" lowerBound="1" eType="#//Route"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="occupies" eType="#//TrackElement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="holds" upperBound="-1"
+        eType="#//Lock"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TrackElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="next" upperBound="-1" eType="#//TrackElement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signal" eType="#//Signal"
+        containment="true" eOpposite="#//Signal/home"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Track" eSuperTypes="#//TrackElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Point" eSuperTypes="#//TrackElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lock" lowerBound="1" eType="#//Lock"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pos" lowerBound="1" eType="#//Position"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Entry" eSuperTypes="#//TrackElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Exit" eSuperTypes="#//TrackElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Signal">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="home" lowerBound="1" eType="#//TrackElement"
+        eOpposite="#//TrackElement/signal"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Route">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tracks" upperBound="-1"
+        eType="#//TrackElement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="controls" upperBound="-1"
+        eType="#//SignalControl" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SignalControl">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sig" lowerBound="1" eType="#//Signal"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="point" eType="#//Point"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="reqPos" lowerBound="1"
+        eType="#//Position"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="clear" upperBound="-1"
+        eType="#//TrackElement"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Lock">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="release" lowerBound="1"
+        upperBound="-1" eType="#//TrackElement"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Position">
+    <eLiterals name="NORMAL"/>
+    <eLiterals name="REVERSE" value="1"/>
+  </eClassifiers>
+</ecore:EPackage>

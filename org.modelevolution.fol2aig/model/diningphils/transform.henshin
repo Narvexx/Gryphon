@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_NdBtIEAKEeS4RsegafoaNw">
+  <imports href="diningphils.ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_k0VKwEAKEeS4RsegafoaNw" name="plate2LeftAndRightFork">
+    <lhs xmi:id="_k0Y1IEAKEeS4RsegafoaNw" name="Lhs">
+      <nodes xmi:id="_njbOQEAKEeS4RsegafoaNw" outgoing="_uJaq0EAKEeS4RsegafoaNw">
+        <type href="diningphils.ecore#//Philosopher"/>
+      </nodes>
+      <nodes xmi:id="_rLBnEEAKEeS4RsegafoaNw" incoming="_uJaq0EAKEeS4RsegafoaNw _M7AIsEALEeS4RsegafoaNw" outgoing="_u69cgEAKEeS4RsegafoaNw _vOVrgEAKEeS4RsegafoaNw">
+        <type href="diningphils.ecore#//Plate"/>
+      </nodes>
+      <nodes xmi:id="_sLC5oEAKEeS4RsegafoaNw" incoming="_u69cgEAKEeS4RsegafoaNw">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <nodes xmi:id="_ssidIEAKEeS4RsegafoaNw" incoming="_vOVrgEAKEeS4RsegafoaNw">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <nodes xmi:id="_LvdioEALEeS4RsegafoaNw" outgoing="_M7AIsEALEeS4RsegafoaNw">
+        <type href="diningphils.ecore#//Table"/>
+      </nodes>
+      <edges xmi:id="_uJaq0EAKEeS4RsegafoaNw" source="_njbOQEAKEeS4RsegafoaNw" target="_rLBnEEAKEeS4RsegafoaNw">
+        <type href="diningphils.ecore#//Philosopher/plate"/>
+      </edges>
+      <edges xmi:id="_u69cgEAKEeS4RsegafoaNw" source="_rLBnEEAKEeS4RsegafoaNw" target="_sLC5oEAKEeS4RsegafoaNw">
+        <type href="diningphils.ecore#//Plate/right"/>
+      </edges>
+      <edges xmi:id="_vOVrgEAKEeS4RsegafoaNw" source="_rLBnEEAKEeS4RsegafoaNw" target="_ssidIEAKEeS4RsegafoaNw">
+        <type href="diningphils.ecore#//Plate/left"/>
+      </edges>
+      <edges xmi:id="_M7AIsEALEeS4RsegafoaNw" source="_LvdioEALEeS4RsegafoaNw" target="_rLBnEEAKEeS4RsegafoaNw">
+        <type href="diningphils.ecore#//Table/plates"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_k0Y1IUAKEeS4RsegafoaNw" name="Rhs">
+      <nodes xmi:id="_njeRkEAKEeS4RsegafoaNw" outgoing="_w-CHgEAKEeS4RsegafoaNw _wJxZAEAKEeS4RsegafoaNw">
+        <type href="diningphils.ecore#//Philosopher"/>
+      </nodes>
+      <nodes xmi:id="_sLC5oUAKEeS4RsegafoaNw" incoming="_wJxZAEAKEeS4RsegafoaNw">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <nodes xmi:id="_ssidIUAKEeS4RsegafoaNw" incoming="_w-CHgEAKEeS4RsegafoaNw">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <nodes xmi:id="_LvdioUALEeS4RsegafoaNw">
+        <type href="diningphils.ecore#//Table"/>
+      </nodes>
+      <edges xmi:id="_w-CHgEAKEeS4RsegafoaNw" source="_njeRkEAKEeS4RsegafoaNw" target="_ssidIUAKEeS4RsegafoaNw">
+        <type href="diningphils.ecore#//Philosopher/left"/>
+      </edges>
+      <edges xmi:id="_wJxZAEAKEeS4RsegafoaNw" source="_njeRkEAKEeS4RsegafoaNw" target="_sLC5oUAKEeS4RsegafoaNw">
+        <type href="diningphils.ecore#//Philosopher/right"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_njeRkUAKEeS4RsegafoaNw" origin="_njbOQEAKEeS4RsegafoaNw" image="_njeRkEAKEeS4RsegafoaNw"/>
+    <mappings xmi:id="_sLDgsEAKEeS4RsegafoaNw" origin="_sLC5oEAKEeS4RsegafoaNw" image="_sLC5oUAKEeS4RsegafoaNw"/>
+    <mappings xmi:id="_ssidIkAKEeS4RsegafoaNw" origin="_ssidIEAKEeS4RsegafoaNw" image="_ssidIUAKEeS4RsegafoaNw"/>
+    <mappings xmi:id="_LvdiokALEeS4RsegafoaNw" origin="_LvdioEALEeS4RsegafoaNw" image="_LvdioUALEeS4RsegafoaNw"/>
+  </units>
+  <units xsi:type="henshin:LoopUnit" xmi:id="_WVxaAEALEeS4RsegafoaNw" name="alap" subUnit="_k0VKwEAKEeS4RsegafoaNw"/>
+</henshin:Module>

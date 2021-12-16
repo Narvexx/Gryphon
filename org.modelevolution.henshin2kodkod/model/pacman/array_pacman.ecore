@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="pacman" nsURI="http://pacman/array/1.0" nsPrefix="pacman">
+  <eClassifiers xsi:type="ecore:EClass" name="Game">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fields" lowerBound="1"
+        upperBound="-1" eType="#//Field" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pacman" lowerBound="1"
+        eType="#//Pacman" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ghosts" lowerBound="1"
+        upperBound="-1" eType="#//Ghost" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ints" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Field">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="neighbor" upperBound="4"
+        eType="#//Field"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="treasure" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Pacman">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="on" lowerBound="1" eType="#//Field"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ghost">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="on" lowerBound="1" eType="#//Field"/>
+  </eClassifiers>
+</ecore:EPackage>

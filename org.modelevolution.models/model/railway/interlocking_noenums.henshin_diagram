@@ -1,0 +1,1225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_0-ySUM0DEeS4LbO9Iddqqw" type="Henshin" name="interlocking_noenums.henshin_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_68SykM0DEeS4LbO9Iddqqw" type="2001" fontName="Droid Serif" italic="true" lineColor="0">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ATTTgM0EEeS4LbO9Iddqqw" source="defaultAction">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ATT6kM0EEeS4LbO9Iddqqw" key="value" value="forbid#2"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_68UAsM0DEeS4LbO9Iddqqw" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_68UAsc0DEeS4LbO9Iddqqw" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_ATVvwM0EEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_ATVvws0EEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_ATVvw80EEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_ATVvxM0EEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_ATVvxc0EEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_ATVvxs0EEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_ATQ3QM0EEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ATVvwc0EEeS4LbO9Iddqqw" x="30" y="16"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_BJOO4M0EEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_BJO18M0EEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_BJO18c0EEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_BJO18s0EEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_BJO1880EEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_BJO19M0EEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_BJMZsM0EEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BJOO4c0EEeS4LbO9Iddqqw" x="17" y="130"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Dkae8M0EEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_Dkae8s0EEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_Dkae880EEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_DkbGAM0EEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_DkbGAc0EEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_DkbGAs0EEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_DkYpwM0EEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dkae8c0EEeS4LbO9Iddqqw" x="172" y="16"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_EkLS0M0EEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_EkL54M0EEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_EkL54c0EEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_EkL54s0EEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_EkL5480EEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_EkL55M0EEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_EkHBYM0EEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EkLS0c0EEeS4LbO9Iddqqw" x="182" y="138"/>
+      </children>
+    </children>
+    <element xmi:type="henshin:Rule" href="interlocking_noenums.henshin#_68PIMM0DEeS4LbO9Iddqqw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_68TZoM0DEeS4LbO9Iddqqw" x="51" y="56"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_YrB24M0FEeS4LbO9Iddqqw" type="2001" fontName="Droid Serif" italic="true" lineColor="0">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bTTgss0FEeS4LbO9Iddqqw" source="defaultAction">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bTUHwM0FEeS4LbO9Iddqqw" key="value" value="forbid#1"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_YrCd8M0FEeS4LbO9Iddqqw" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_YrCd8c0FEeS4LbO9Iddqqw" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_bTVV4M0FEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_bTVV4s0FEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_bTVV480FEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_bTV88M0FEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_bTV88c0FEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_bTV88s0FEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_bTS5oM0FEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bTVV4c0FEeS4LbO9Iddqqw" x="21" y="8"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_b8eZgM0FEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_b8fAkM0FEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_b8fAkc0FEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_b8fAks0FEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_b8fAk80FEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_b8fAlM0FEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_b8dLYM0FEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b8eZgc0FEeS4LbO9Iddqqw" x="11" y="91"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_c7veIM0FEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_c7veIs0FEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_c7wFMM0FEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_c7wFMc0FEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_c7wFMs0FEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_c7wFM80FEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_c7to8M0FEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c7veIc0FEeS4LbO9Iddqqw" x="21" y="191"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_d9eA4M0FEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_d9en8M0FEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_d9en8c0FEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_d9en8s0FEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_d9en880FEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_d9en9M0FEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_d9cLsM0FEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d9eA4c0FEeS4LbO9Iddqqw" x="172" y="100"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_fWr2kM0FEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_fWsdoM0FEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_fWsdoc0FEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_fWsdos0FEeS4LbO9Iddqqw" type="7002">
+          <children xmi:type="notation:Node" xmi:id="_Cc5LUM0GEeS4LbO9Iddqqw" type="3002">
+            <element xmi:type="henshin:Attribute" href="interlocking_noenums.henshin#_Cc3WIM0GEeS4LbO9Iddqqw"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Cc5LUc0GEeS4LbO9Iddqqw"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_fWsdo80FEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_fWsdpM0FEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_fWpaUM0FEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fWr2kc0FEeS4LbO9Iddqqw" x="324" y="4"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_hXFBAM0FEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_hXFoEM0FEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_hXFoEc0FEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_hXFoEs0FEeS4LbO9Iddqqw" type="7002">
+          <children xmi:type="notation:Node" xmi:id="_DPaNYM0GEeS4LbO9Iddqqw" type="3002">
+            <element xmi:type="henshin:Attribute" href="interlocking_noenums.henshin#_DPYYMM0GEeS4LbO9Iddqqw"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_DPaNYc0GEeS4LbO9Iddqqw"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_hXFoE80FEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_hXFoFM0FEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_hXDL0M0FEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hXFBAc0FEeS4LbO9Iddqqw" x="321" y="96"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_iOETYM0FEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_iOETYs0FEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_iOETY80FEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_iOETZM0FEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_iOETZc0FEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_iOETZs0FEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_iOCeMM0FEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iOETYc0FEeS4LbO9Iddqqw" x="335" y="191"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_jdqTAM0FEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_jdqTAs0FEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_jdqTA80FEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_jdq6EM0FEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_jdq6Ec0FEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_jdq6Es0FEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_jdkzcM0FEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jdqTAc0FEeS4LbO9Iddqqw" x="210" y="146"/>
+      </children>
+    </children>
+    <element xmi:type="henshin:Rule" href="interlocking_noenums.henshin#_YrBP0M0FEeS4LbO9Iddqqw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YrB24c0FEeS4LbO9Iddqqw" x="340" y="56" width="442" height="277"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_0dolsM0GEeS4LbO9Iddqqw" type="2001" fontName="Droid Serif" italic="true" lineColor="0">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3B_Y080GEeS4LbO9Iddqqw" source="defaultAction">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3B_Y1M0GEeS4LbO9Iddqqw" key="value" value="preserve"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_0dolss0GEeS4LbO9Iddqqw" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_0dols80GEeS4LbO9Iddqqw" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_3CAm8M0GEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_3CBOAM0GEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_3CBOAc0GEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_3CBOAs0GEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_3CBOA80GEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_3CBOBM0GEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_3B_Y0M0GEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3CAm8c0GEeS4LbO9Iddqqw" x="11" y="94"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_3zV9QM0GEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_3zV9Qs0GEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_3zV9Q80GEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_3zV9RM0GEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_3zV9Rc0GEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_3zV9Rs0GEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_3zUvIM0GEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3zV9Qc0GEeS4LbO9Iddqqw" x="160" y="94"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_4fvJMM0GEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_4fvJMs0GEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_4fvJM80GEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_4fvwQM0GEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_4fvwQc0GEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_4fvwQs0GEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_4ftUAM0GEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4fvJMc0GEeS4LbO9Iddqqw" x="75" y="6"/>
+      </children>
+    </children>
+    <element xmi:type="henshin:Rule" href="interlocking_noenums.henshin#_0dn-oM0GEeS4LbO9Iddqqw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0dolsc0GEeS4LbO9Iddqqw" x="804" y="56"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_DeNB4M0HEeS4LbO9Iddqqw" type="2001" fontName="Droid Serif" italic="true" lineColor="0">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HY-OU80HEeS4LbO9Iddqqw" source="defaultAction">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HY-OVM0HEeS4LbO9Iddqqw" key="value" value="preserve"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_DeNB4s0HEeS4LbO9Iddqqw" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_DeNB480HEeS4LbO9Iddqqw" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_HY_ccM0HEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_HZADgM0HEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_HZADgc0HEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_HZADgs0HEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_HZADg80HEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_HZADhM0HEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_HY-OUM0HEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HY_ccc0HEeS4LbO9Iddqqw" x="43" y="23"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_IBBs0M0HEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_IBBs0s0HEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_IBBs080HEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_IBBs1M0HEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_IBBs1c0HEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_IBBs1s0HEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_IBAesM0HEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IBBs0c0HEeS4LbO9Iddqqw" x="43" y="111"/>
+      </children>
+    </children>
+    <element xmi:type="henshin:Rule" href="interlocking_noenums.henshin#_DeMa0M0HEeS4LbO9Iddqqw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DeNB4c0HEeS4LbO9Iddqqw" x="1169" y="402" width="154"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_ua2AAM0KEeS4LbO9Iddqqw" type="2001" fontName="Droid Serif" italic="true" lineColor="0">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Sippws0NEeS4LbO9Iddqqw" source="defaultAction">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Sippw80NEeS4LbO9Iddqqw" key="value" value="forbid#1"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ua2AAs0KEeS4LbO9Iddqqw" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ua2AA80KEeS4LbO9Iddqqw" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_Siq34M0NEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_Siq34s0NEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_Siq3480NEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_Siq35M0NEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_Siq35c0NEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_Siq35s0NEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_SipCsM0NEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Siq34c0NEeS4LbO9Iddqqw" x="1" y="102"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_TGTwcM0NEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_TGUXgM0NEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_TGUXgc0NEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_TGUXgs0NEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_TGUXg80NEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_TGUXhM0NEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_TGSiUM0NEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TGTwcc0NEeS4LbO9Iddqqw" x="212" y="102"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_TmcCAM0NEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_TmcCAs0NEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_TmcCA80NEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_TmcCBM0NEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_TmcCBc0NEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_TmcCBs0NEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_TmaM0M0NEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TmcCAc0NEeS4LbO9Iddqqw" x="162" y="196"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_U-8GAM0NEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_U-8GAs0NEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_U-8GA80NEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_U-8GBM0NEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_U-8GBc0NEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_U-8GBs0NEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_U-6Q0M0NEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U-8GAc0NEeS4LbO9Iddqqw" x="118"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_WPmcoM0NEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_WPmcos0NEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_WPmco80NEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_WPmcpM0NEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_WPmcpc0NEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_WPmcps0NEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_WPjZUM0NEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WPmcoc0NEeS4LbO9Iddqqw" x="11" y="196"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_YyiTcM0NEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_YyiTcs0NEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_YyiTc80NEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_YyiTdM0NEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_YyiTdc0NEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_YyiTds0NEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_Yyf3MM0NEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YyiTcc0NEeS4LbO9Iddqqw" x="118" y="63"/>
+      </children>
+    </children>
+    <element xmi:type="henshin:Rule" href="interlocking_noenums.henshin#_uazjwM0KEeS4LbO9Iddqqw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ua2AAc0KEeS4LbO9Iddqqw" x="1081" y="68" width="320" height="277"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Gvg9cM0OEeS4LbO9Iddqqw" type="2001" fontName="Droid Serif" italic="true" lineColor="0">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dDnRpc0OEeS4LbO9Iddqqw" source="defaultAction">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dDn4sM0OEeS4LbO9Iddqqw" key="value" value="preserve"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Gvg9cs0OEeS4LbO9Iddqqw" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Gvg9c80OEeS4LbO9Iddqqw" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_dDpG0M0OEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_dDpt4M0OEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_dDpt4c0OEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_dDpt4s0OEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_dDpt480OEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_dDpt5M0OEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_dDmqkM0OEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dDpG0c0OEeS4LbO9Iddqqw" x="18" y="16"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_d9mNoM0OEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_d9m0sM0OEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_d9m0sc0OEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_d9m0ss0OEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_d9m0s80OEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_d9m0tM0OEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_d9k_gM0OEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d9mNoc0OEeS4LbO9Iddqqw" x="207" y="16"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_eoK0oM0OEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_eoLbsM0OEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_eoLbsc0OEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_eoLbss0OEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_eoLbs80OEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_eoLbtM0OEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_eoJmgM0OEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eoK0oc0OEeS4LbO9Iddqqw" x="8" y="121"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_e-KSwM0OEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_e-KSws0OEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_e-K50M0OEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_e-K50c0OEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_e-K50s0OEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_e-K5080OEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_e-IdkM0OEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e-KSwc0OEeS4LbO9Iddqqw" x="197" y="121"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_nmUaYM0ZEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_nmUaYs0ZEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_nmUaY80ZEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_nmUaZM0ZEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_nmUaZc0ZEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_nmUaZs0ZEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_nmSlMM0ZEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nmUaYc0ZEeS4LbO9Iddqqw" x="371" y="16"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_ob5XgM0ZEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_ob5Xgs0ZEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_ob5-kM0ZEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_ob5-kc0ZEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_ob5-ks0ZEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_ob5-k80ZEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_ob4JYM0ZEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ob5Xgc0ZEeS4LbO9Iddqqw" x="371" y="135"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_pGqLwM0ZEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_pGqy0M0ZEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_pGqy0c0ZEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_pGqy0s0ZEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_pGqy080ZEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_pGqy1M0ZEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_pGo9oM0ZEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pGqLwc0ZEeS4LbO9Iddqqw" x="361" y="240"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_p7b3oM0ZEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_p7b3os0ZEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_p7b3o80ZEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_p7cesM0ZEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_p7cesc0ZEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_p7cess0ZEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_p7apgM0ZEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_p7b3oc0ZEeS4LbO9Iddqqw" x="29" y="245"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_rHhQQM0ZEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_rHhQQs0ZEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_rHhQQ80ZEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_rHhQRM0ZEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_rHhQRc0ZEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_rHhQRs0ZEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_rHdl4M0ZEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHhQQc0ZEeS4LbO9Iddqqw" x="469" y="32"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_rtiucM0ZEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_rtiucs0ZEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_rtiuc80ZEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_rtiudM0ZEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_rtiudc0ZEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_rtiuds0ZEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_rtg5QM0ZEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rtiucc0ZEeS4LbO9Iddqqw" x="469" y="135"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_3qTbYM0ZEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_3qTbYs0ZEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_3qTbY80ZEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_3qTbZM0ZEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_3qTbZc0ZEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_3qTbZs0ZEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_3qOi4M0ZEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3qTbYc0ZEeS4LbO9Iddqqw" x="267" y="188"/>
+      </children>
+    </children>
+    <element xmi:type="henshin:Rule" href="interlocking_noenums.henshin#_GvgWYM0OEeS4LbO9Iddqqw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Gvg9cc0OEeS4LbO9Iddqqw" x="7" y="360"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_16i4gM0aEeS4LbO9Iddqqw" type="2001" fontName="Droid Serif" italic="true" lineColor="0">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9GKSYs1hEeS4LbO9Iddqqw" source="defaultAction">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9GK5cM1hEeS4LbO9Iddqqw" key="value" value="forbid#2"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_16i4gs0aEeS4LbO9Iddqqw" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_16i4g80aEeS4LbO9Iddqqw" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_9GMHkM1hEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_9GMuoM1hEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_9GMuoc1hEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_9GMuos1hEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_9GMuo81hEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_9GMupM1hEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_9GH2IM1hEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9GMHkc1hEeS4LbO9Iddqqw" x="200" y="27"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_9jcrUM1hEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_9jdSYM1hEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_9jdSYc1hEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_9jdSYs1hEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_9jdSY81hEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_9jdSZM1hEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_9jbdMM1hEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9jcrUc1hEeS4LbO9Iddqqw" x="25" y="123"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_97taUM1hEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_97taUs1hEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_97taU81hEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_97uBYM1hEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_97uBYc1hEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_97uBYs1hEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_97sMMM1hEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_97taUc1hEeS4LbO9Iddqqw" x="190" y="123"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_-lJY4M1hEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_-lJY4s1hEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_-lJY481hEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_-lJY5M1hEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_-lJY5c1hEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_-lJY5s1hEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_-lIKwM1hEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-lJY4c1hEeS4LbO9Iddqqw" x="35" y="240"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="__Xgp8M1hEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="__Xgp8s1hEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="__Xgp881hEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="__Xgp9M1hEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="__Xgp9c1hEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="__Xgp9s1hEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#__Xfb0M1hEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="__Xgp8c1hEeS4LbO9Iddqqw" x="282" y="184"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Act-gM1iEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_Act-gs1iEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_Act-g81iEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_Act-hM1iEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_Act-hc1iEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_Act-hs1iEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_AcswYM1iEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Act-gc1iEeS4LbO9Iddqqw" x="371" y="240"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_BgCcsM1iEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_BgCcss1iEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_BgCcs81iEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_BgDDwM1iEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_BgDDwc1iEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_BgDDws1iEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_Bf9kMM1iEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BgCcsc1iEeS4LbO9Iddqqw" x="35" y="6"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_C8NfwM1iEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_C8OG0M1iEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_C8OG0c1iEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_C8OG0s1iEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_C8OG081iEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_C8OG1M1iEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_C8LqkM1iEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C8Nfwc1iEeS4LbO9Iddqqw" x="381" y="162"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Dlvk8M1iEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_Dlvk8s1iEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_Dlvk881iEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_Dlvk9M1iEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_Dlvk9c1iEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_Dlvk9s1iEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_DltvwM1iEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dlvk8c1iEeS4LbO9Iddqqw" x="430" y="15"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_EAN6cM1iEeS4LbO9Iddqqw" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_EAN6cs1iEeS4LbO9Iddqqw" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_EAN6c81iEeS4LbO9Iddqqw" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_EAN6dM1iEeS4LbO9Iddqqw" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_EAN6dc1iEeS4LbO9Iddqqw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_EAN6ds1iEeS4LbO9Iddqqw"/>
+        </children>
+        <element xmi:type="henshin:Node" href="interlocking_noenums.henshin#_EAK3IM1iEeS4LbO9Iddqqw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EAN6cc1iEeS4LbO9Iddqqw" x="420" y="95"/>
+      </children>
+    </children>
+    <element xmi:type="henshin:Rule" href="interlocking_noenums.henshin#_16iRcM0aEeS4LbO9Iddqqw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_16i4gc0aEeS4LbO9Iddqqw" x="603" y="365"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_0-ySUc0DEeS4LbO9Iddqqw"/>
+  <element xmi:type="henshin:Module" href="interlocking_noenums.henshin#_0-rkoM0DEeS4LbO9Iddqqw"/>
+  <edges xmi:type="notation:Connector" xmi:id="_IWbccM0EEeS4LbO9Iddqqw" type="4001" source="_ATVvwM0EEeS4LbO9Iddqqw" target="_Dkae8M0EEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_IWcDgM0EEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_IWcDgc0EEeS4LbO9Iddqqw" x="-1" y="9"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_IWcDgs0EEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_IWcDg80EEeS4LbO9Iddqqw" x="1" y="-10"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_IWbccc0EEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_IWZnQM0EEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IWbccs0EEeS4LbO9Iddqqw" points="[15, 5, -118, -48]$[154, 50, 21, -3]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IWft4M0EEeS4LbO9Iddqqw" id="(0.7692307692307693,0.275)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IWft4c0EEeS4LbO9Iddqqw" id="(0.7558139534883721,0.425)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_QApWIM0EEeS4LbO9Iddqqw" type="4001" source="_ATVvwM0EEeS4LbO9Iddqqw" target="_BJOO4M0EEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_QAp9MM0EEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_QAp9Mc0EEeS4LbO9Iddqqw" x="-9" y="-34"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_QAp9Ms0EEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_QAp9M80EEeS4LbO9Iddqqw" x="-25" y="-33"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_QApWIc0EEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_QAng8M0EEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QApWIs0EEeS4LbO9Iddqqw" points="[0, 7, 0, -87]$[11, 90, 11, -4]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QAsZcM0EEeS4LbO9Iddqqw" id="(0.6307692307692307,0.825)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QAsZcc0EEeS4LbO9Iddqqw" id="(0.8307692307692308,0.325)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_VYb6MM0EEeS4LbO9Iddqqw" type="4001" source="_EkLS0M0EEeS4LbO9Iddqqw" target="_BJOO4M0EEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_VYb6M80EEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_VYb6NM0EEeS4LbO9Iddqqw" x="-5" y="-8"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_VYb6Nc0EEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_VYb6Ns0EEeS4LbO9Iddqqw" x="-4" y="5"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_VYb6Mc0EEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_VYasEM0EEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VYb6Ms0EEeS4LbO9Iddqqw" points="[-15, 2, 133, 4]$[-115, 2, 33, 4]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VYe9gM0EEeS4LbO9Iddqqw" id="(0.23076923076923078,0.35)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_e1qpoM0EEeS4LbO9Iddqqw" type="4001" source="_ATVvwM0EEeS4LbO9Iddqqw" target="_BJOO4M0EEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_e1qpo80EEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_e1qppM0EEeS4LbO9Iddqqw" x="-13" y="26"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_e1rQsM0EEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_e1rQsc0EEeS4LbO9Iddqqw" x="-26" y="25"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_e1qpoc0EEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_bPd_AM0EEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_e1qpos0EEeS4LbO9Iddqqw" points="[-2, 20, 11, -94]$[-11, 94, 2, -20]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gigl8M0EEeS4LbO9Iddqqw" id="(0.27692307692307694,0.95)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ls5KsM0FEeS4LbO9Iddqqw" type="4001" source="_jdqTAM0FEeS4LbO9Iddqqw" target="_iOETYM0FEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ls5xwM0FEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ls5xwc0FEeS4LbO9Iddqqw" x="-3" y="13"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ls5xws0FEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ls5xw80FEeS4LbO9Iddqqw" x="-3" y="-1"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ls5Ksc0FEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_ls38kM0FEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ls5Kss0FEeS4LbO9Iddqqw" points="[33, 10, -49, -14]$[50, 22, -32, -2]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_7nTMgM0FEeS4LbO9Iddqqw" type="4001" source="_fWr2kM0FEeS4LbO9Iddqqw" target="_bTVV4M0FEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_7nTzkM0FEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_7nTzkc0FEeS4LbO9Iddqqw" x="1" y="-10"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7nTzks0FEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_7nTzk80FEeS4LbO9Iddqqw" x="1" y="8"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_7nTMgc0FEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_7nR-YM0FEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7nTMgs0FEeS4LbO9Iddqqw" points="[-43, -8, 149, 0]$[-179, -6, 13, 2]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7nWP0M0FEeS4LbO9Iddqqw" id="(0.8,0.575)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_8LTRcM0FEeS4LbO9Iddqqw" type="4001" source="_d9eA4M0FEeS4LbO9Iddqqw" target="_fWr2kM0FEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_8LT4gM0FEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_8LT4gc0FEeS4LbO9Iddqqw" x="-11" y="3"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_8LT4gs0FEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_8LT4g80FEeS4LbO9Iddqqw" x="-24" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_8LTRcc0FEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_8LSDUM0FEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8LTRcs0FEeS4LbO9Iddqqw" points="[16, -20, -55, 55]$[28, -68, -43, 7]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_9chowM0FEeS4LbO9Iddqqw" type="4001" source="_fWr2kM0FEeS4LbO9Iddqqw" target="_hXFBAM0FEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_9chow80FEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_9choxM0FEeS4LbO9Iddqqw" x="1" y="-17"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_9choxc0FEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_9choxs0FEeS4LbO9Iddqqw" x="-13" y="-13"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_9chowc0FEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_9cfzkM0FEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9chows0FEeS4LbO9Iddqqw" points="[4, 9, -23, -64]$[60, 76, 33, 3]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9ckFAM0FEeS4LbO9Iddqqw" id="(0.6046511627906976,0.775)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_-dFt4M0FEeS4LbO9Iddqqw" type="4001" source="_hXFBAM0FEeS4LbO9Iddqqw" target="_iOETYM0FEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_-dGU8M0FEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_-dGU8c0FEeS4LbO9Iddqqw" x="9" y="-15"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-dGU8s0FEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_-dGU880FEeS4LbO9Iddqqw" x="-4" y="-14"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_-dFt4c0FEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_-dEfwM0FEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-dFt4s0FEeS4LbO9Iddqqw" points="[0, 20, -2, -53]$[0, 53, -2, -20]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="__YLdIM0FEeS4LbO9Iddqqw" type="4001" source="_c7veIM0FEeS4LbO9Iddqqw" target="_d9eA4M0FEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="__YLdI80FEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="__YLdJM0FEeS4LbO9Iddqqw" x="5" y="10"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="__YLdJc0FEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="__YLdJs0FEeS4LbO9Iddqqw" x="2" y="-8"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="__YLdIc0FEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#__YJn8M0FEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__YLdIs0FEeS4LbO9Iddqqw" points="[14, -11, -103, 66]$[111, -97, -6, -20]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="__YN5YM0FEeS4LbO9Iddqqw" id="(0.7846153846153846,0.375)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="___mCcM0FEeS4LbO9Iddqqw" type="4001" source="_c7veIM0FEeS4LbO9Iddqqw" target="_b8eZgM0FEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="___mCc80FEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="___mCdM0FEeS4LbO9Iddqqw" x="-5" y="-25"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="___mCdc0FEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="___mCds0FEeS4LbO9Iddqqw" x="8" y="-13"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="___mCcc0FEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#___kNQM0FEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="___mCcs0FEeS4LbO9Iddqqw" points="[-7, -20, -13, 74]$[-37, -94, -43, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_AO9UIM0GEeS4LbO9Iddqqw" type="4001" source="_b8eZgM0FEeS4LbO9Iddqqw" target="_bTVV4M0FEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_AO9UI80GEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AO9UJM0GEeS4LbO9Iddqqw" x="-7" y="21"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_AO9UJc0GEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AO9UJs0GEeS4LbO9Iddqqw" x="6"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AO9UIc0GEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_AO7e8M0GEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AO9UIs0GEeS4LbO9Iddqqw" points="[-5, -20, 6, 54]$[-17, -94, -6, -20]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_SPjLwM0GEeS4LbO9Iddqqw" type="4001" source="_c7veIM0FEeS4LbO9Iddqqw" target="_iOETYM0FEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_SPjy0M0GEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_SPjy0c0GEeS4LbO9Iddqqw" x="40" y="11"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_SPjy0s0GEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_SPjy080GEeS4LbO9Iddqqw" x="-22" y="10"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_SPjLwc0GEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_SPh9oM0GEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SPjLws0GEeS4LbO9Iddqqw" points="[11, -1, -256, 0]$[260, 1, -7, 2]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SPmPEM0GEeS4LbO9Iddqqw" id="(0.8307692307692308,0.725)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SPmPEc0GEeS4LbO9Iddqqw" id="(0.1076923076923077,0.7)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_cJwLEM0GEeS4LbO9Iddqqw" type="4001" source="_c7veIM0FEeS4LbO9Iddqqw" target="_iOETYM0FEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_cJwyIM0GEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_cJwyIc0GEeS4LbO9Iddqqw" x="5" y="-8"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_cJwyIs0GEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_cJwyI80GEeS4LbO9Iddqqw" x="-41" y="-7"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_cJwLEc0GEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_X4yFIM0GEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cJwLEs0GEeS4LbO9Iddqqw" points="[33, 0, -281, 0]$[282, 0, -32, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_5N9hIM0GEeS4LbO9Iddqqw" type="4001" source="_3CAm8M0GEeS4LbO9Iddqqw" target="_4fvJMM0GEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_5N9hI80GEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_5N9hJM0GEeS4LbO9Iddqqw" x="-26" y="-14"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_5N9hJc0GEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_5N9hJs0GEeS4LbO9Iddqqw" x="-12" y="-21"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_5N9hIc0GEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_5N8TAM0GEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5N9hIs0GEeS4LbO9Iddqqw" points="[18, -20, -76, 81]$[88, -81, -6, 20]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_5jGqsM0GEeS4LbO9Iddqqw" type="4001" source="_3zV9QM0GEeS4LbO9Iddqqw" target="_4fvJMM0GEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_5jHRwM0GEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_5jHRwc0GEeS4LbO9Iddqqw" x="-21" y="19"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_5jHRws0GEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_5jHRw80GEeS4LbO9Iddqqw" x="-9" y="24"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_5jGqsc0GEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_5jFckM0GEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5jGqss0GEeS4LbO9Iddqqw" points="[-11, -20, 31, 58]$[-42, -77, 0, 1]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5jJuAM0GEeS4LbO9Iddqqw" id="(0.627906976744186,0.975)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_-zj3sM0GEeS4LbO9Iddqqw" type="4001" source="_3CAm8M0GEeS4LbO9Iddqqw" target="_3zV9QM0GEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_-zj3s80GEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_-zj3tM0GEeS4LbO9Iddqqw" x="-1" y="9"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-zj3tc0GEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_-zj3ts0GEeS4LbO9Iddqqw" x="-1" y="-9"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_-zj3sc0GEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_-zipkM0GEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-zj3ss0GEeS4LbO9Iddqqw" points="[14, 7, -97, 0]$[98, 9, -13, 2]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-zmT8M0GEeS4LbO9Iddqqw" id="(0.7846153846153846,0.425)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-zmT8c0GEeS4LbO9Iddqqw" id="(0.2,0.6)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_In770M0HEeS4LbO9Iddqqw" type="4001" source="_HY_ccM0HEeS4LbO9Iddqqw" target="_IBBs0M0HEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_In8i4M0HEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_In8i4c0HEeS4LbO9Iddqqw" x="2" y="26"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_In8i4s0HEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_In8i480HEeS4LbO9Iddqqw" x="-13"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_In770c0HEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_In6tsM0HEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_In770s0HEeS4LbO9Iddqqw" points="[0, 5, -1, -70]$[0, 55, -1, -20]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_In-YEM0HEeS4LbO9Iddqqw" id="(0.4153846153846154,0.875)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_acQqUM0NEeS4LbO9Iddqqw" type="4001" source="_Siq34M0NEeS4LbO9Iddqqw" target="_YyiTcM0NEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_acQqU80NEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_acQqVM0NEeS4LbO9Iddqqw" x="3" y="9"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_acQqVc0NEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_acQqVs0NEeS4LbO9Iddqqw" x="7" y="-9"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_acQqUc0NEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_acPcMM0NEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_acQqUs0NEeS4LbO9Iddqqw" points="[0, -20, -106, 19]$[0, -48, -106, -9]$[74, -48, -32, -9]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_a-i4AM0NEeS4LbO9Iddqqw" type="4001" source="_WPmcoM0NEeS4LbO9Iddqqw" target="_Siq34M0NEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_a-i4A80NEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_a-i4BM0NEeS4LbO9Iddqqw" x="-12"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_a-i4Bc0NEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_a-i4Bs0NEeS4LbO9Iddqqw" x="2" y="-1"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_a-i4Ac0NEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_a-hp4M0NEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_a-i4As0NEeS4LbO9Iddqqw" points="[-9, -9, -10, 86]$[-42, -98, -43, -3]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_a-lUQM0NEeS4LbO9Iddqqw" id="(0.4,0.225)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_bRawsM0NEeS4LbO9Iddqqw" type="4001" source="_TmcCAM0NEeS4LbO9Iddqqw" target="_WPmcoM0NEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_bRbXwM0NEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_bRbXwc0NEeS4LbO9Iddqqw" x="2" y="-8"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_bRbXws0NEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_bRbXw80NEeS4LbO9Iddqqw" x="-2" y="8"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_bRawsc0NEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_bRaJoM0NEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bRawss0NEeS4LbO9Iddqqw" points="[-16, 8, 72, 1]$[-80, 27, 8, 20]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bRdM8M0NEeS4LbO9Iddqqw" id="(0.24615384615384617,0.375)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_uAnawM0NEeS4LbO9Iddqqw" type="4001" source="_Siq34M0NEeS4LbO9Iddqqw" target="_TGTwcM0NEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_uAnaw80NEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_uAnaxM0NEeS4LbO9Iddqqw" y="7"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_uAoB0M0NEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_uAoB0c0NEeS4LbO9Iddqqw" y="20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_uAnawc0NEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_uAmMoM0NEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_uAnaws0NEeS4LbO9Iddqqw" points="[12, -2, -145, 0]$[137, -9, -20, -7]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_uAp3AM0NEeS4LbO9Iddqqw" id="(0.8604651162790697,0.375)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_uAp3Ac0NEeS4LbO9Iddqqw" id="(0.23255813953488372,0.325)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_v0JN4M0NEeS4LbO9Iddqqw" type="4001" source="_TmcCAM0NEeS4LbO9Iddqqw" target="_TGTwcM0NEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_v0JN480NEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_v0JN5M0NEeS4LbO9Iddqqw" x="-5" y="24"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_v0JN5c0NEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_v0JN5s0NEeS4LbO9Iddqqw" x="1"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_v0JN4c0NEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_v0H_wM0NEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_v0JN4s0NEeS4LbO9Iddqqw" points="[12, -20, -28, 73]$[64, -73, 24, 20]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_v0LqIM0NEeS4LbO9Iddqqw" id="(0.8153846153846154,0.475)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_1272wM0NEeS4LbO9Iddqqw" type="4001" source="_TmcCAM0NEeS4LbO9Iddqqw" target="_Siq34M0NEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_128d0M0NEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_128d0c0NEeS4LbO9Iddqqw" x="-38" y="11"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_128d0s0NEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_128d080NEeS4LbO9Iddqqw" x="-3" y="7"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_1272wc0NEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_126ooM0NEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1272ws0NEeS4LbO9Iddqqw" points="[-8, -5, 130, 74]$[-95, -79, 43, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_12-6EM0NEeS4LbO9Iddqqw" id="(0.3076923076923077,0.125)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_5hSooM0NEeS4LbO9Iddqqw" type="4001" source="_U-8GAM0NEeS4LbO9Iddqqw" target="_TGTwcM0NEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_5hSoo80NEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_5hSopM0NEeS4LbO9Iddqqw" x="-32" y="8"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_5hSopc0NEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_5hSops0NEeS4LbO9Iddqqw" x="-38" y="-5"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_5hSooc0NEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_5hRagM0NEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5hSoos0NEeS4LbO9Iddqqw" points="[11, 8, -102, -101]$[104, 8, -9, -101]$[104, 85, -9, -24]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5hVE4M0NEeS4LbO9Iddqqw" id="(0.8307692307692308,0.425)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5hVE4c0NEeS4LbO9Iddqqw" id="(0.8488372093023255,0.6)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_6UQ9sM0NEeS4LbO9Iddqqw" type="4001" source="_U-8GAM0NEeS4LbO9Iddqqw" target="_Siq34M0NEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_6UQ9s80NEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_6UQ9tM0NEeS4LbO9Iddqqw" x="-27" y="-7"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_6UQ9tc0NEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_6UQ9ts0NEeS4LbO9Iddqqw" x="-31" y="6"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_6UQ9sc0NEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_6UPIgM0NEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6UQ9ss0NEeS4LbO9Iddqqw" points="[-14, 0, 97, -79]$[-111, 0, 0, -79]$[-111, 76, 0, -3]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6UTZ8M0NEeS4LbO9Iddqqw" id="(0.2153846153846154,0.65)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7xz5wM0NEeS4LbO9Iddqqw" id="(0.23255813953488372,0.075)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_vTs80M0ZEeS4LbO9Iddqqw" type="4001" source="_d9mNoM0OEeS4LbO9Iddqqw" target="_dDpG0M0OEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_vTtj4M0ZEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_vTtj4c0ZEeS4LbO9Iddqqw" y="-8"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_vTtj4s0ZEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_vTtj480ZEeS4LbO9Iddqqw" x="1" y="13"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_vTs80c0ZEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_vTsVwM0ZEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vTs80s0ZEeS4LbO9Iddqqw" points="[-14, -5, 88, 20]$[-92, -45, 10, -20]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vTwAIM0ZEeS4LbO9Iddqqw" id="(0.046153846153846156,0.425)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_vqP0kM0ZEeS4LbO9Iddqqw" type="4001" source="_dDpG0M0OEeS4LbO9Iddqqw" target="_eoK0oM0OEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_vqQboM0ZEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_vqQboc0ZEeS4LbO9Iddqqw" x="-6" y="-23"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_vqQbos0ZEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_vqQbo80ZEeS4LbO9Iddqqw" x="-19" y="-10"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_vqP0kc0ZEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_vqPNgM0ZEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vqP0ks0ZEeS4LbO9Iddqqw" points="[-2, 20, -11, -85]$[-34, 99, -43, -6]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_wExNYM0ZEeS4LbO9Iddqqw" type="4001" source="_eoK0oM0OEeS4LbO9Iddqqw" target="_p7b3oM0ZEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_wEx0cM0ZEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_wEx0cc0ZEeS4LbO9Iddqqw" x="12" y="18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_wEx0cs0ZEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_wEx0c80ZEeS4LbO9Iddqqw" x="-2" y="23"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_wExNYc0ZEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_wEv_QM0ZEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wExNYs0ZEeS4LbO9Iddqqw" points="[2, 20, -8, -63]$[5, 90, -5, 7]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wEzpoM0ZEeS4LbO9Iddqqw" id="(0.36923076923076925,0.825)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_whzHoM0ZEeS4LbO9Iddqqw" type="4001" source="_pGqLwM0ZEeS4LbO9Iddqqw" target="_p7b3oM0ZEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_whzusM0ZEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_whzusc0ZEeS4LbO9Iddqqw" x="13" y="9"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_whzuss0ZEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_whzus80ZEeS4LbO9Iddqqw" x="60" y="9"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_whzHoc0ZEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_whx5gM0ZEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_whzHos0ZEeS4LbO9Iddqqw" points="[-43, 4, 254, -25]$[-289, 9, 8, -20]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pUq9IM0aEeS4LbO9Iddqqw" id="(0.011627906976744186,0.9)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qdj30M0aEeS4LbO9Iddqqw" id="(0.9846153846153847,0.725)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_xqw60M0ZEeS4LbO9Iddqqw" type="4001" source="_pGqLwM0ZEeS4LbO9Iddqqw" target="_rtiucM0ZEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_xqw6080ZEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_xqw61M0ZEeS4LbO9Iddqqw" x="18" y="-18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_xqw61c0ZEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_xqw61s0ZEeS4LbO9Iddqqw" x="31" y="-2"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_xqw60c0ZEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_xqvssM0ZEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xqw60s0ZEeS4LbO9Iddqqw" points="[9, 8, -66, 92]$[75, 8, 0, 92]$[75, -81, 0, 3]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xqzXEM0ZEeS4LbO9Iddqqw" id="(0.8953488372093024,0.4)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xqzXEc0ZEeS4LbO9Iddqqw" id="(0.5116279069767442,0.925)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yOhIIM0ZEeS4LbO9Iddqqw" type="4001" source="_rHhQQM0ZEeS4LbO9Iddqqw" target="_rtiucM0ZEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yOhII80ZEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yOhIJM0ZEeS4LbO9Iddqqw" x="1" y="26"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_yOhvMM0ZEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yOhvMc0ZEeS4LbO9Iddqqw" x="-15" y="1"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_yOhIIc0ZEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_yOf6AM0ZEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yOhIIs0ZEeS4LbO9Iddqqw" points="[3, 15, -23, -101]$[26, 124, 0, 8]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yOjkYM0ZEeS4LbO9Iddqqw" id="(0.7538461538461538,0.625)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yOjkYc0ZEeS4LbO9Iddqqw" id="(0.5,0.8)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_zHNqsM0ZEeS4LbO9Iddqqw" type="4001" source="_pGqLwM0ZEeS4LbO9Iddqqw" target="_ob5XgM0ZEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_zHNqs80ZEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zHNqtM0ZEeS4LbO9Iddqqw" x="-1" y="18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_zHORwM0ZEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zHORwc0ZEeS4LbO9Iddqqw" x="12" y="-2"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zHNqsc0ZEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_zHMckM0ZEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zHNqss0ZEeS4LbO9Iddqqw" points="[-14, -20, 28, 34]$[-40, -74, 2, -20]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_zVTxEM0ZEeS4LbO9Iddqqw" type="4001" source="_ob5XgM0ZEeS4LbO9Iddqqw" target="_nmUaYM0ZEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_zVUYIM0ZEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zVUYIc0ZEeS4LbO9Iddqqw" x="-6" y="-12"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_zVUYIs0ZEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zVUYI80ZEeS4LbO9Iddqqw" x="8" y="-18"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zVTxEc0ZEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_zVR74M0ZEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zVTxEs0ZEeS4LbO9Iddqqw" points="[-9, -20, 20, 58]$[-36, -98, -7, -20]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_05YL4M0ZEeS4LbO9Iddqqw" type="4001" source="_d9mNoM0OEeS4LbO9Iddqqw" target="_nmUaYM0ZEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_05Yy8M0ZEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_05Yy8c0ZEeS4LbO9Iddqqw" y="8"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_05Yy8s0ZEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_05Yy880ZEeS4LbO9Iddqqw" x="-2" y="-10"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_05YL4c0ZEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_05W9wM0ZEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_05YL4s0ZEeS4LbO9Iddqqw" points="[33, -7, -114, 19]$[143, -46, -4, -20]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_1sGpUM0ZEeS4LbO9Iddqqw" type="4001" source="_eoK0oM0OEeS4LbO9Iddqqw" target="_e-KSwM0OEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_1sHQYM0ZEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_1sHQYc0ZEeS4LbO9Iddqqw" x="2" y="13"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_1sHQYs0ZEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_1sHQY80ZEeS4LbO9Iddqqw" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_1sGpUc0ZEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_1sFbMM0ZEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1sGpUs0ZEeS4LbO9Iddqqw" points="[17, 5, -125, -7]$[99, 5, -43, -7]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1sJsoM0ZEeS4LbO9Iddqqw" id="(0.8023255813953488,0.55)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_GdT8sM0aEeS4LbO9Iddqqw" type="4001" source="_3qTbYM0ZEeS4LbO9Iddqqw" target="_e-KSwM0OEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_GdT8s80aEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_GdT8tM0aEeS4LbO9Iddqqw" x="-16" y="9"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_GdT8tc0aEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_GdT8ts0aEeS4LbO9Iddqqw" x="-7" y="21"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_GdT8sc0aEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_GdSukM0aEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GdT8ss0aEeS4LbO9Iddqqw" points="[-14, -20, 45, 47]$[-16, -63, 43, 4]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_HDE8MM0aEeS4LbO9Iddqqw" type="4001" source="_3qTbYM0ZEeS4LbO9Iddqqw" target="_eoK0oM0OEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_HDFjQM0aEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HDFjQc0aEeS4LbO9Iddqqw" x="1" y="-8"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_HDFjQs0aEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HDFjQ80aEeS4LbO9Iddqqw" x="1" y="74"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_HDE8Mc0aEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_HDDuEM0aEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HDE8Ms0aEeS4LbO9Iddqqw" points="[-32, 0, 186, 48]$[-218, 0, 0, 48]$[-218, -47, 0, 1]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LiQdQM0aEeS4LbO9Iddqqw" id="(0.8488372093023255,0.975)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_HnEaEM0aEeS4LbO9Iddqqw" type="4001" source="_3qTbYM0ZEeS4LbO9Iddqqw" target="_pGqLwM0ZEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_HnEaE80aEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HnEaFM0aEeS4LbO9Iddqqw" x="4" y="9"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_HnEaFc0aEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HnEaFs0aEeS4LbO9Iddqqw" x="13" y="-6"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_HnEaEc0aEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_HnDL8M0aEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HnEaEs0aEeS4LbO9Iddqqw" points="[-6, 11, -89, -32]$[-6, 34, -89, -9]$[40, 34, -43, -9]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HnG2UM0aEeS4LbO9Iddqqw" id="(0.36923076923076925,0.85)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_a_tCsM0aEeS4LbO9Iddqqw" type="4001" source="_d9mNoM0OEeS4LbO9Iddqqw" target="_3qTbYM0ZEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_a_tCs80aEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_a_tCtM0aEeS4LbO9Iddqqw" x="21" y="15"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_a_tCtc0aEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_a_tCts0aEeS4LbO9Iddqqw" x="6" y="19"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_a_tCsc0aEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_a_r0kM0aEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_a_tCss0aEeS4LbO9Iddqqw" points="[13, 3, -50, -147]$[72, 22, 9, -128]$[72, 139, 9, -11]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_a_ve8M0aEeS4LbO9Iddqqw" id="(0.8,0.825)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_a_ve8c0aEeS4LbO9Iddqqw" id="(0.8461538461538461,0.275)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_bgmJQM0aEeS4LbO9Iddqqw" type="4001" source="_d9mNoM0OEeS4LbO9Iddqqw" target="_eoK0oM0OEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_bgmwUM0aEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_bgmwUc0aEeS4LbO9Iddqqw" x="13" y="-1"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_bgmwUs0aEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_bgmwU80aEeS4LbO9Iddqqw" x="5" y="11"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_bgmJQc0aEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_bgkUEM0aEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bgmJQs0aEeS4LbO9Iddqqw" points="[-32, 17, 156, -88]$[-194, 85, -6, -20]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_cDSmoM0aEeS4LbO9Iddqqw" type="4001" source="_d9mNoM0OEeS4LbO9Iddqqw" target="_e-KSwM0OEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_cDTNsM0aEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_cDTNsc0aEeS4LbO9Iddqqw" x="2" y="25"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_cDTNss0aEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_cDTNs80aEeS4LbO9Iddqqw" x="-11" y="-4"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_cDSmoc0aEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_cDRYgM0aEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cDSmos0aEeS4LbO9Iddqqw" points="[-2, 20, 0, -72]$[-4, 85, -2, -7]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cDVC4M0aEeS4LbO9Iddqqw" id="(0.46511627906976744,0.175)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_WNwB4M1iEeS4LbO9Iddqqw" type="4001" source="_9GMHkM1hEeS4LbO9Iddqqw" target="_BgCcsM1iEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_WNwB481iEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_WNwB5M1iEeS4LbO9Iddqqw" x="18" y="-8"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_WNwB5c1iEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_WNwB5s1iEeS4LbO9Iddqqw" x="14" y="9"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_WNwB4c1iEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_WNuzwM1iEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WNwB4s1iEeS4LbO9Iddqqw" points="[7, -20, 140, 9]$[7, -29, 140, 0]$[-132, -29, 1, 0]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tNt9kM1iEeS4LbO9Iddqqw" id="(0.9846153846153847,0.3)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_WfbAsM1iEeS4LbO9Iddqqw" type="4001" source="_BgCcsM1iEeS4LbO9Iddqqw" target="_9jcrUM1hEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_WfbAs81iEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_WfbAtM1iEeS4LbO9Iddqqw" x="5" y="23"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_WfbAtc1iEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_WfbAts1iEeS4LbO9Iddqqw" x="-11" y="19"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_WfbAsc1iEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_WfZykM1iEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WfbAss1iEeS4LbO9Iddqqw" points="[6, 20, 5, -97]$[6, 137, 5, 20]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_W50dsM1iEeS4LbO9Iddqqw" type="4001" source="_9jcrUM1hEeS4LbO9Iddqqw" target="_97taUM1hEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_W50ds81iEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_W51EwM1iEeS4LbO9Iddqqw" x="-4" y="-13"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_W51Ewc1iEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_W51Ews1iEeS4LbO9Iddqqw" x="-2"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_W50dsc1iEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_W5zPkM1iEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_W50dss1iEeS4LbO9Iddqqw" points="[14, 2, -122, -3]$[131, -15, -5, -20]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_W5258M1iEeS4LbO9Iddqqw" id="(0.8372093023255814,0.375)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_XWlSMM1iEeS4LbO9Iddqqw" type="4001" source="_9GMHkM1hEeS4LbO9Iddqqw" target="_9jcrUM1hEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_XWlSM81iEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_XWlSNM1iEeS4LbO9Iddqqw" x="-21" y="-7"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_XWlSNc1iEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_XWl5QM1iEeS4LbO9Iddqqw" x="-21" y="8"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_XWlSMc1iEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_XWkEEM1iEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_XWlSMs1iEeS4LbO9Iddqqw" points="[-8, 0, 102, -73]$[-110, 0, 0, -73]$[-110, 72, 0, -1]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XWnucM1iEeS4LbO9Iddqqw" id="(0.12307692307692308,0.6)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vL13IM1iEeS4LbO9Iddqqw" id="(0.8488372093023255,0.025)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_XoStQM1iEeS4LbO9Iddqqw" type="4001" source="_9GMHkM1hEeS4LbO9Iddqqw" target="_97taUM1hEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_XoTUUM1iEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_XoTUUc1iEeS4LbO9Iddqqw" x="7" y="28"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_XoTUUs1iEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_XoTUU81iEeS4LbO9Iddqqw" x="-6" y="-7"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_XoStQc1iEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_XoRfIM1iEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_XoStQs1iEeS4LbO9Iddqqw" points="[1, 20, 0, -76]$[1, 76, 0, -20]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_X_jWsM1iEeS4LbO9Iddqqw" type="4001" source="_9GMHkM1hEeS4LbO9Iddqqw" target="__Xgp8M1hEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_X_jWs81iEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_X_jWtM1iEeS4LbO9Iddqqw" x="-26" y="17"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_X_jWtc1iEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_X_jWts1iEeS4LbO9Iddqqw" x="-40" y="9"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_X_jWsc1iEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_X_hhgM1iEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_X_jWss1iEeS4LbO9Iddqqw" points="[12, 0, -49, -157]$[70, 0, 9, -157]$[70, 137, 9, -20]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_X_ly8M1iEeS4LbO9Iddqqw" id="(0.8153846153846154,0.5)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_YvipMM1iEeS4LbO9Iddqqw" type="4001" source="__Xgp8M1hEeS4LbO9Iddqqw" target="_97taUM1hEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_YvjQQM1iEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_YvjQQc1iEeS4LbO9Iddqqw" x="-5" y="-8"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_YvjQQs1iEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_YvjQQ81iEeS4LbO9Iddqqw" x="4" y="1"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_YvipMc1iEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_YvhbEM1iEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_YvipMs1iEeS4LbO9Iddqqw" points="[-32, -21, 47, 28]$[-78, -41, 1, 8]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YvlFcM1iEeS4LbO9Iddqqw" id="(0.5232558139534884,0.8)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZR8ysM1iEeS4LbO9Iddqqw" type="4001" source="__Xgp8M1hEeS4LbO9Iddqqw" target="_9jcrUM1hEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ZR8ys81iEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ZR8ytM1iEeS4LbO9Iddqqw" x="8" y="-7"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ZR8ytc1iEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ZR8yts1iEeS4LbO9Iddqqw" x="7" y="9"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZR8ysc1iEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_ZR7kkM1iEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZR8yss1iEeS4LbO9Iddqqw" points="[-32, 6, 188, 48]$[-220, 6, 0, 48]$[-220, -41, 0, 1]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_o9b0IM1iEeS4LbO9Iddqqw" id="(0.8023255813953488,0.975)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZnioMM1iEeS4LbO9Iddqqw" type="4001" source="_9jcrUM1hEeS4LbO9Iddqqw" target="_-lJY4M1hEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ZnioM81iEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ZnioNM1iEeS4LbO9Iddqqw" x="7" y="15"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ZnioNc1iEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ZnioNs1iEeS4LbO9Iddqqw" x="3" y="21"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZnioMc1iEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_ZnhaEM1iEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZnioMs1iEeS4LbO9Iddqqw" points="[0, 20, 1, -80]$[0, 80, 1, -20]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_aEiGMM1iEeS4LbO9Iddqqw" type="4001" source="_Act-gM1iEeS4LbO9Iddqqw" target="_-lJY4M1hEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_aEiGM81iEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_aEiGNM1iEeS4LbO9Iddqqw" x="-8" y="8"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_aEiGNc1iEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_aEiGNs1iEeS4LbO9Iddqqw" x="37" y="10"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_aEiGMc1iEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_aEg4EM1iEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_aEiGMs1iEeS4LbO9Iddqqw" points="[-43, -4, 304, -4]$[-346, -20, 1, -20]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_j_0DkM1iEeS4LbO9Iddqqw" id="(0.0,0.8)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kUt8kM1iEeS4LbO9Iddqqw" id="(0.8923076923076924,0.75)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_aksM8M1iEeS4LbO9Iddqqw" type="4001" source="_Act-gM1iEeS4LbO9Iddqqw" target="_C8NfwM1iEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_aks0AM1iEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_aks0Ac1iEeS4LbO9Iddqqw" x="-9" y="18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_aks0As1iEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_aks0A81iEeS4LbO9Iddqqw" x="4" y="-7"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_aksM8c1iEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_akrl4M1iEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_aksM8s1iEeS4LbO9Iddqqw" points="[-6, -20, -5, 41]$[-33, -61, -32, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_bpIFcM1iEeS4LbO9Iddqqw" type="4001" source="_Act-gM1iEeS4LbO9Iddqqw" target="_EAN6cM1iEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_bpIsgM1iEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_bpIsgc1iEeS4LbO9Iddqqw" x="48" y="-18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_bpIsgs1iEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_bpIsg81iEeS4LbO9Iddqqw" x="61" y="-5"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_bpIFcc1iEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_bpHeYM1iEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bpIFcs1iEeS4LbO9Iddqqw" points="[17, 0, -16, 133]$[40, 0, 7, 133]$[40, -129, 7, 4]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bpKhsM1iEeS4LbO9Iddqqw" id="(0.8023255813953488,0.6)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1wcMkM1iEeS4LbO9Iddqqw" id="(0.6162790697674418,0.9)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_cnt0oM1iEeS4LbO9Iddqqw" type="4001" source="_Dlvk8M1iEeS4LbO9Iddqqw" target="_EAN6cM1iEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_cnubsM1iEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_cnubsc1iEeS4LbO9Iddqqw" x="5" y="26"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_cnubss1iEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_cnubs81iEeS4LbO9Iddqqw" x="-8" y="27"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_cnt0oc1iEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_cntNkM1iEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cnt0os1iEeS4LbO9Iddqqw" points="[4, 20, 3, -60]$[4, 60, 3, -20]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_dVp4sM1iEeS4LbO9Iddqqw" type="4001" source="__Xgp8M1hEeS4LbO9Iddqqw" target="_Act-gM1iEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_dVqfwM1iEeS4LbO9Iddqqw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_dVqfwc1iEeS4LbO9Iddqqw" x="12" y="1"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_dVqfws1iEeS4LbO9Iddqqw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_dVqfw81iEeS4LbO9Iddqqw" x="12" y="-10"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_dVp4sc1iEeS4LbO9Iddqqw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_dVoqkM1iEeS4LbO9Iddqqw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dVp4ss1iEeS4LbO9Iddqqw" points="[0, 2, -120, -36]$[0, 31, -120, -7]$[77, 31, -43, -7]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nmTpIM1iEeS4LbO9Iddqqw" id="(0.18461538461538463,0.95)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_kEICgP9MEeStFtKLGtJjRw" type="4001" source="_d9eA4M0FEeS4LbO9Iddqqw" target="_hXFBAM0FEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_kEJQoP9MEeStFtKLGtJjRw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_kEJQof9MEeStFtKLGtJjRw" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_kEJ3sP9MEeStFtKLGtJjRw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_kEJ3sf9MEeStFtKLGtJjRw" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_kEIpkP9MEeStFtKLGtJjRw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_kB0VYP9MEeStFtKLGtJjRw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kEIpkf9MEeStFtKLGtJjRw" points="[13, -2, -131, -5]$[97, -2, -47, -5]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kEP-UP9MEeStFtKLGtJjRw" id="(0.8,0.4)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_mBDCMP9MEeStFtKLGtJjRw" type="4001" source="_d9eA4M0FEeS4LbO9Iddqqw" target="_b8eZgM0FEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_mBDpQP9MEeStFtKLGtJjRw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_mBDpQf9MEeStFtKLGtJjRw" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_mBDpQv9MEeStFtKLGtJjRw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_mBFecP9MEeStFtKLGtJjRw" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_mBDCMf9MEeStFtKLGtJjRw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_mA0YsP9MEeStFtKLGtJjRw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mBDCMv9MEeStFtKLGtJjRw" points="[-14, -2, 118, 3]$[-89, -10, 43, -5]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBQdkP9MEeStFtKLGtJjRw" id="(0.2153846153846154,0.4)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_PAVc0P-SEeStFtKLGtJjRw" type="4001" source="_TmcCAM0NEeS4LbO9Iddqqw" target="_U-8GAM0NEeS4LbO9Iddqqw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_PAWD4P-SEeStFtKLGtJjRw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_PAWD4f-SEeStFtKLGtJjRw" x="-131" y="-43"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_PAWD4v-SEeStFtKLGtJjRw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_PAWD4_-SEeStFtKLGtJjRw" x="-116" y="-40"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_PAVc0f-SEeStFtKLGtJjRw" fontName="Droid Serif"/>
+    <element xmi:type="henshin:Edge" href="interlocking_noenums.henshin#_PATAkP-SEeStFtKLGtJjRw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PAVc0v-SEeStFtKLGtJjRw" points="[33, 0, 77, 196]$[113, 0, 157, 196]$[113, -202, 157, -6]$[-11, -202, 33, -6]"/>
+  </edges>
+</notation:Diagram>

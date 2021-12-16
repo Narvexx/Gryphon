@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_a1YdICbWEeSwYdQNJ1oOzQ">
+  <imports href="pacman_colored.ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_bSEZICbWEeSwYdQNJ1oOzQ" name="test">
+    <lhs xmi:id="_bSIDgCbWEeSwYdQNJ1oOzQ" name="Lhs">
+      <nodes xmi:id="_cU9ZgCbWEeSwYdQNJ1oOzQ" outgoing="_dB7NMCbWEeSwYdQNJ1oOzQ _dtjkISbWEeSwYdQNJ1oOzQ">
+        <type href="pacman_colored.ecore#//Game"/>
+      </nodes>
+      <nodes xmi:id="_dB6mICbWEeSwYdQNJ1oOzQ" incoming="_dB7NMCbWEeSwYdQNJ1oOzQ _e5BRsCbWEeSwYdQNJ1oOzQ">
+        <type href="pacman_colored.ecore#//Field"/>
+      </nodes>
+      <nodes xmi:id="_dti9ECbWEeSwYdQNJ1oOzQ" incoming="_dtjkISbWEeSwYdQNJ1oOzQ" outgoing="_e5BRsCbWEeSwYdQNJ1oOzQ">
+        <type href="pacman_colored.ecore#//Ghost"/>
+        <attributes xmi:id="_fiEOsCbWEeSwYdQNJ1oOzQ" value="Black">
+          <type href="pacman_colored.ecore#//Ghost/color"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_dB7NMCbWEeSwYdQNJ1oOzQ" source="_cU9ZgCbWEeSwYdQNJ1oOzQ" target="_dB6mICbWEeSwYdQNJ1oOzQ">
+        <type href="pacman_colored.ecore#//Game/fields"/>
+      </edges>
+      <edges xmi:id="_dtjkISbWEeSwYdQNJ1oOzQ" source="_cU9ZgCbWEeSwYdQNJ1oOzQ" target="_dti9ECbWEeSwYdQNJ1oOzQ">
+        <type href="pacman_colored.ecore#//Game/ghosts"/>
+      </edges>
+      <edges xmi:id="_e5BRsCbWEeSwYdQNJ1oOzQ" source="_dti9ECbWEeSwYdQNJ1oOzQ" target="_dB6mICbWEeSwYdQNJ1oOzQ">
+        <type href="pacman_colored.ecore#//Ghost/on"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_bSIDgSbWEeSwYdQNJ1oOzQ" name="Rhs">
+      <nodes xmi:id="_cU9ZgSbWEeSwYdQNJ1oOzQ" outgoing="_dB7NMSbWEeSwYdQNJ1oOzQ _dtjkIibWEeSwYdQNJ1oOzQ _eVqF8CbWEeSwYdQNJ1oOzQ">
+        <type href="pacman_colored.ecore#//Game"/>
+      </nodes>
+      <nodes xmi:id="_dB6mISbWEeSwYdQNJ1oOzQ" incoming="_dB7NMSbWEeSwYdQNJ1oOzQ _e5B4wCbWEeSwYdQNJ1oOzQ _fINkQCbWEeSwYdQNJ1oOzQ">
+        <type href="pacman_colored.ecore#//Field"/>
+      </nodes>
+      <nodes xmi:id="_dti9ESbWEeSwYdQNJ1oOzQ" incoming="_dtjkIibWEeSwYdQNJ1oOzQ" outgoing="_e5B4wCbWEeSwYdQNJ1oOzQ">
+        <type href="pacman_colored.ecore#//Ghost"/>
+        <attributes xmi:id="_fiEOsSbWEeSwYdQNJ1oOzQ" value="Black">
+          <type href="pacman_colored.ecore#//Ghost/color"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_eVpe4CbWEeSwYdQNJ1oOzQ" incoming="_eVqF8CbWEeSwYdQNJ1oOzQ" outgoing="_fINkQCbWEeSwYdQNJ1oOzQ">
+        <type href="pacman_colored.ecore#//Ghost"/>
+        <attributes xmi:id="_fzxCsCbWEeSwYdQNJ1oOzQ" value="Red">
+          <type href="pacman_colored.ecore#//Ghost/color"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_dB7NMSbWEeSwYdQNJ1oOzQ" source="_cU9ZgSbWEeSwYdQNJ1oOzQ" target="_dB6mISbWEeSwYdQNJ1oOzQ">
+        <type href="pacman_colored.ecore#//Game/fields"/>
+      </edges>
+      <edges xmi:id="_dtjkIibWEeSwYdQNJ1oOzQ" source="_cU9ZgSbWEeSwYdQNJ1oOzQ" target="_dti9ESbWEeSwYdQNJ1oOzQ">
+        <type href="pacman_colored.ecore#//Game/ghosts"/>
+      </edges>
+      <edges xmi:id="_eVqF8CbWEeSwYdQNJ1oOzQ" source="_cU9ZgSbWEeSwYdQNJ1oOzQ" target="_eVpe4CbWEeSwYdQNJ1oOzQ">
+        <type href="pacman_colored.ecore#//Game/ghosts"/>
+      </edges>
+      <edges xmi:id="_e5B4wCbWEeSwYdQNJ1oOzQ" source="_dti9ESbWEeSwYdQNJ1oOzQ" target="_dB6mISbWEeSwYdQNJ1oOzQ">
+        <type href="pacman_colored.ecore#//Ghost/on"/>
+      </edges>
+      <edges xmi:id="_fINkQCbWEeSwYdQNJ1oOzQ" source="_eVpe4CbWEeSwYdQNJ1oOzQ" target="_dB6mISbWEeSwYdQNJ1oOzQ">
+        <type href="pacman_colored.ecore#//Ghost/on"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_cU9ZgibWEeSwYdQNJ1oOzQ" origin="_cU9ZgCbWEeSwYdQNJ1oOzQ" image="_cU9ZgSbWEeSwYdQNJ1oOzQ"/>
+    <mappings xmi:id="_dB6mIibWEeSwYdQNJ1oOzQ" origin="_dB6mICbWEeSwYdQNJ1oOzQ" image="_dB6mISbWEeSwYdQNJ1oOzQ"/>
+    <mappings xmi:id="_dtjkICbWEeSwYdQNJ1oOzQ" origin="_dti9ECbWEeSwYdQNJ1oOzQ" image="_dti9ESbWEeSwYdQNJ1oOzQ"/>
+  </units>
+</henshin:Module>

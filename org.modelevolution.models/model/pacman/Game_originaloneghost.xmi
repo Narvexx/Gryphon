@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pacman:Game xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pacman="http://pacman/1.0">
+  <!-- Cold start always globally true: 6803 ms,  287 ms with warm start (state space generated), sometimes eventually false 416 ms -->
+  <!-- Cold start sometimes eventually pacman.on.treasure: 2548 ms, warm start 202 ms -->
+  <!-- Cold start sometimes eventually pacman.on.treasure and ghosts->forAll(g | g.on  <> pacman.on): 2416 ms, warm start 314 ms -->
+  <fields id="0" neighbor="//@fields.33 //@fields.29 //@fields.32" treasure="false"/>
+  <fields id="1" neighbor="//@fields.3 //@fields.4 //@fields.6" treasure="false"/>
+  <fields id="2" neighbor="//@fields.7 //@fields.9 //@fields.10" treasure="true"/>
+  <fields id="3" neighbor="//@fields.1 //@fields.4 //@fields.11" treasure="false"/>
+  <fields id="4" neighbor="//@fields.1 //@fields.3 //@fields.5 //@fields.11" treasure="false"/>
+  <fields id="5" neighbor="//@fields.4 //@fields.6 //@fields.13" treasure="false"/>
+  <fields id="6" neighbor="//@fields.1 //@fields.5 //@fields.7" treasure="false"/>
+  <fields id="7" neighbor="//@fields.6 //@fields.2 //@fields.8" treasure="false"/>
+  <fields id="8" neighbor="//@fields.7 //@fields.14 //@fields.9" treasure="false"/>
+  <fields id="9" neighbor="//@fields.2 //@fields.8 //@fields.10 //@fields.12" treasure="false"/>
+  <fields id="10" neighbor="//@fields.2 //@fields.9 //@fields.12" treasure="false"/>
+  <fields id="11" neighbor="//@fields.3 //@fields.4 //@fields.15" treasure="false"/>
+  <fields id="12" neighbor="//@fields.9 //@fields.10 //@fields.18" treasure="false"/>
+  <fields id="13" neighbor="//@fields.5 //@fields.14 //@fields.16" treasure="false"/>
+  <fields id="14" neighbor="//@fields.13 //@fields.8 //@fields.17" treasure="false"/>
+  <fields id="15" neighbor="//@fields.11 //@fields.16 //@fields.18 //@fields.21" treasure="false"/>
+  <fields id="16" neighbor="//@fields.13 //@fields.15 //@fields.19" treasure="false"/>
+  <fields id="17" neighbor="//@fields.14 //@fields.18 //@fields.20" treasure="false"/>
+  <fields id="18" neighbor="//@fields.17 //@fields.12 //@fields.15 //@fields.24" treasure="false"/>
+  <fields id="19" neighbor="//@fields.16 //@fields.20 //@fields.22" treasure="false"/>
+  <fields id="20" neighbor="//@fields.17 //@fields.19 //@fields.23" treasure="false"/>
+  <fields id="21" neighbor="//@fields.15 //@fields.22 //@fields.25 //@fields.13" treasure="false"/>
+  <fields id="22" neighbor="//@fields.19 //@fields.21 //@fields.27" treasure="false"/>
+  <fields id="23" neighbor="//@fields.20 //@fields.24 //@fields.28" treasure="false"/>
+  <fields id="24" neighbor="//@fields.18 //@fields.23 //@fields.30 //@fields.32" treasure="false"/>
+  <fields id="25" neighbor="//@fields.21 //@fields.31 //@fields.26" treasure="false"/>
+  <fields id="26" neighbor="//@fields.25 //@fields.27 //@fields.33" treasure="false"/>
+  <fields id="27" neighbor="//@fields.22 //@fields.26 //@fields.28" treasure="false"/>
+  <fields id="28" neighbor="//@fields.23 //@fields.27 //@fields.29" treasure="false"/>
+  <fields id="29" neighbor="//@fields.28 //@fields.30 //@fields.0" treasure="false"/>
+  <fields id="30" neighbor="//@fields.24 //@fields.29 //@fields.32" treasure="false"/>
+  <fields id="31" neighbor="//@fields.21 //@fields.25 //@fields.33" treasure="false"/>
+  <fields id="32" neighbor="//@fields.24 //@fields.30 //@fields.0" treasure="false"/>
+  <fields id="33" neighbor="//@fields.31 //@fields.26 //@fields.30" treasure="false"/>
+  <pacman xsi:type="pacman:Pacman" on="//@fields.25"/>
+  <ghosts xsi:type="pacman:Ghost" on="//@fields.13"/>
+  <!--ghosts xsi:type="pacman:Ghost" on="//@fields.14"/-->
+
+</pacman:Game>

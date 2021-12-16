@@ -1,0 +1,69 @@
+/*
+ * henshin2kodkod -- Copyright (c) 2014-present, Sebastian Gabmeyer
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+package org.modelevolution.gts2rts;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+import kodkod.ast.Formula;
+
+import org.eclipse.emf.henshin.model.AttributeCondition;
+import org.eclipse.emf.henshin.model.Rule;
+import org.modelevolution.emf2rel.Enums;
+import org.modelevolution.emf2rel.Signature;
+import org.modelevolution.gts2rts.attrexpr.AttrCondParser;
+
+/**
+ * @author Sebastian Gabmeyer
+ * 
+ */
+final class AttributeConditionTranslator {
+
+  private ParamDataset params;
+  private Enums enums;
+  private final Rule rule;
+
+  /**
+   * @param rule
+   * @param params
+   * @param enums
+   */
+  AttributeConditionTranslator(Rule rule, final ParamDataset params, Enums enums) {
+    this.rule = rule;
+    this.params = params;
+    this.enums = enums;
+  }
+
+  public Collection<Formula> translate(final Collection<AttributeCondition> attrConditions) {
+    final Collection<Formula> formulas = new ArrayList<>(attrConditions.size());
+    for (AttributeCondition c : attrConditions) {
+      // final AttributeConditionParser parser = new AttributeConditionParser(
+      // params);
+      final String sentence = c.getConditionText();
+      final AttrCondParser parser = new AttrCondParser(rule, params, enums);
+      final Formula condition = parser.parse(sentence);
+      formulas.add(condition);
+    }
+    return formulas;
+  }
+}

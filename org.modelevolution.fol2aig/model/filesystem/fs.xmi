@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:fs="http://filesystem/1.0"
+    xsi:schemaLocation="http://filesystem/1.0 filesystem.ecore">
+  <fs:Root>
+    <dirs name="D1">
+      <subdirs
+          name="D1S1">
+        <subdirs
+            name="D1S1S1">
+          <files
+              name="F1_D1S1S1"/>
+        </subdirs>
+        <files
+            name="F1_D1S1"
+            link="/0/@dirs.0/@subdirs.1/@files.0"/>
+      </subdirs>
+      <subdirs
+          name="D1S2">
+        <files
+            name="F1_D1S2"
+            link="/0/@dirs.0/@subdirs.0/@subdirs.0/@files.0"/>
+      </subdirs>
+      <files
+          name="F1"/>
+    </dirs>
+  </fs:Root>
+  <fs:Directory
+      name="D1S1S1"/>
+</xmi:XMI>

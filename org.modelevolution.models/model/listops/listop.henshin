@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_U5e3gPrFEeOv7bnvJP5MQg">
+  <imports href="list.ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_ySYOsPrGEeOv7bnvJP5MQg" name="returnOnValueFound">
+    <parameters xmi:id="_669OEPrGEeOv7bnvJP5MQg" name="x">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <lhs xmi:id="_yScgIPrGEeOv7bnvJP5MQg" name="Lhs">
+      <nodes xmi:id="_ErDPIPrHEeOv7bnvJP5MQg" incoming="_CZI4EPrhEeOv7bnvJP5MQg" outgoing="_hoYhIPrHEeOv7bnvJP5MQg">
+        <type href="list.ecore#//ContainsOrAppend"/>
+        <attributes xmi:id="_XsJKYPrbEeOv7bnvJP5MQg" value="x">
+          <type href="list.ecore#//Command/val"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_eqpksPrHEeOv7bnvJP5MQg" incoming="_hoYhIPrHEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Cell"/>
+        <attributes xmi:id="_X0spcPrbEeOv7bnvJP5MQg" value="x">
+          <type href="list.ecore#//Cell/val"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_B47G8PrhEeOv7bnvJP5MQg" outgoing="_CZI4EPrhEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <edges xmi:id="_hoYhIPrHEeOv7bnvJP5MQg" source="_ErDPIPrHEeOv7bnvJP5MQg" target="_eqpksPrHEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Command/pos"/>
+      </edges>
+      <edges xmi:id="_CZI4EPrhEeOv7bnvJP5MQg" source="_B47G8PrhEeOv7bnvJP5MQg" target="_ErDPIPrHEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_yScgIfrGEeOv7bnvJP5MQg" name="Rhs">
+      <nodes xmi:id="_ErFEUPrHEeOv7bnvJP5MQg" incoming="_CZI4EfrhEeOv7bnvJP5MQg">
+        <type href="list.ecore#//GetOrAppend"/>
+        <attributes xmi:id="_XsJKYfrbEeOv7bnvJP5MQg" value="x">
+          <type href="list.ecore#//Command/val"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_eqpksfrHEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Cell"/>
+        <attributes xmi:id="_X0spcfrbEeOv7bnvJP5MQg" value="x">
+          <type href="list.ecore#//Cell/val"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_B47G8frhEeOv7bnvJP5MQg" outgoing="_CZI4EfrhEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <edges xmi:id="_CZI4EfrhEeOv7bnvJP5MQg" source="_B47G8frhEeOv7bnvJP5MQg" target="_ErFEUPrHEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_ErFrYPrHEeOv7bnvJP5MQg" origin="_ErDPIPrHEeOv7bnvJP5MQg" image="_ErFEUPrHEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_eqpksvrHEeOv7bnvJP5MQg" origin="_eqpksPrHEeOv7bnvJP5MQg" image="_eqpksfrHEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_B47G8vrhEeOv7bnvJP5MQg" origin="_B47G8PrhEeOv7bnvJP5MQg" image="_B47G8frhEeOv7bnvJP5MQg"/>
+    <multiRules xmi:id="_Q1HYQPrHEeOv7bnvJP5MQg">
+      <lhs xmi:id="_Q1ImYPrHEeOv7bnvJP5MQg" name="Lhs">
+        <nodes xmi:id="_Q1ImafrHEeOv7bnvJP5MQg" incoming="_CZI4E_rhEeOv7bnvJP5MQg" outgoing="_hoZIOPrHEeOv7bnvJP5MQg">
+          <type href="list.ecore#//ContainsOrAppend"/>
+        </nodes>
+        <nodes xmi:id="_hoZINfrHEeOv7bnvJP5MQg" incoming="_hoZIOPrHEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Cell"/>
+        </nodes>
+        <nodes xmi:id="_B47G9frhEeOv7bnvJP5MQg" outgoing="_CZI4E_rhEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Thread"/>
+        </nodes>
+        <edges xmi:id="_hoZIOPrHEeOv7bnvJP5MQg" source="_Q1ImafrHEeOv7bnvJP5MQg" target="_hoZINfrHEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Command/pos"/>
+        </edges>
+        <edges xmi:id="_CZI4E_rhEeOv7bnvJP5MQg" source="_B47G9frhEeOv7bnvJP5MQg" target="_Q1ImafrHEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Thread/exe"/>
+        </edges>
+      </lhs>
+      <rhs xmi:id="_Q1ImYfrHEeOv7bnvJP5MQg" name="Rhs">
+        <nodes xmi:id="_Q1JNcPrHEeOv7bnvJP5MQg" incoming="_CZI4EvrhEeOv7bnvJP5MQg" outgoing="_hoZINPrHEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Command"/>
+        </nodes>
+        <nodes xmi:id="_hoZIMfrHEeOv7bnvJP5MQg" incoming="_hoZINPrHEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Cell"/>
+        </nodes>
+        <nodes xmi:id="_B47G8_rhEeOv7bnvJP5MQg" outgoing="_CZI4EvrhEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Thread"/>
+        </nodes>
+        <edges xmi:id="_hoZINPrHEeOv7bnvJP5MQg" source="_Q1JNcPrHEeOv7bnvJP5MQg" target="_hoZIMfrHEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Command/pos"/>
+        </edges>
+        <edges xmi:id="_CZI4EvrhEeOv7bnvJP5MQg" source="_B47G8_rhEeOv7bnvJP5MQg" target="_Q1JNcPrHEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Thread/exe"/>
+        </edges>
+      </rhs>
+      <mappings xmi:id="_Q1JNcvrHEeOv7bnvJP5MQg" origin="_Q1ImafrHEeOv7bnvJP5MQg" image="_Q1JNcPrHEeOv7bnvJP5MQg"/>
+      <mappings xmi:id="_hoZIOfrHEeOv7bnvJP5MQg" origin="_hoZINfrHEeOv7bnvJP5MQg" image="_hoZIMfrHEeOv7bnvJP5MQg"/>
+      <mappings xmi:id="_B47G9_rhEeOv7bnvJP5MQg" origin="_B47G9frhEeOv7bnvJP5MQg" image="_B47G8_rhEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_Q1ImavrHEeOv7bnvJP5MQg" origin="_ErDPIPrHEeOv7bnvJP5MQg" image="_Q1ImafrHEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_Q1JNcfrHEeOv7bnvJP5MQg" origin="_ErFEUPrHEeOv7bnvJP5MQg" image="_Q1JNcPrHEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_hoZIM_rHEeOv7bnvJP5MQg" origin="_eqpksfrHEeOv7bnvJP5MQg" image="_hoZIMfrHEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_hoZIN_rHEeOv7bnvJP5MQg" origin="_eqpksPrHEeOv7bnvJP5MQg" image="_hoZINfrHEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_B47G9PrhEeOv7bnvJP5MQg" origin="_B47G8frhEeOv7bnvJP5MQg" image="_B47G8_rhEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_B47G9vrhEeOv7bnvJP5MQg" origin="_B47G8PrhEeOv7bnvJP5MQg" image="_B47G9frhEeOv7bnvJP5MQg"/>
+    </multiRules>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_jO5roPrKEeOv7bnvJP5MQg" name="deleteValueFromList">
+    <parameters xmi:id="_jO5rofrKEeOv7bnvJP5MQg" name="x">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <lhs xmi:id="_jO5rovrKEeOv7bnvJP5MQg" name="Lhs">
+      <nodes xmi:id="_jO5ro_rKEeOv7bnvJP5MQg" incoming="_E-7OkPrhEeOv7bnvJP5MQg" outgoing="_jO5rp_rKEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Delete"/>
+        <attributes xmi:id="_WAxNsPrbEeOv7bnvJP5MQg" value="x">
+          <type href="list.ecore#//Command/val"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_jO5rpfrKEeOv7bnvJP5MQg" incoming="_jO5rp_rKEeOv7bnvJP5MQg _VI3voPrLEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Cell"/>
+        <attributes xmi:id="_V4VqcPrbEeOv7bnvJP5MQg" value="x">
+          <type href="list.ecore#//Cell/val"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_DBDMoPrhEeOv7bnvJP5MQg" outgoing="_E-7OkPrhEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <nodes xmi:id="_SIVW0PrLEeOv7bnvJP5MQg" outgoing="_VI3voPrLEeOv7bnvJP5MQg">
+        <type href="list.ecore#//ListObject"/>
+      </nodes>
+      <edges xmi:id="_jO5rp_rKEeOv7bnvJP5MQg" source="_jO5ro_rKEeOv7bnvJP5MQg" target="_jO5rpfrKEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Command/pos"/>
+      </edges>
+      <edges xmi:id="_E-7OkPrhEeOv7bnvJP5MQg" source="_DBDMoPrhEeOv7bnvJP5MQg" target="_jO5ro_rKEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+      <edges xmi:id="_VI3voPrLEeOv7bnvJP5MQg" source="_SIVW0PrLEeOv7bnvJP5MQg" target="_jO5rpfrKEeOv7bnvJP5MQg">
+        <type href="list.ecore#//ListObject/next"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_jO5rqPrKEeOv7bnvJP5MQg" name="Rhs">
+      <nodes xmi:id="_jO5rqfrKEeOv7bnvJP5MQg" incoming="_E-7OkfrhEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Delete"/>
+        <attributes xmi:id="_WAxNsfrbEeOv7bnvJP5MQg" value="x">
+          <type href="list.ecore#//Command/val"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_DzOQcPrhEeOv7bnvJP5MQg" outgoing="_E-7OkfrhEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <nodes xmi:id="_S6WpoPrLEeOv7bnvJP5MQg">
+        <type href="list.ecore#//ListObject"/>
+      </nodes>
+      <edges xmi:id="_E-7OkfrhEeOv7bnvJP5MQg" source="_DzOQcPrhEeOv7bnvJP5MQg" target="_jO5rqfrKEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_jO5rrfrKEeOv7bnvJP5MQg" origin="_jO5ro_rKEeOv7bnvJP5MQg" image="_jO5rqfrKEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_DzO3gPrhEeOv7bnvJP5MQg" origin="_DBDMoPrhEeOv7bnvJP5MQg" image="_DzOQcPrhEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_S6WpofrLEeOv7bnvJP5MQg" origin="_SIVW0PrLEeOv7bnvJP5MQg" image="_S6WpoPrLEeOv7bnvJP5MQg"/>
+    <multiRules xmi:id="_J4puwPxvEeO2srAJ1NB-mQ">
+      <lhs xmi:id="_J4sLAPxvEeO2srAJ1NB-mQ" name="Lhs">
+        <nodes xmi:id="_J4syEPxvEeO2srAJ1NB-mQ" incoming="_J4syFfxvEeO2srAJ1NB-mQ" outgoing="_J4syGfxvEeO2srAJ1NB-mQ">
+          <type href="list.ecore#//Delete"/>
+          <attributes xmi:id="_J4syEfxvEeO2srAJ1NB-mQ" value="x">
+            <type href="list.ecore#//Command/val"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_J4syE_xvEeO2srAJ1NB-mQ" outgoing="_J4syFfxvEeO2srAJ1NB-mQ">
+          <type href="list.ecore#//Thread"/>
+        </nodes>
+        <nodes xmi:id="_J4syFvxvEeO2srAJ1NB-mQ" incoming="_J4syGfxvEeO2srAJ1NB-mQ _J4syHfxvEeO2srAJ1NB-mQ" outgoing="_6aBdkfxuEeO2srAJ1NB-mQ">
+          <type href="list.ecore#//Cell"/>
+          <attributes xmi:id="_J4syF_xvEeO2srAJ1NB-mQ" value="x">
+            <type href="list.ecore#//Cell/val"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_J4syG_xvEeO2srAJ1NB-mQ" outgoing="_J4syHfxvEeO2srAJ1NB-mQ">
+          <type href="list.ecore#//ListObject"/>
+        </nodes>
+        <nodes xmi:id="_6aA2gPxuEeO2srAJ1NB-mQ" incoming="_6aBdkfxuEeO2srAJ1NB-mQ">
+          <type href="list.ecore#//Cell"/>
+        </nodes>
+        <edges xmi:id="_J4syFfxvEeO2srAJ1NB-mQ" source="_J4syE_xvEeO2srAJ1NB-mQ" target="_J4syEPxvEeO2srAJ1NB-mQ">
+          <type href="list.ecore#//Thread/exe"/>
+        </edges>
+        <edges xmi:id="_J4syGfxvEeO2srAJ1NB-mQ" source="_J4syEPxvEeO2srAJ1NB-mQ" target="_J4syFvxvEeO2srAJ1NB-mQ">
+          <type href="list.ecore#//Command/pos"/>
+        </edges>
+        <edges xmi:id="_J4syHfxvEeO2srAJ1NB-mQ" source="_J4syG_xvEeO2srAJ1NB-mQ" target="_J4syFvxvEeO2srAJ1NB-mQ">
+          <type href="list.ecore#//ListObject/next"/>
+        </edges>
+        <edges xmi:id="_6aBdkfxuEeO2srAJ1NB-mQ" source="_J4syFvxvEeO2srAJ1NB-mQ" target="_6aA2gPxuEeO2srAJ1NB-mQ">
+          <type href="list.ecore#//ListObject/next"/>
+        </edges>
+      </lhs>
+      <rhs xmi:id="_J4sLAfxvEeO2srAJ1NB-mQ" name="Rhs">
+        <nodes xmi:id="_J4sLAvxvEeO2srAJ1NB-mQ" incoming="_J4sLB_xvEeO2srAJ1NB-mQ">
+          <type href="list.ecore#//Delete"/>
+          <attributes xmi:id="_J4sLA_xvEeO2srAJ1NB-mQ" value="x">
+            <type href="list.ecore#//Command/val"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_J4sLBfxvEeO2srAJ1NB-mQ" outgoing="_J4sLB_xvEeO2srAJ1NB-mQ">
+          <type href="list.ecore#//Thread"/>
+        </nodes>
+        <nodes xmi:id="_J4tZIfxvEeO2srAJ1NB-mQ" outgoing="_9322YPxuEeO2srAJ1NB-mQ">
+          <type href="list.ecore#//ListObject"/>
+        </nodes>
+        <nodes xmi:id="_6aA2gfxuEeO2srAJ1NB-mQ" incoming="_9322YPxuEeO2srAJ1NB-mQ">
+          <type href="list.ecore#//Cell"/>
+        </nodes>
+        <edges xmi:id="_J4sLB_xvEeO2srAJ1NB-mQ" source="_J4sLBfxvEeO2srAJ1NB-mQ" target="_J4sLAvxvEeO2srAJ1NB-mQ">
+          <type href="list.ecore#//Thread/exe"/>
+        </edges>
+        <edges xmi:id="_9322YPxuEeO2srAJ1NB-mQ" source="_J4tZIfxvEeO2srAJ1NB-mQ" target="_6aA2gfxuEeO2srAJ1NB-mQ">
+          <type href="list.ecore#//ListObject/next"/>
+        </edges>
+      </rhs>
+      <mappings xmi:id="_J4syGvxvEeO2srAJ1NB-mQ" origin="_J4syEPxvEeO2srAJ1NB-mQ" image="_J4sLAvxvEeO2srAJ1NB-mQ"/>
+      <mappings xmi:id="_J4tZIPxvEeO2srAJ1NB-mQ" origin="_J4syE_xvEeO2srAJ1NB-mQ" image="_J4sLBfxvEeO2srAJ1NB-mQ"/>
+      <mappings xmi:id="_J4tZJvxvEeO2srAJ1NB-mQ" origin="_J4syG_xvEeO2srAJ1NB-mQ" image="_J4tZIfxvEeO2srAJ1NB-mQ"/>
+      <mappings xmi:id="_6aBdkPxuEeO2srAJ1NB-mQ" origin="_6aA2gPxuEeO2srAJ1NB-mQ" image="_6aA2gfxuEeO2srAJ1NB-mQ"/>
+      <multiMappings xmi:id="_J4sLBPxvEeO2srAJ1NB-mQ" origin="_jO5rqfrKEeOv7bnvJP5MQg" image="_J4sLAvxvEeO2srAJ1NB-mQ"/>
+      <multiMappings xmi:id="_J4sLBvxvEeO2srAJ1NB-mQ" origin="_DzOQcPrhEeOv7bnvJP5MQg" image="_J4sLBfxvEeO2srAJ1NB-mQ"/>
+      <multiMappings xmi:id="_J4syEvxvEeO2srAJ1NB-mQ" origin="_jO5ro_rKEeOv7bnvJP5MQg" image="_J4syEPxvEeO2srAJ1NB-mQ"/>
+      <multiMappings xmi:id="_J4syFPxvEeO2srAJ1NB-mQ" origin="_DBDMoPrhEeOv7bnvJP5MQg" image="_J4syE_xvEeO2srAJ1NB-mQ"/>
+      <multiMappings xmi:id="_J4syGPxvEeO2srAJ1NB-mQ" origin="_jO5rpfrKEeOv7bnvJP5MQg" image="_J4syFvxvEeO2srAJ1NB-mQ"/>
+      <multiMappings xmi:id="_J4syHPxvEeO2srAJ1NB-mQ" origin="_SIVW0PrLEeOv7bnvJP5MQg" image="_J4syG_xvEeO2srAJ1NB-mQ"/>
+      <multiMappings xmi:id="_J4tZIvxvEeO2srAJ1NB-mQ" origin="_S6WpoPrLEeOv7bnvJP5MQg" image="_J4tZIfxvEeO2srAJ1NB-mQ"/>
+    </multiRules>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_swk2MPrKEeOv7bnvJP5MQg" name="abortContainsOnEmptyList">
+    <lhs xmi:id="_swmEUPrKEeOv7bnvJP5MQg" name="Lhs">
+      <nodes xmi:id="_uJd7wPrKEeOv7bnvJP5MQg" incoming="__5FWIPrgEeOv7bnvJP5MQg" outgoing="_asGUYPrbEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Contains"/>
+      </nodes>
+      <nodes xmi:id="_vORAoPrKEeOv7bnvJP5MQg" incoming="_asGUYPrbEeOv7bnvJP5MQg">
+        <type href="list.ecore#//List"/>
+      </nodes>
+      <nodes xmi:id="_-y6YQPrgEeOv7bnvJP5MQg" outgoing="__5FWIPrgEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <edges xmi:id="_asGUYPrbEeOv7bnvJP5MQg" source="_uJd7wPrKEeOv7bnvJP5MQg" target="_vORAoPrKEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Command/pos"/>
+      </edges>
+      <edges xmi:id="__5FWIPrgEeOv7bnvJP5MQg" source="_-y6YQPrgEeOv7bnvJP5MQg" target="_uJd7wPrKEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_Ulbz8PriEeOv7bnvJP5MQg">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_Ulbz8friEeOv7bnvJP5MQg">
+          <conclusion xmi:id="_Ulbz8vriEeOv7bnvJP5MQg">
+            <nodes xmi:id="_Ulbz8_riEeOv7bnvJP5MQg" incoming="_Ulbz-vriEeOv7bnvJP5MQg">
+              <type href="list.ecore#//Get"/>
+            </nodes>
+            <nodes xmi:id="_Ulbz9friEeOv7bnvJP5MQg" outgoing="_wl7XI_rKEeOv7bnvJP5MQg">
+              <type href="list.ecore#//List"/>
+            </nodes>
+            <nodes xmi:id="_Ulbz9_riEeOv7bnvJP5MQg" outgoing="_Ulbz-vriEeOv7bnvJP5MQg">
+              <type href="list.ecore#//Thread"/>
+            </nodes>
+            <nodes xmi:id="_wl7XIPrKEeOv7bnvJP5MQg" incoming="_wl7XI_rKEeOv7bnvJP5MQg">
+              <type href="list.ecore#//Cell"/>
+            </nodes>
+            <edges xmi:id="_Ulbz-vriEeOv7bnvJP5MQg" source="_Ulbz9_riEeOv7bnvJP5MQg" target="_Ulbz8_riEeOv7bnvJP5MQg">
+              <type href="list.ecore#//Thread/exe"/>
+            </edges>
+            <edges xmi:id="_wl7XI_rKEeOv7bnvJP5MQg" source="_Ulbz9friEeOv7bnvJP5MQg" target="_wl7XIPrKEeOv7bnvJP5MQg">
+              <type href="list.ecore#//ListObject/next"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_Ulbz9PriEeOv7bnvJP5MQg" origin="_uJd7wPrKEeOv7bnvJP5MQg" image="_Ulbz8_riEeOv7bnvJP5MQg"/>
+          <mappings xmi:id="_Ulbz9vriEeOv7bnvJP5MQg" origin="_vORAoPrKEeOv7bnvJP5MQg" image="_Ulbz9friEeOv7bnvJP5MQg"/>
+          <mappings xmi:id="_Ulbz-PriEeOv7bnvJP5MQg" origin="_-y6YQPrgEeOv7bnvJP5MQg" image="_Ulbz9_riEeOv7bnvJP5MQg"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_swmEUfrKEeOv7bnvJP5MQg" name="Rhs">
+      <nodes xmi:id="_uJd7wfrKEeOv7bnvJP5MQg" incoming="__5FWIfrgEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Get"/>
+      </nodes>
+      <nodes xmi:id="_vORAofrKEeOv7bnvJP5MQg">
+        <type href="list.ecore#//List"/>
+      </nodes>
+      <nodes xmi:id="_-y6YQfrgEeOv7bnvJP5MQg" outgoing="__5FWIfrgEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <edges xmi:id="__5FWIfrgEeOv7bnvJP5MQg" source="_-y6YQfrgEeOv7bnvJP5MQg" target="_uJd7wfrKEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_uJd7wvrKEeOv7bnvJP5MQg" origin="_uJd7wPrKEeOv7bnvJP5MQg" image="_uJd7wfrKEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_vORAovrKEeOv7bnvJP5MQg" origin="_vORAoPrKEeOv7bnvJP5MQg" image="_vORAofrKEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_-y6YQvrgEeOv7bnvJP5MQg" origin="_-y6YQPrgEeOv7bnvJP5MQg" image="_-y6YQfrgEeOv7bnvJP5MQg"/>
+    <multiRules xmi:id="_0H2lwPrKEeOv7bnvJP5MQg">
+      <lhs xmi:id="_0H2lwfrKEeOv7bnvJP5MQg" name="Lhs">
+        <nodes xmi:id="_0H2lyPrKEeOv7bnvJP5MQg" incoming="__5F9M_rgEeOv7bnvJP5MQg" outgoing="_asG7cvrbEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Contains"/>
+        </nodes>
+        <nodes xmi:id="_0H2lyvrKEeOv7bnvJP5MQg" incoming="_asG7cvrbEeOv7bnvJP5MQg">
+          <type href="list.ecore#//List"/>
+        </nodes>
+        <nodes xmi:id="__5F9MfrgEeOv7bnvJP5MQg" outgoing="__5F9M_rgEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Thread"/>
+        </nodes>
+        <edges xmi:id="_asG7cvrbEeOv7bnvJP5MQg" source="_0H2lyPrKEeOv7bnvJP5MQg" target="_0H2lyvrKEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Command/pos"/>
+        </edges>
+        <edges xmi:id="__5F9M_rgEeOv7bnvJP5MQg" source="__5F9MfrgEeOv7bnvJP5MQg" target="_0H2lyPrKEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Thread/exe"/>
+        </edges>
+      </lhs>
+      <rhs xmi:id="_0H2lwvrKEeOv7bnvJP5MQg" name="Rhs">
+        <nodes xmi:id="_0H2lw_rKEeOv7bnvJP5MQg" incoming="__5F9MPrgEeOv7bnvJP5MQg" outgoing="_asG7cfrbEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Command"/>
+        </nodes>
+        <nodes xmi:id="_0H3M0vrKEeOv7bnvJP5MQg" incoming="_asG7cfrbEeOv7bnvJP5MQg">
+          <type href="list.ecore#//List"/>
+        </nodes>
+        <nodes xmi:id="__5FWIvrgEeOv7bnvJP5MQg" outgoing="__5F9MPrgEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Thread"/>
+        </nodes>
+        <edges xmi:id="_asG7cfrbEeOv7bnvJP5MQg" source="_0H2lw_rKEeOv7bnvJP5MQg" target="_0H3M0vrKEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Command/pos"/>
+        </edges>
+        <edges xmi:id="__5F9MPrgEeOv7bnvJP5MQg" source="__5FWIvrgEeOv7bnvJP5MQg" target="_0H2lw_rKEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Thread/exe"/>
+        </edges>
+      </rhs>
+      <mappings xmi:id="_0H3M0frKEeOv7bnvJP5MQg" origin="_0H2lyPrKEeOv7bnvJP5MQg" image="_0H2lw_rKEeOv7bnvJP5MQg"/>
+      <mappings xmi:id="_0H3M2PrKEeOv7bnvJP5MQg" origin="_0H2lyvrKEeOv7bnvJP5MQg" image="_0H3M0vrKEeOv7bnvJP5MQg"/>
+      <mappings xmi:id="__5F9NPrgEeOv7bnvJP5MQg" origin="__5F9MfrgEeOv7bnvJP5MQg" image="__5FWIvrgEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_0H2lxPrKEeOv7bnvJP5MQg" origin="_uJd7wfrKEeOv7bnvJP5MQg" image="_0H2lw_rKEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_0H2lyfrKEeOv7bnvJP5MQg" origin="_uJd7wPrKEeOv7bnvJP5MQg" image="_0H2lyPrKEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_0H2ly_rKEeOv7bnvJP5MQg" origin="_vORAoPrKEeOv7bnvJP5MQg" image="_0H2lyvrKEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_0H3M0_rKEeOv7bnvJP5MQg" origin="_vORAofrKEeOv7bnvJP5MQg" image="_0H3M0vrKEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="__5FWI_rgEeOv7bnvJP5MQg" origin="_-y6YQfrgEeOv7bnvJP5MQg" image="__5FWIvrgEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="__5F9MvrgEeOv7bnvJP5MQg" origin="_-y6YQPrgEeOv7bnvJP5MQg" image="__5F9MfrgEeOv7bnvJP5MQg"/>
+    </multiRules>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_lewU2vrSEeOv7bnvJP5MQg" name="abortDeleteOnEmptyList">
+    <lhs xmi:id="_lewU2_rSEeOv7bnvJP5MQg" name="Lhs">
+      <nodes xmi:id="_lewU3PrSEeOv7bnvJP5MQg" incoming="_KHfq4PrhEeOv7bnvJP5MQg" outgoing="_cbfOYPrbEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Delete"/>
+      </nodes>
+      <nodes xmi:id="_lewU3frSEeOv7bnvJP5MQg" incoming="_cbfOYPrbEeOv7bnvJP5MQg">
+        <type href="list.ecore#//List"/>
+      </nodes>
+      <nodes xmi:id="_JQtM0PrhEeOv7bnvJP5MQg" outgoing="_KHfq4PrhEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <edges xmi:id="_cbfOYPrbEeOv7bnvJP5MQg" source="_lewU3PrSEeOv7bnvJP5MQg" target="_lewU3frSEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Command/pos"/>
+      </edges>
+      <edges xmi:id="_KHfq4PrhEeOv7bnvJP5MQg" source="_JQtM0PrhEeOv7bnvJP5MQg" target="_lewU3PrSEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_T0b01friEeOv7bnvJP5MQg">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_T0b01vriEeOv7bnvJP5MQg">
+          <conclusion xmi:id="_T0b01_riEeOv7bnvJP5MQg">
+            <nodes xmi:id="_T0dC8PriEeOv7bnvJP5MQg" incoming="_T0dqAvriEeOv7bnvJP5MQg" outgoing="_T0dqAfriEeOv7bnvJP5MQg">
+              <type href="list.ecore#//Delete"/>
+            </nodes>
+            <nodes xmi:id="_T0dC8vriEeOv7bnvJP5MQg" incoming="_T0dqAfriEeOv7bnvJP5MQg" outgoing="_lewU6vrSEeOv7bnvJP5MQg">
+              <type href="list.ecore#//List"/>
+            </nodes>
+            <nodes xmi:id="_T0dC9PriEeOv7bnvJP5MQg" outgoing="_T0dqAvriEeOv7bnvJP5MQg">
+              <type href="list.ecore#//Thread"/>
+            </nodes>
+            <nodes xmi:id="_lewU6PrSEeOv7bnvJP5MQg" incoming="_lewU6vrSEeOv7bnvJP5MQg">
+              <type href="list.ecore#//Cell"/>
+            </nodes>
+            <edges xmi:id="_T0dqAfriEeOv7bnvJP5MQg" source="_T0dC8PriEeOv7bnvJP5MQg" target="_T0dC8vriEeOv7bnvJP5MQg">
+              <type href="list.ecore#//Command/pos"/>
+            </edges>
+            <edges xmi:id="_T0dqAvriEeOv7bnvJP5MQg" source="_T0dC9PriEeOv7bnvJP5MQg" target="_T0dC8PriEeOv7bnvJP5MQg">
+              <type href="list.ecore#//Thread/exe"/>
+            </edges>
+            <edges xmi:id="_lewU6vrSEeOv7bnvJP5MQg" source="_T0dC8vriEeOv7bnvJP5MQg" target="_lewU6PrSEeOv7bnvJP5MQg">
+              <type href="list.ecore#//ListObject/next"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_T0dC8friEeOv7bnvJP5MQg" origin="_lewU3PrSEeOv7bnvJP5MQg" image="_T0dC8PriEeOv7bnvJP5MQg"/>
+          <mappings xmi:id="_T0dC8_riEeOv7bnvJP5MQg" origin="_lewU3frSEeOv7bnvJP5MQg" image="_T0dC8vriEeOv7bnvJP5MQg"/>
+          <mappings xmi:id="_T0dqAPriEeOv7bnvJP5MQg" origin="_JQtM0PrhEeOv7bnvJP5MQg" image="_T0dC9PriEeOv7bnvJP5MQg"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_lewU3_rSEeOv7bnvJP5MQg" name="Rhs">
+      <nodes xmi:id="_lewU4PrSEeOv7bnvJP5MQg" incoming="_KHfq4frhEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Delete"/>
+      </nodes>
+      <nodes xmi:id="_lewU4frSEeOv7bnvJP5MQg">
+        <type href="list.ecore#//List"/>
+      </nodes>
+      <nodes xmi:id="_JQtM0frhEeOv7bnvJP5MQg" outgoing="_KHfq4frhEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <edges xmi:id="_KHfq4frhEeOv7bnvJP5MQg" source="_JQtM0frhEeOv7bnvJP5MQg" target="_lewU4PrSEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_lewU4vrSEeOv7bnvJP5MQg" origin="_lewU3PrSEeOv7bnvJP5MQg" image="_lewU4PrSEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_lewU4_rSEeOv7bnvJP5MQg" origin="_lewU3frSEeOv7bnvJP5MQg" image="_lewU4frSEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_JQtM0vrhEeOv7bnvJP5MQg" origin="_JQtM0PrhEeOv7bnvJP5MQg" image="_JQtM0frhEeOv7bnvJP5MQg"/>
+    <multiRules xmi:id="_lewU5PrSEeOv7bnvJP5MQg">
+      <lhs xmi:id="_lewU5frSEeOv7bnvJP5MQg" name="Lhs">
+        <nodes xmi:id="_lewU5vrSEeOv7bnvJP5MQg" incoming="_KHfq5_rhEeOv7bnvJP5MQg" outgoing="_cbfOY_rbEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Command"/>
+        </nodes>
+        <nodes xmi:id="_lewU5_rSEeOv7bnvJP5MQg" incoming="_cbfOY_rbEeOv7bnvJP5MQg">
+          <type href="list.ecore#//List"/>
+        </nodes>
+        <nodes xmi:id="_KHfq5frhEeOv7bnvJP5MQg" outgoing="_KHfq5_rhEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Thread"/>
+        </nodes>
+        <edges xmi:id="_cbfOY_rbEeOv7bnvJP5MQg" source="_lewU5vrSEeOv7bnvJP5MQg" target="_lewU5_rSEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Command/pos"/>
+        </edges>
+        <edges xmi:id="_KHfq5_rhEeOv7bnvJP5MQg" source="_KHfq5frhEeOv7bnvJP5MQg" target="_lewU5vrSEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Thread/exe"/>
+        </edges>
+      </lhs>
+      <rhs xmi:id="_lewU6_rSEeOv7bnvJP5MQg" name="Rhs">
+        <nodes xmi:id="_lewU7PrSEeOv7bnvJP5MQg" incoming="_KHfq5PrhEeOv7bnvJP5MQg" outgoing="_cbfOYvrbEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Command"/>
+        </nodes>
+        <nodes xmi:id="_lewU7vrSEeOv7bnvJP5MQg" incoming="_cbfOYvrbEeOv7bnvJP5MQg">
+          <type href="list.ecore#//List"/>
+        </nodes>
+        <nodes xmi:id="_KHfq4vrhEeOv7bnvJP5MQg" outgoing="_KHfq5PrhEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Thread"/>
+        </nodes>
+        <edges xmi:id="_cbfOYvrbEeOv7bnvJP5MQg" source="_lewU7PrSEeOv7bnvJP5MQg" target="_lewU7vrSEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Command/pos"/>
+        </edges>
+        <edges xmi:id="_KHfq5PrhEeOv7bnvJP5MQg" source="_KHfq4vrhEeOv7bnvJP5MQg" target="_lewU7PrSEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Thread/exe"/>
+        </edges>
+      </rhs>
+      <mappings xmi:id="_lewU8frSEeOv7bnvJP5MQg" origin="_lewU5vrSEeOv7bnvJP5MQg" image="_lewU7PrSEeOv7bnvJP5MQg"/>
+      <mappings xmi:id="_lewU8vrSEeOv7bnvJP5MQg" origin="_lewU5_rSEeOv7bnvJP5MQg" image="_lewU7vrSEeOv7bnvJP5MQg"/>
+      <mappings xmi:id="_KHfq6PrhEeOv7bnvJP5MQg" origin="_KHfq5frhEeOv7bnvJP5MQg" image="_KHfq4vrhEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_lewU9PrSEeOv7bnvJP5MQg" origin="_lewU4PrSEeOv7bnvJP5MQg" image="_lewU7PrSEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_lewU9frSEeOv7bnvJP5MQg" origin="_lewU3PrSEeOv7bnvJP5MQg" image="_lewU5vrSEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_lewU9vrSEeOv7bnvJP5MQg" origin="_lewU3frSEeOv7bnvJP5MQg" image="_lewU5_rSEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_lewU9_rSEeOv7bnvJP5MQg" origin="_lewU4frSEeOv7bnvJP5MQg" image="_lewU7vrSEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_KHfq4_rhEeOv7bnvJP5MQg" origin="_JQtM0frhEeOv7bnvJP5MQg" image="_KHfq4vrhEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_KHfq5vrhEeOv7bnvJP5MQg" origin="_JQtM0PrhEeOv7bnvJP5MQg" image="_KHfq5frhEeOv7bnvJP5MQg"/>
+    </multiRules>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_qsT-wPrSEeOv7bnvJP5MQg" name="initSearch">
+    <lhs xmi:id="_qsT-wfrSEeOv7bnvJP5MQg" name="Lhs">
+      <nodes xmi:id="_qsT-wvrSEeOv7bnvJP5MQg" incoming="_ImzUMPrhEeOv7bnvJP5MQg" outgoing="_d43yYPrbEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Command"/>
+      </nodes>
+      <nodes xmi:id="_qsT-w_rSEeOv7bnvJP5MQg" incoming="_d43yYPrbEeOv7bnvJP5MQg" outgoing="_qsT-0PrSEeOv7bnvJP5MQg">
+        <type href="list.ecore#//List"/>
+      </nodes>
+      <nodes xmi:id="_qsT-zvrSEeOv7bnvJP5MQg" incoming="_qsT-0PrSEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Cell"/>
+      </nodes>
+      <nodes xmi:id="_IKgZwPrhEeOv7bnvJP5MQg" outgoing="_ImzUMPrhEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <edges xmi:id="_qsT-0PrSEeOv7bnvJP5MQg" source="_qsT-w_rSEeOv7bnvJP5MQg" target="_qsT-zvrSEeOv7bnvJP5MQg">
+        <type href="list.ecore#//ListObject/next"/>
+      </edges>
+      <edges xmi:id="_d43yYPrbEeOv7bnvJP5MQg" source="_qsT-wvrSEeOv7bnvJP5MQg" target="_qsT-w_rSEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Command/pos"/>
+      </edges>
+      <edges xmi:id="_ImzUMPrhEeOv7bnvJP5MQg" source="_IKgZwPrhEeOv7bnvJP5MQg" target="_qsT-wvrSEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_qsT-xfrSEeOv7bnvJP5MQg" name="Rhs">
+      <nodes xmi:id="_qsT-xvrSEeOv7bnvJP5MQg" incoming="_ImzUMfrhEeOv7bnvJP5MQg" outgoing="_eOrqUPrbEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Command"/>
+      </nodes>
+      <nodes xmi:id="_qsT-x_rSEeOv7bnvJP5MQg" outgoing="_qsT-1vrSEeOv7bnvJP5MQg">
+        <type href="list.ecore#//List"/>
+      </nodes>
+      <nodes xmi:id="_qsT-0_rSEeOv7bnvJP5MQg" incoming="_qsT-1vrSEeOv7bnvJP5MQg _eOrqUPrbEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Cell"/>
+      </nodes>
+      <nodes xmi:id="_IKgZwfrhEeOv7bnvJP5MQg" outgoing="_ImzUMfrhEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <edges xmi:id="_qsT-1vrSEeOv7bnvJP5MQg" source="_qsT-x_rSEeOv7bnvJP5MQg" target="_qsT-0_rSEeOv7bnvJP5MQg">
+        <type href="list.ecore#//ListObject/next"/>
+      </edges>
+      <edges xmi:id="_eOrqUPrbEeOv7bnvJP5MQg" source="_qsT-xvrSEeOv7bnvJP5MQg" target="_qsT-0_rSEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Command/pos"/>
+      </edges>
+      <edges xmi:id="_ImzUMfrhEeOv7bnvJP5MQg" source="_IKgZwfrhEeOv7bnvJP5MQg" target="_qsT-xvrSEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_qsT-yPrSEeOv7bnvJP5MQg" origin="_qsT-wvrSEeOv7bnvJP5MQg" image="_qsT-xvrSEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_qsT-yfrSEeOv7bnvJP5MQg" origin="_qsT-w_rSEeOv7bnvJP5MQg" image="_qsT-x_rSEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_qsT-2frSEeOv7bnvJP5MQg" origin="_qsT-zvrSEeOv7bnvJP5MQg" image="_qsT-0_rSEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_IKgZwvrhEeOv7bnvJP5MQg" origin="_IKgZwPrhEeOv7bnvJP5MQg" image="_IKgZwfrhEeOv7bnvJP5MQg"/>
+    <multiRules xmi:id="_qsT-yvrSEeOv7bnvJP5MQg">
+      <lhs xmi:id="_qsT-y_rSEeOv7bnvJP5MQg" name="Lhs">
+        <nodes xmi:id="_qsT-zPrSEeOv7bnvJP5MQg" incoming="_ImzUM_rhEeOv7bnvJP5MQg" outgoing="_d44ZcvrbEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Command"/>
+        </nodes>
+        <nodes xmi:id="_qsT-zfrSEeOv7bnvJP5MQg" incoming="_d44ZcvrbEeOv7bnvJP5MQg" outgoing="_d44ZdvrbEeOv7bnvJP5MQg">
+          <type href="list.ecore#//List"/>
+        </nodes>
+        <nodes xmi:id="_d44ZdPrbEeOv7bnvJP5MQg" incoming="_d44ZdvrbEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Cell"/>
+        </nodes>
+        <nodes xmi:id="_IKgZxvrhEeOv7bnvJP5MQg" outgoing="_ImzUM_rhEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Thread"/>
+        </nodes>
+        <edges xmi:id="_d44ZcvrbEeOv7bnvJP5MQg" source="_qsT-zPrSEeOv7bnvJP5MQg" target="_qsT-zfrSEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Command/pos"/>
+        </edges>
+        <edges xmi:id="_d44ZdvrbEeOv7bnvJP5MQg" source="_qsT-zfrSEeOv7bnvJP5MQg" target="_d44ZdPrbEeOv7bnvJP5MQg">
+          <type href="list.ecore#//ListObject/next"/>
+        </edges>
+        <edges xmi:id="_ImzUM_rhEeOv7bnvJP5MQg" source="_IKgZxvrhEeOv7bnvJP5MQg" target="_qsT-zPrSEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Thread/exe"/>
+        </edges>
+      </lhs>
+      <rhs xmi:id="_qsT-0frSEeOv7bnvJP5MQg" name="Rhs">
+        <nodes xmi:id="_qsT-0vrSEeOv7bnvJP5MQg" incoming="_ImzUMvrhEeOv7bnvJP5MQg" outgoing="_d44ZcfrbEeOv7bnvJP5MQg _IKgZw_rhEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Command"/>
+        </nodes>
+        <nodes xmi:id="_qsT-1PrSEeOv7bnvJP5MQg" incoming="_d44ZcfrbEeOv7bnvJP5MQg" outgoing="_d44Zc_rbEeOv7bnvJP5MQg">
+          <type href="list.ecore#//List"/>
+        </nodes>
+        <nodes xmi:id="_d43yYvrbEeOv7bnvJP5MQg" incoming="_d44Zc_rbEeOv7bnvJP5MQg _IKgZw_rhEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Cell"/>
+        </nodes>
+        <nodes xmi:id="_IKgZxPrhEeOv7bnvJP5MQg" outgoing="_ImzUMvrhEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Thread"/>
+        </nodes>
+        <edges xmi:id="_d44ZcfrbEeOv7bnvJP5MQg" source="_qsT-0vrSEeOv7bnvJP5MQg" target="_qsT-1PrSEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Command/pos"/>
+        </edges>
+        <edges xmi:id="_d44Zc_rbEeOv7bnvJP5MQg" source="_qsT-1PrSEeOv7bnvJP5MQg" target="_d43yYvrbEeOv7bnvJP5MQg">
+          <type href="list.ecore#//ListObject/next"/>
+        </edges>
+        <edges xmi:id="_IKgZw_rhEeOv7bnvJP5MQg" source="_qsT-0vrSEeOv7bnvJP5MQg" target="_d43yYvrbEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Command/pos"/>
+        </edges>
+        <edges xmi:id="_ImzUMvrhEeOv7bnvJP5MQg" source="_IKgZxPrhEeOv7bnvJP5MQg" target="_qsT-0vrSEeOv7bnvJP5MQg">
+          <type href="list.ecore#//Thread/exe"/>
+        </edges>
+      </rhs>
+      <mappings xmi:id="_qsT-1_rSEeOv7bnvJP5MQg" origin="_qsT-zPrSEeOv7bnvJP5MQg" image="_qsT-0vrSEeOv7bnvJP5MQg"/>
+      <mappings xmi:id="_qsT-2PrSEeOv7bnvJP5MQg" origin="_qsT-zfrSEeOv7bnvJP5MQg" image="_qsT-1PrSEeOv7bnvJP5MQg"/>
+      <mappings xmi:id="_d44Zd_rbEeOv7bnvJP5MQg" origin="_d44ZdPrbEeOv7bnvJP5MQg" image="_d43yYvrbEeOv7bnvJP5MQg"/>
+      <mappings xmi:id="_IKgZyPrhEeOv7bnvJP5MQg" origin="_IKgZxvrhEeOv7bnvJP5MQg" image="_IKgZxPrhEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_qsT-2vrSEeOv7bnvJP5MQg" origin="_qsT-xvrSEeOv7bnvJP5MQg" image="_qsT-0vrSEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_qsT-2_rSEeOv7bnvJP5MQg" origin="_qsT-wvrSEeOv7bnvJP5MQg" image="_qsT-zPrSEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_qsT-3PrSEeOv7bnvJP5MQg" origin="_qsT-w_rSEeOv7bnvJP5MQg" image="_qsT-zfrSEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_qsT-3frSEeOv7bnvJP5MQg" origin="_qsT-x_rSEeOv7bnvJP5MQg" image="_qsT-1PrSEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_d43yY_rbEeOv7bnvJP5MQg" origin="_qsT-0_rSEeOv7bnvJP5MQg" image="_d43yYvrbEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_d44ZdfrbEeOv7bnvJP5MQg" origin="_qsT-zvrSEeOv7bnvJP5MQg" image="_d44ZdPrbEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_IKgZxfrhEeOv7bnvJP5MQg" origin="_IKgZwfrhEeOv7bnvJP5MQg" image="_IKgZxPrhEeOv7bnvJP5MQg"/>
+      <multiMappings xmi:id="_IKgZx_rhEeOv7bnvJP5MQg" origin="_IKgZwPrhEeOv7bnvJP5MQg" image="_IKgZxvrhEeOv7bnvJP5MQg"/>
+    </multiRules>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_yb6RQPreEeOv7bnvJP5MQg" name="appendToEmptyList">
+    <parameters xmi:id="__JqWQPreEeOv7bnvJP5MQg" name="x">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <lhs xmi:id="_yb97oPreEeOv7bnvJP5MQg" name="Lhs">
+      <nodes xmi:id="_0gR8wPreEeOv7bnvJP5MQg" incoming="_99JN4PrgEeOv7bnvJP5MQg" outgoing="_-Jhu8PreEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Append"/>
+        <attributes xmi:id="_9FNLMPreEeOv7bnvJP5MQg" value="x">
+          <type href="list.ecore#//Command/val"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_1LD_IPreEeOv7bnvJP5MQg" incoming="_-Jhu8PreEeOv7bnvJP5MQg">
+        <type href="list.ecore#//List"/>
+      </nodes>
+      <nodes xmi:id="_634GEPrgEeOv7bnvJP5MQg" outgoing="_99JN4PrgEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <edges xmi:id="_-Jhu8PreEeOv7bnvJP5MQg" source="_0gR8wPreEeOv7bnvJP5MQg" target="_1LD_IPreEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Command/pos"/>
+      </edges>
+      <edges xmi:id="_99JN4PrgEeOv7bnvJP5MQg" source="_634GEPrgEeOv7bnvJP5MQg" target="_0gR8wPreEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_4IFJ4PreEeOv7bnvJP5MQg">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_4IFJ4freEeOv7bnvJP5MQg">
+          <conclusion xmi:id="_4IFJ4vreEeOv7bnvJP5MQg">
+            <nodes xmi:id="_4IFJ4_reEeOv7bnvJP5MQg" outgoing="_433oEvreEeOv7bnvJP5MQg">
+              <type href="list.ecore#//ListObject"/>
+            </nodes>
+            <nodes xmi:id="_433BAPreEeOv7bnvJP5MQg">
+              <type href="list.ecore#//Append"/>
+              <attributes xmi:id="_9FNLMvreEeOv7bnvJP5MQg" value="x">
+                <type href="list.ecore#//Command/val"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_433oEPreEeOv7bnvJP5MQg" incoming="_433oEvreEeOv7bnvJP5MQg">
+              <type href="list.ecore#//Cell"/>
+            </nodes>
+            <edges xmi:id="_433oEvreEeOv7bnvJP5MQg" source="_4IFJ4_reEeOv7bnvJP5MQg" target="_433oEPreEeOv7bnvJP5MQg">
+              <type href="list.ecore#//ListObject/next"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_4IFw8PreEeOv7bnvJP5MQg" origin="_1LD_IPreEeOv7bnvJP5MQg" image="_4IFJ4_reEeOv7bnvJP5MQg"/>
+          <mappings xmi:id="_433BAfreEeOv7bnvJP5MQg" origin="_0gR8wPreEeOv7bnvJP5MQg" image="_433BAPreEeOv7bnvJP5MQg"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_yb97ofreEeOv7bnvJP5MQg" name="Rhs">
+      <nodes xmi:id="_0gR8wfreEeOv7bnvJP5MQg" incoming="_99J08PrgEeOv7bnvJP5MQg" outgoing="_-Jhu8freEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Append"/>
+        <attributes xmi:id="_9FNLMfreEeOv7bnvJP5MQg" value="x">
+          <type href="list.ecore#//Command/val"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_1LD_IfreEeOv7bnvJP5MQg" incoming="_-Jhu8freEeOv7bnvJP5MQg" outgoing="_1iyio_reEeOv7bnvJP5MQg">
+        <type href="list.ecore#//List"/>
+      </nodes>
+      <nodes xmi:id="_1iyioPreEeOv7bnvJP5MQg" incoming="_1iyio_reEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Cell"/>
+        <attributes xmi:id="_7AuK8PreEeOv7bnvJP5MQg" value="x">
+          <type href="list.ecore#//Cell/val"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_75pFEPrgEeOv7bnvJP5MQg" outgoing="_99J08PrgEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <edges xmi:id="_1iyio_reEeOv7bnvJP5MQg" source="_1LD_IfreEeOv7bnvJP5MQg" target="_1iyioPreEeOv7bnvJP5MQg">
+        <type href="list.ecore#//ListObject/next"/>
+      </edges>
+      <edges xmi:id="_-Jhu8freEeOv7bnvJP5MQg" source="_0gR8wfreEeOv7bnvJP5MQg" target="_1LD_IfreEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Command/pos"/>
+      </edges>
+      <edges xmi:id="_99J08PrgEeOv7bnvJP5MQg" source="_75pFEPrgEeOv7bnvJP5MQg" target="_0gR8wfreEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_0gR8wvreEeOv7bnvJP5MQg" origin="_0gR8wPreEeOv7bnvJP5MQg" image="_0gR8wfreEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_1LD_IvreEeOv7bnvJP5MQg" origin="_1LD_IPreEeOv7bnvJP5MQg" image="_1LD_IfreEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_75pFEfrgEeOv7bnvJP5MQg" origin="_634GEPrgEeOv7bnvJP5MQg" image="_75pFEPrgEeOv7bnvJP5MQg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_4qbhoPrhEeOv7bnvJP5MQg" name="abortContainsOnValueNotFound">
+    <parameters xmi:id="_GSkGQPsZEeOfFbwE57EwzA" name="x">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <lhs xmi:id="_4qfMAPrhEeOv7bnvJP5MQg" name="Lhs">
+      <nodes xmi:id="_6wufwPrhEeOv7bnvJP5MQg" outgoing="_7NbC0_rhEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <nodes xmi:id="_7NbC0PrhEeOv7bnvJP5MQg" incoming="_7NbC0_rhEeOv7bnvJP5MQg" outgoing="_GEprEPriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Contains"/>
+        <attributes xmi:id="_IT6_APriEeOv7bnvJP5MQg" value="x">
+          <type href="list.ecore#//Command/val"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_DdATYPriEeOv7bnvJP5MQg" incoming="_GEprEPriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Cell"/>
+      </nodes>
+      <edges xmi:id="_7NbC0_rhEeOv7bnvJP5MQg" source="_6wufwPrhEeOv7bnvJP5MQg" target="_7NbC0PrhEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+      <edges xmi:id="_GEprEPriEeOv7bnvJP5MQg" source="_7NbC0PrhEeOv7bnvJP5MQg" target="_DdATYPriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Command/pos"/>
+      </edges>
+      <formula xsi:type="henshin:And" xmi:id="_OmRb0PxsEeO2srAJ1NB-mQ">
+        <left xsi:type="henshin:Not" xmi:id="_JCeuIPriEeOv7bnvJP5MQg">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_JCeuIfriEeOv7bnvJP5MQg">
+            <conclusion xmi:id="_JCeuIvriEeOv7bnvJP5MQg">
+              <nodes xmi:id="_JCfVMPriEeOv7bnvJP5MQg" incoming="_JCfVNvriEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Cell"/>
+                <attributes xmi:id="_IGaHcPriEeOv7bnvJP5MQg" value="x">
+                  <type href="list.ecore#//Cell/val"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_JCfVM_riEeOv7bnvJP5MQg" incoming="_YLCBovriEeOv7bnvJP5MQg" outgoing="_JCfVNvriEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Command"/>
+                <attributes xmi:id="_JCfVNPriEeOv7bnvJP5MQg" value="x">
+                  <type href="list.ecore#//Command/val"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_YLCBoPriEeOv7bnvJP5MQg" outgoing="_YLCBovriEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Thread"/>
+              </nodes>
+              <edges xmi:id="_JCfVNvriEeOv7bnvJP5MQg" source="_JCfVM_riEeOv7bnvJP5MQg" target="_JCfVMPriEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Command/pos"/>
+              </edges>
+              <edges xmi:id="_YLCBovriEeOv7bnvJP5MQg" source="_YLCBoPriEeOv7bnvJP5MQg" target="_JCfVM_riEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Thread/exe"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_JCfVMvriEeOv7bnvJP5MQg" origin="_DdATYPriEeOv7bnvJP5MQg" image="_JCfVMPriEeOv7bnvJP5MQg"/>
+            <mappings xmi:id="_JCfVNfriEeOv7bnvJP5MQg" origin="_7NbC0PrhEeOv7bnvJP5MQg" image="_JCfVM_riEeOv7bnvJP5MQg"/>
+            <mappings xmi:id="_YLCBofriEeOv7bnvJP5MQg" origin="_6wufwPrhEeOv7bnvJP5MQg" image="_YLCBoPriEeOv7bnvJP5MQg"/>
+          </child>
+        </left>
+        <right xsi:type="henshin:Not" xmi:id="_OmRb0fxsEeO2srAJ1NB-mQ">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_OmRb0vxsEeO2srAJ1NB-mQ">
+            <conclusion xmi:id="_OmRb0_xsEeO2srAJ1NB-mQ" name="2">
+              <nodes xmi:id="_OmSC4PxsEeO2srAJ1NB-mQ" outgoing="_OmSp8vxsEeO2srAJ1NB-mQ">
+                <type href="list.ecore#//Thread"/>
+              </nodes>
+              <nodes xmi:id="_OmSC4vxsEeO2srAJ1NB-mQ" incoming="_OmSp8vxsEeO2srAJ1NB-mQ">
+                <type href="list.ecore#//Get"/>
+                <attributes xmi:id="_OmSp8PxsEeO2srAJ1NB-mQ" value="x">
+                  <type href="list.ecore#//Command/val"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_OmSp8_xsEeO2srAJ1NB-mQ" outgoing="_FH8yQ_riEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Cell"/>
+              </nodes>
+              <nodes xmi:id="_FH8yQPriEeOv7bnvJP5MQg" incoming="_FH8yQ_riEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Cell"/>
+              </nodes>
+              <edges xmi:id="_OmSp8vxsEeO2srAJ1NB-mQ" source="_OmSC4PxsEeO2srAJ1NB-mQ" target="_OmSC4vxsEeO2srAJ1NB-mQ">
+                <type href="list.ecore#//Thread/exe"/>
+              </edges>
+              <edges xmi:id="_FH8yQ_riEeOv7bnvJP5MQg" source="_OmSp8_xsEeO2srAJ1NB-mQ" target="_FH8yQPriEeOv7bnvJP5MQg">
+                <type href="list.ecore#//ListObject/next"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_OmSC4fxsEeO2srAJ1NB-mQ" origin="_6wufwPrhEeOv7bnvJP5MQg" image="_OmSC4PxsEeO2srAJ1NB-mQ"/>
+            <mappings xmi:id="_OmSp8fxsEeO2srAJ1NB-mQ" origin="_7NbC0PrhEeOv7bnvJP5MQg" image="_OmSC4vxsEeO2srAJ1NB-mQ"/>
+            <mappings xmi:id="_OmSp9PxsEeO2srAJ1NB-mQ" origin="_DdATYPriEeOv7bnvJP5MQg" image="_OmSp8_xsEeO2srAJ1NB-mQ"/>
+          </child>
+        </right>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_4qfMAfrhEeOv7bnvJP5MQg" name="Rhs">
+      <nodes xmi:id="_6wwU8PrhEeOv7bnvJP5MQg" outgoing="_7NbC1PrhEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <nodes xmi:id="_7NbC0frhEeOv7bnvJP5MQg" incoming="_7NbC1PrhEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Get"/>
+        <attributes xmi:id="_IT6_AfriEeOv7bnvJP5MQg" value="x">
+          <type href="list.ecore#//Command/val"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_DdATYfriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Cell"/>
+      </nodes>
+      <edges xmi:id="_7NbC1PrhEeOv7bnvJP5MQg" source="_6wwU8PrhEeOv7bnvJP5MQg" target="_7NbC0frhEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_6ww8APrhEeOv7bnvJP5MQg" origin="_6wufwPrhEeOv7bnvJP5MQg" image="_6wwU8PrhEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_7NbC0vrhEeOv7bnvJP5MQg" origin="_7NbC0PrhEeOv7bnvJP5MQg" image="_7NbC0frhEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_DdATYvriEeOv7bnvJP5MQg" origin="_DdATYPriEeOv7bnvJP5MQg" image="_DdATYfriEeOv7bnvJP5MQg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_WbGVEPriEeOv7bnvJP5MQg" name="movePosAndContinueSearch">
+    <parameters xmi:id="_WbGVEfriEeOv7bnvJP5MQg" name="x">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <lhs xmi:id="_WbGVEvriEeOv7bnvJP5MQg" name="Lhs">
+      <nodes xmi:id="_WbGVE_riEeOv7bnvJP5MQg" outgoing="_WbGVGPriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <nodes xmi:id="_WbGVFPriEeOv7bnvJP5MQg" incoming="_WbGVGPriEeOv7bnvJP5MQg" outgoing="_WbGVGvriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Command"/>
+        <attributes xmi:id="_WbGVFfriEeOv7bnvJP5MQg" value="x">
+          <type href="list.ecore#//Command/val"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_WbGVFvriEeOv7bnvJP5MQg" incoming="_WbGVGvriEeOv7bnvJP5MQg" outgoing="_WbGVGfriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Cell"/>
+      </nodes>
+      <nodes xmi:id="_WbGVF_riEeOv7bnvJP5MQg" incoming="_WbGVGfriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Cell"/>
+      </nodes>
+      <edges xmi:id="_WbGVGPriEeOv7bnvJP5MQg" source="_WbGVE_riEeOv7bnvJP5MQg" target="_WbGVFPriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+      <edges xmi:id="_WbGVGfriEeOv7bnvJP5MQg" source="_WbGVFvriEeOv7bnvJP5MQg" target="_WbGVF_riEeOv7bnvJP5MQg">
+        <type href="list.ecore#//ListObject/next"/>
+      </edges>
+      <edges xmi:id="_WbGVGvriEeOv7bnvJP5MQg" source="_WbGVFPriEeOv7bnvJP5MQg" target="_WbGVFvriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Command/pos"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_WbGVG_riEeOv7bnvJP5MQg">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_WbGVHPriEeOv7bnvJP5MQg">
+          <conclusion xmi:id="_WbGVHfriEeOv7bnvJP5MQg">
+            <nodes xmi:id="_WbGVHvriEeOv7bnvJP5MQg" incoming="_WbGVI_riEeOv7bnvJP5MQg" outgoing="_WbGVJPriEeOv7bnvJP5MQg">
+              <type href="list.ecore#//Cell"/>
+              <attributes xmi:id="_WbGVH_riEeOv7bnvJP5MQg" value="x">
+                <type href="list.ecore#//Cell/val"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_WbGVIPriEeOv7bnvJP5MQg" outgoing="_WbGVI_riEeOv7bnvJP5MQg">
+              <type href="list.ecore#//Command"/>
+              <attributes xmi:id="_WbGVIfriEeOv7bnvJP5MQg" value="x">
+                <type href="list.ecore#//Command/val"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_WbGVIvriEeOv7bnvJP5MQg" incoming="_WbGVJPriEeOv7bnvJP5MQg">
+              <type href="list.ecore#//Cell"/>
+            </nodes>
+            <edges xmi:id="_WbGVI_riEeOv7bnvJP5MQg" source="_WbGVIPriEeOv7bnvJP5MQg" target="_WbGVHvriEeOv7bnvJP5MQg">
+              <type href="list.ecore#//Command/pos"/>
+            </edges>
+            <edges xmi:id="_WbGVJPriEeOv7bnvJP5MQg" source="_WbGVHvriEeOv7bnvJP5MQg" target="_WbGVIvriEeOv7bnvJP5MQg">
+              <type href="list.ecore#//ListObject/next"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_WbGVJfriEeOv7bnvJP5MQg" origin="_WbGVFvriEeOv7bnvJP5MQg" image="_WbGVHvriEeOv7bnvJP5MQg"/>
+          <mappings xmi:id="_WbGVJvriEeOv7bnvJP5MQg" origin="_WbGVFPriEeOv7bnvJP5MQg" image="_WbGVIPriEeOv7bnvJP5MQg"/>
+          <mappings xmi:id="_WbGVJ_riEeOv7bnvJP5MQg" origin="_WbGVF_riEeOv7bnvJP5MQg" image="_WbGVIvriEeOv7bnvJP5MQg"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_WbGVKPriEeOv7bnvJP5MQg" name="Rhs">
+      <nodes xmi:id="_WbGVKfriEeOv7bnvJP5MQg" outgoing="_WbGVLvriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <nodes xmi:id="_WbGVKvriEeOv7bnvJP5MQg" incoming="_WbGVLvriEeOv7bnvJP5MQg" outgoing="_WbGVMPriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Command"/>
+        <attributes xmi:id="_WbGVK_riEeOv7bnvJP5MQg" value="x">
+          <type href="list.ecore#//Command/val"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_WbGVLPriEeOv7bnvJP5MQg" outgoing="_WbGVL_riEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Cell"/>
+      </nodes>
+      <nodes xmi:id="_WbGVLfriEeOv7bnvJP5MQg" incoming="_WbGVL_riEeOv7bnvJP5MQg _WbGVMPriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Cell"/>
+      </nodes>
+      <edges xmi:id="_WbGVLvriEeOv7bnvJP5MQg" source="_WbGVKfriEeOv7bnvJP5MQg" target="_WbGVKvriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+      <edges xmi:id="_WbGVL_riEeOv7bnvJP5MQg" source="_WbGVLPriEeOv7bnvJP5MQg" target="_WbGVLfriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//ListObject/next"/>
+      </edges>
+      <edges xmi:id="_WbGVMPriEeOv7bnvJP5MQg" source="_WbGVKvriEeOv7bnvJP5MQg" target="_WbGVLfriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Command/pos"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_WbGVMfriEeOv7bnvJP5MQg" origin="_WbGVE_riEeOv7bnvJP5MQg" image="_WbGVKfriEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_WbGVMvriEeOv7bnvJP5MQg" origin="_WbGVFPriEeOv7bnvJP5MQg" image="_WbGVKvriEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_WbGVM_riEeOv7bnvJP5MQg" origin="_WbGVFvriEeOv7bnvJP5MQg" image="_WbGVLPriEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_WbGVNPriEeOv7bnvJP5MQg" origin="_WbGVF_riEeOv7bnvJP5MQg" image="_WbGVLfriEeOv7bnvJP5MQg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_bqGwt_riEeOv7bnvJP5MQg" name="abortDeleteOnValueNotFound">
+    <parameters xmi:id="_bqGwuPriEeOv7bnvJP5MQg" name="x">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <lhs xmi:id="_bqGwufriEeOv7bnvJP5MQg" name="Lhs">
+      <nodes xmi:id="_bqGwuvriEeOv7bnvJP5MQg" outgoing="_bqGwvvriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <nodes xmi:id="_bqGwu_riEeOv7bnvJP5MQg" incoming="_bqGwvvriEeOv7bnvJP5MQg" outgoing="_bqGwv_riEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Delete"/>
+        <attributes xmi:id="_bqGwvPriEeOv7bnvJP5MQg" value="x">
+          <type href="list.ecore#//Command/val"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_bqGwvfriEeOv7bnvJP5MQg" incoming="_bqGwv_riEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Cell"/>
+      </nodes>
+      <edges xmi:id="_bqGwvvriEeOv7bnvJP5MQg" source="_bqGwuvriEeOv7bnvJP5MQg" target="_bqGwu_riEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+      <edges xmi:id="_bqGwv_riEeOv7bnvJP5MQg" source="_bqGwu_riEeOv7bnvJP5MQg" target="_bqGwvfriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Command/pos"/>
+      </edges>
+      <formula xsi:type="henshin:And" xmi:id="_Pau-oPxsEeO2srAJ1NB-mQ">
+        <left xsi:type="henshin:Not" xmi:id="_bqGwwPriEeOv7bnvJP5MQg">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_bqGwwfriEeOv7bnvJP5MQg">
+            <conclusion xmi:id="_bqGwwvriEeOv7bnvJP5MQg">
+              <nodes xmi:id="_bqGww_riEeOv7bnvJP5MQg" incoming="_bqGwyfriEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Cell"/>
+                <attributes xmi:id="_bqGwxPriEeOv7bnvJP5MQg" value="x">
+                  <type href="list.ecore#//Cell/val"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_bqGwxfriEeOv7bnvJP5MQg" incoming="_bqGwyvriEeOv7bnvJP5MQg" outgoing="_bqGwyfriEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Command"/>
+                <attributes xmi:id="_bqGwxvriEeOv7bnvJP5MQg" value="x">
+                  <type href="list.ecore#//Command/val"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_bqGwyPriEeOv7bnvJP5MQg" outgoing="_bqGwyvriEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Thread"/>
+              </nodes>
+              <edges xmi:id="_bqGwyfriEeOv7bnvJP5MQg" source="_bqGwxfriEeOv7bnvJP5MQg" target="_bqGww_riEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Command/pos"/>
+              </edges>
+              <edges xmi:id="_bqGwyvriEeOv7bnvJP5MQg" source="_bqGwyPriEeOv7bnvJP5MQg" target="_bqGwxfriEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Thread/exe"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_bqGwzPriEeOv7bnvJP5MQg" origin="_bqGwvfriEeOv7bnvJP5MQg" image="_bqGww_riEeOv7bnvJP5MQg"/>
+            <mappings xmi:id="_bqGwzfriEeOv7bnvJP5MQg" origin="_bqGwu_riEeOv7bnvJP5MQg" image="_bqGwxfriEeOv7bnvJP5MQg"/>
+            <mappings xmi:id="_bqGwzvriEeOv7bnvJP5MQg" origin="_bqGwuvriEeOv7bnvJP5MQg" image="_bqGwyPriEeOv7bnvJP5MQg"/>
+          </child>
+        </left>
+        <right xsi:type="henshin:Not" xmi:id="_Pau-ofxsEeO2srAJ1NB-mQ">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_Pau-ovxsEeO2srAJ1NB-mQ">
+            <conclusion xmi:id="_Pau-o_xsEeO2srAJ1NB-mQ" name="2">
+              <nodes xmi:id="_Pau-pPxsEeO2srAJ1NB-mQ" outgoing="_PavlsPxsEeO2srAJ1NB-mQ">
+                <type href="list.ecore#//Thread"/>
+              </nodes>
+              <nodes xmi:id="_Pau-pvxsEeO2srAJ1NB-mQ" incoming="_PavlsPxsEeO2srAJ1NB-mQ" outgoing="_Pavls_xsEeO2srAJ1NB-mQ">
+                <type href="list.ecore#//Delete"/>
+                <attributes xmi:id="_Pau-p_xsEeO2srAJ1NB-mQ" value="x">
+                  <type href="list.ecore#//Command/val"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_PavlsfxsEeO2srAJ1NB-mQ" incoming="_Pavls_xsEeO2srAJ1NB-mQ" outgoing="_bqGwy_riEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Cell"/>
+              </nodes>
+              <nodes xmi:id="_bqGwx_riEeOv7bnvJP5MQg" incoming="_bqGwy_riEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Cell"/>
+              </nodes>
+              <edges xmi:id="_PavlsPxsEeO2srAJ1NB-mQ" source="_Pau-pPxsEeO2srAJ1NB-mQ" target="_Pau-pvxsEeO2srAJ1NB-mQ">
+                <type href="list.ecore#//Thread/exe"/>
+              </edges>
+              <edges xmi:id="_Pavls_xsEeO2srAJ1NB-mQ" source="_Pau-pvxsEeO2srAJ1NB-mQ" target="_PavlsfxsEeO2srAJ1NB-mQ">
+                <type href="list.ecore#//Command/pos"/>
+              </edges>
+              <edges xmi:id="_bqGwy_riEeOv7bnvJP5MQg" source="_PavlsfxsEeO2srAJ1NB-mQ" target="_bqGwx_riEeOv7bnvJP5MQg">
+                <type href="list.ecore#//ListObject/next"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_Pau-pfxsEeO2srAJ1NB-mQ" origin="_bqGwuvriEeOv7bnvJP5MQg" image="_Pau-pPxsEeO2srAJ1NB-mQ"/>
+            <mappings xmi:id="_Pau-qPxsEeO2srAJ1NB-mQ" origin="_bqGwu_riEeOv7bnvJP5MQg" image="_Pau-pvxsEeO2srAJ1NB-mQ"/>
+            <mappings xmi:id="_PavlsvxsEeO2srAJ1NB-mQ" origin="_bqGwvfriEeOv7bnvJP5MQg" image="_PavlsfxsEeO2srAJ1NB-mQ"/>
+          </child>
+        </right>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_bqGwz_riEeOv7bnvJP5MQg" name="Rhs">
+      <nodes xmi:id="_bqGw0PriEeOv7bnvJP5MQg" outgoing="_bqGw1PriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <nodes xmi:id="_bqGw0friEeOv7bnvJP5MQg" incoming="_bqGw1PriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Delete"/>
+        <attributes xmi:id="_bqGw0vriEeOv7bnvJP5MQg" value="x">
+          <type href="list.ecore#//Command/val"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_bqGw0_riEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Cell"/>
+      </nodes>
+      <edges xmi:id="_bqGw1PriEeOv7bnvJP5MQg" source="_bqGw0PriEeOv7bnvJP5MQg" target="_bqGw0friEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_bqGw1friEeOv7bnvJP5MQg" origin="_bqGwuvriEeOv7bnvJP5MQg" image="_bqGw0PriEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_bqGw1vriEeOv7bnvJP5MQg" origin="_bqGwu_riEeOv7bnvJP5MQg" image="_bqGw0friEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_bqGw1_riEeOv7bnvJP5MQg" origin="_bqGwvfriEeOv7bnvJP5MQg" image="_bqGw0_riEeOv7bnvJP5MQg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_2ITtuvriEeOv7bnvJP5MQg" name="appendOnValueNotFound">
+    <parameters xmi:id="_2ITtu_riEeOv7bnvJP5MQg" name="x">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <lhs xmi:id="_2ITtvPriEeOv7bnvJP5MQg" name="Lhs">
+      <nodes xmi:id="_2ITtvfriEeOv7bnvJP5MQg" incoming="_2ITtwvriEeOv7bnvJP5MQg" outgoing="_2ITtwfriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Append"/>
+        <attributes xmi:id="_2ITtvvriEeOv7bnvJP5MQg" value="x">
+          <type href="list.ecore#//Command/val"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_2ITtv_riEeOv7bnvJP5MQg" incoming="_2ITtwfriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Cell"/>
+      </nodes>
+      <nodes xmi:id="_2ITtwPriEeOv7bnvJP5MQg" outgoing="_2ITtwvriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <edges xmi:id="_2ITtwfriEeOv7bnvJP5MQg" source="_2ITtvfriEeOv7bnvJP5MQg" target="_2ITtv_riEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Command/pos"/>
+      </edges>
+      <edges xmi:id="_2ITtwvriEeOv7bnvJP5MQg" source="_2ITtwPriEeOv7bnvJP5MQg" target="_2ITtvfriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+      <formula xsi:type="henshin:And" xmi:id="_Dv8BAPrjEeOv7bnvJP5MQg">
+        <left xsi:type="henshin:Not" xmi:id="_Q1StsPrjEeOv7bnvJP5MQg">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_Q1StsfrjEeOv7bnvJP5MQg">
+            <conclusion xmi:id="_Q1StsvrjEeOv7bnvJP5MQg" name="1">
+              <nodes xmi:id="_Q1Sts_rjEeOv7bnvJP5MQg" incoming="_Q1StufrjEeOv7bnvJP5MQg" outgoing="_Q1StuvrjEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Append"/>
+                <attributes xmi:id="_Q1SttPrjEeOv7bnvJP5MQg" value="x">
+                  <type href="list.ecore#//Command/val"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_Q1SttfrjEeOv7bnvJP5MQg" outgoing="_Q1StufrjEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Thread"/>
+              </nodes>
+              <nodes xmi:id="_Q1SttvrjEeOv7bnvJP5MQg" incoming="_Q1StuvrjEeOv7bnvJP5MQg" outgoing="_Q1Stu_rjEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Cell"/>
+              </nodes>
+              <nodes xmi:id="_Q1StuPrjEeOv7bnvJP5MQg" incoming="_Q1Stu_rjEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Cell"/>
+              </nodes>
+              <edges xmi:id="_Q1StufrjEeOv7bnvJP5MQg" source="_Q1SttfrjEeOv7bnvJP5MQg" target="_Q1Sts_rjEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Thread/exe"/>
+              </edges>
+              <edges xmi:id="_Q1StuvrjEeOv7bnvJP5MQg" source="_Q1Sts_rjEeOv7bnvJP5MQg" target="_Q1SttvrjEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Command/pos"/>
+              </edges>
+              <edges xmi:id="_Q1Stu_rjEeOv7bnvJP5MQg" source="_Q1SttvrjEeOv7bnvJP5MQg" target="_Q1StuPrjEeOv7bnvJP5MQg">
+                <type href="list.ecore#//ListObject/next"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_Q1StvPrjEeOv7bnvJP5MQg" origin="_2ITtvfriEeOv7bnvJP5MQg" image="_Q1Sts_rjEeOv7bnvJP5MQg"/>
+            <mappings xmi:id="_Q1StvfrjEeOv7bnvJP5MQg" origin="_2ITtwPriEeOv7bnvJP5MQg" image="_Q1SttfrjEeOv7bnvJP5MQg"/>
+            <mappings xmi:id="_Q1StvvrjEeOv7bnvJP5MQg" origin="_2ITtv_riEeOv7bnvJP5MQg" image="_Q1SttvrjEeOv7bnvJP5MQg"/>
+          </child>
+        </left>
+        <right xsi:type="henshin:Not" xmi:id="_Dv8BAfrjEeOv7bnvJP5MQg">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_Dv8BAvrjEeOv7bnvJP5MQg">
+            <conclusion xmi:id="_Dv8BA_rjEeOv7bnvJP5MQg" name="2">
+              <nodes xmi:id="_Dv8BBPrjEeOv7bnvJP5MQg" incoming="_Dv8oEPrjEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Cell"/>
+                <attributes xmi:id="_DKkqIPrjEeOv7bnvJP5MQg" value="x">
+                  <type href="list.ecore#//Cell/val"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_Dv8BB_rjEeOv7bnvJP5MQg" outgoing="_Dv8oEPrjEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Append"/>
+                <attributes xmi:id="_Dv8BCPrjEeOv7bnvJP5MQg" value="x">
+                  <type href="list.ecore#//Command/val"/>
+                </attributes>
+              </nodes>
+              <edges xmi:id="_Dv8oEPrjEeOv7bnvJP5MQg" source="_Dv8BB_rjEeOv7bnvJP5MQg" target="_Dv8BBPrjEeOv7bnvJP5MQg">
+                <type href="list.ecore#//Command/pos"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_Dv8BBvrjEeOv7bnvJP5MQg" origin="_2ITtv_riEeOv7bnvJP5MQg" image="_Dv8BBPrjEeOv7bnvJP5MQg"/>
+            <mappings xmi:id="_Dv8BCfrjEeOv7bnvJP5MQg" origin="_2ITtvfriEeOv7bnvJP5MQg" image="_Dv8BB_rjEeOv7bnvJP5MQg"/>
+          </child>
+        </right>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_2ITtzfriEeOv7bnvJP5MQg" name="Rhs">
+      <nodes xmi:id="_2ITtzvriEeOv7bnvJP5MQg" incoming="_2ITt1vriEeOv7bnvJP5MQg" outgoing="_2ITt1friEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Append"/>
+        <attributes xmi:id="_2ITtz_riEeOv7bnvJP5MQg" value="x">
+          <type href="list.ecore#//Command/val"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_2ITt0PriEeOv7bnvJP5MQg" incoming="_2ITt1friEeOv7bnvJP5MQg" outgoing="_2ITt1PriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Cell"/>
+      </nodes>
+      <nodes xmi:id="_2ITt0friEeOv7bnvJP5MQg" incoming="_2ITt1PriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Cell"/>
+        <attributes xmi:id="_2ITt0vriEeOv7bnvJP5MQg" value="x">
+          <type href="list.ecore#//Cell/val"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_2ITt0_riEeOv7bnvJP5MQg" outgoing="_2ITt1vriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <edges xmi:id="_2ITt1PriEeOv7bnvJP5MQg" source="_2ITt0PriEeOv7bnvJP5MQg" target="_2ITt0friEeOv7bnvJP5MQg">
+        <type href="list.ecore#//ListObject/next"/>
+      </edges>
+      <edges xmi:id="_2ITt1friEeOv7bnvJP5MQg" source="_2ITtzvriEeOv7bnvJP5MQg" target="_2ITt0PriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Command/pos"/>
+      </edges>
+      <edges xmi:id="_2ITt1vriEeOv7bnvJP5MQg" source="_2ITt0_riEeOv7bnvJP5MQg" target="_2ITtzvriEeOv7bnvJP5MQg">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_2ITt1_riEeOv7bnvJP5MQg" origin="_2ITtvfriEeOv7bnvJP5MQg" image="_2ITtzvriEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_2ITt2PriEeOv7bnvJP5MQg" origin="_2ITtv_riEeOv7bnvJP5MQg" image="_2ITt0PriEeOv7bnvJP5MQg"/>
+    <mappings xmi:id="_2ITt2friEeOv7bnvJP5MQg" origin="_2ITtwPriEeOv7bnvJP5MQg" image="_2ITt0_riEeOv7bnvJP5MQg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_Qp2nkPuEEeOfFbwE57EwzA" name="executeFirstCommand">
+    <lhs xmi:id="_Qp2nkfuEEeOfFbwE57EwzA" name="Lhs">
+      <nodes xmi:id="_Qp2nk_uEEeOfFbwE57EwzA" outgoing="_Qp2nlvuEEeOfFbwE57EwzA _X7Tb8PuEEeOfFbwE57EwzA">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <nodes xmi:id="_Qp2nlPuEEeOfFbwE57EwzA" incoming="_Qp2nlvuEEeOfFbwE57EwzA">
+        <type href="list.ecore#//List"/>
+      </nodes>
+      <nodes xmi:id="_Qp2nqfuEEeOfFbwE57EwzA" incoming="_X7Tb8PuEEeOfFbwE57EwzA">
+        <type href="list.ecore#//Command"/>
+      </nodes>
+      <edges xmi:id="_Qp2nlvuEEeOfFbwE57EwzA" source="_Qp2nk_uEEeOfFbwE57EwzA" target="_Qp2nlPuEEeOfFbwE57EwzA">
+        <type href="list.ecore#//Thread/modLists"/>
+      </edges>
+      <edges xmi:id="_X7Tb8PuEEeOfFbwE57EwzA" source="_Qp2nk_uEEeOfFbwE57EwzA" target="_Qp2nqfuEEeOfFbwE57EwzA">
+        <type href="list.ecore#//Thread/init"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_Qp2noPuEEeOfFbwE57EwzA" name="Rhs">
+      <nodes xmi:id="_Qp2nofuEEeOfFbwE57EwzA" outgoing="_Qp2no_uEEeOfFbwE57EwzA _5bmi0PuEEeOfFbwE57EwzA">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <nodes xmi:id="_Qp2novuEEeOfFbwE57EwzA" incoming="_Qp2no_uEEeOfFbwE57EwzA _71tNwPuEEeOfFbwE57EwzA">
+        <type href="list.ecore#//List"/>
+      </nodes>
+      <nodes xmi:id="_3A6CAPuEEeOfFbwE57EwzA" incoming="_5bmi0PuEEeOfFbwE57EwzA" outgoing="_71tNwPuEEeOfFbwE57EwzA">
+        <type href="list.ecore#//Command"/>
+      </nodes>
+      <edges xmi:id="_Qp2no_uEEeOfFbwE57EwzA" source="_Qp2nofuEEeOfFbwE57EwzA" target="_Qp2novuEEeOfFbwE57EwzA">
+        <type href="list.ecore#//Thread/modLists"/>
+      </edges>
+      <edges xmi:id="_5bmi0PuEEeOfFbwE57EwzA" source="_Qp2nofuEEeOfFbwE57EwzA" target="_3A6CAPuEEeOfFbwE57EwzA">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+      <edges xmi:id="_71tNwPuEEeOfFbwE57EwzA" source="_3A6CAPuEEeOfFbwE57EwzA" target="_Qp2novuEEeOfFbwE57EwzA">
+        <type href="list.ecore#//Command/pos"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_Qp2npPuEEeOfFbwE57EwzA" origin="_Qp2nk_uEEeOfFbwE57EwzA" image="_Qp2nofuEEeOfFbwE57EwzA"/>
+    <mappings xmi:id="_Qp2npfuEEeOfFbwE57EwzA" origin="_Qp2nlPuEEeOfFbwE57EwzA" image="_Qp2novuEEeOfFbwE57EwzA"/>
+    <mappings xmi:id="_3A6pEPuEEeOfFbwE57EwzA" origin="_Qp2nqfuEEeOfFbwE57EwzA" image="_3A6CAPuEEeOfFbwE57EwzA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_gJhHgP0ZEeOJD_QxfxM9gw" name="exeNxtCmd">
+    <lhs xmi:id="_gJkx4P0ZEeOJD_QxfxM9gw" name="Lhs">
+      <nodes xmi:id="_iZKO4P0ZEeOJD_QxfxM9gw" outgoing="_kc8EgP0ZEeOJD_QxfxM9gw">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+      <nodes xmi:id="_kc7dcP0ZEeOJD_QxfxM9gw" incoming="_kc8EgP0ZEeOJD_QxfxM9gw">
+        <type href="list.ecore#//Command"/>
+      </nodes>
+      <edges xmi:id="_kc8EgP0ZEeOJD_QxfxM9gw" source="_iZKO4P0ZEeOJD_QxfxM9gw" target="_kc7dcP0ZEeOJD_QxfxM9gw">
+        <type href="list.ecore#//Thread/exe"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_lgYegv0ZEeOJD_QxfxM9gw">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_lgYeg_0ZEeOJD_QxfxM9gw">
+          <conclusion xmi:id="_lgYehP0ZEeOJD_QxfxM9gw">
+            <nodes xmi:id="_lgYehf0ZEeOJD_QxfxM9gw" outgoing="_lgZFkP0ZEeOJD_QxfxM9gw">
+              <type href="list.ecore#//Thread"/>
+            </nodes>
+            <nodes xmi:id="_lgYeh_0ZEeOJD_QxfxM9gw" incoming="_lgZFkP0ZEeOJD_QxfxM9gw" outgoing="_mnLugP0ZEeOJD_QxfxM9gw">
+              <type href="list.ecore#//Command"/>
+            </nodes>
+            <nodes xmi:id="_lgX3cP0ZEeOJD_QxfxM9gw" incoming="_mnLugP0ZEeOJD_QxfxM9gw">
+              <type href="list.ecore#//ListObject"/>
+            </nodes>
+            <edges xmi:id="_lgZFkP0ZEeOJD_QxfxM9gw" source="_lgYehf0ZEeOJD_QxfxM9gw" target="_lgYeh_0ZEeOJD_QxfxM9gw">
+              <type href="list.ecore#//Thread/exe"/>
+            </edges>
+            <edges xmi:id="_mnLugP0ZEeOJD_QxfxM9gw" source="_lgYeh_0ZEeOJD_QxfxM9gw" target="_lgX3cP0ZEeOJD_QxfxM9gw">
+              <type href="list.ecore#//Command/pos"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_lgYehv0ZEeOJD_QxfxM9gw" origin="_iZKO4P0ZEeOJD_QxfxM9gw" image="_lgYehf0ZEeOJD_QxfxM9gw"/>
+          <mappings xmi:id="_lgYeiP0ZEeOJD_QxfxM9gw" origin="_kc7dcP0ZEeOJD_QxfxM9gw" image="_lgYeh_0ZEeOJD_QxfxM9gw"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_gJkx4f0ZEeOJD_QxfxM9gw" name="Rhs">
+      <nodes xmi:id="_iZKO4f0ZEeOJD_QxfxM9gw">
+        <type href="list.ecore#//Thread"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_iZK18P0ZEeOJD_QxfxM9gw" origin="_iZKO4P0ZEeOJD_QxfxM9gw" image="_iZKO4f0ZEeOJD_QxfxM9gw"/>
+    <multiRules xmi:id="_jLbZU_0ZEeOJD_QxfxM9gw">
+      <lhs xmi:id="_jLbZVP0ZEeOJD_QxfxM9gw" name="Lhs">
+        <nodes xmi:id="_jLcAY_0ZEeOJD_QxfxM9gw" outgoing="_kc8rkv0ZEeOJD_QxfxM9gw">
+          <type href="list.ecore#//Thread"/>
+        </nodes>
+        <nodes xmi:id="_jLayQP0ZEeOJD_QxfxM9gw" incoming="_mTTJMP0ZEeOJD_QxfxM9gw">
+          <type href="list.ecore#//Command"/>
+        </nodes>
+        <nodes xmi:id="_kc8rkP0ZEeOJD_QxfxM9gw" incoming="_kc8rkv0ZEeOJD_QxfxM9gw" outgoing="_mTTJMP0ZEeOJD_QxfxM9gw">
+          <type href="list.ecore#//Command"/>
+        </nodes>
+        <edges xmi:id="_kc8rkv0ZEeOJD_QxfxM9gw" source="_jLcAY_0ZEeOJD_QxfxM9gw" target="_kc8rkP0ZEeOJD_QxfxM9gw">
+          <type href="list.ecore#//Thread/exe"/>
+        </edges>
+        <edges xmi:id="_mTTJMP0ZEeOJD_QxfxM9gw" source="_kc8rkP0ZEeOJD_QxfxM9gw" target="_jLayQP0ZEeOJD_QxfxM9gw">
+          <type href="list.ecore#//Command/next"/>
+        </edges>
+      </lhs>
+      <rhs xmi:id="_jLbZVf0ZEeOJD_QxfxM9gw" name="Rhs">
+        <nodes xmi:id="_jLbZVv0ZEeOJD_QxfxM9gw" outgoing="_oh_1YP0ZEeOJD_QxfxM9gw">
+          <type href="list.ecore#//Thread"/>
+        </nodes>
+        <nodes xmi:id="_jLayQf0ZEeOJD_QxfxM9gw" incoming="_oh_1YP0ZEeOJD_QxfxM9gw">
+          <type href="list.ecore#//Command"/>
+        </nodes>
+        <edges xmi:id="_oh_1YP0ZEeOJD_QxfxM9gw" source="_jLbZVv0ZEeOJD_QxfxM9gw" target="_jLayQf0ZEeOJD_QxfxM9gw">
+          <type href="list.ecore#//Thread/init"/>
+        </edges>
+      </rhs>
+      <mappings xmi:id="_jLcAaP0ZEeOJD_QxfxM9gw" origin="_jLcAY_0ZEeOJD_QxfxM9gw" image="_jLbZVv0ZEeOJD_QxfxM9gw"/>
+      <mappings xmi:id="_jLbZUP0ZEeOJD_QxfxM9gw" origin="_jLayQP0ZEeOJD_QxfxM9gw" image="_jLayQf0ZEeOJD_QxfxM9gw"/>
+      <multiMappings xmi:id="_jLbZV_0ZEeOJD_QxfxM9gw" origin="_iZKO4f0ZEeOJD_QxfxM9gw" image="_jLbZVv0ZEeOJD_QxfxM9gw"/>
+      <multiMappings xmi:id="_jLcAZP0ZEeOJD_QxfxM9gw" origin="_iZKO4P0ZEeOJD_QxfxM9gw" image="_jLcAY_0ZEeOJD_QxfxM9gw"/>
+      <multiMappings xmi:id="_kc8rkf0ZEeOJD_QxfxM9gw" origin="_kc7dcP0ZEeOJD_QxfxM9gw" image="_kc8rkP0ZEeOJD_QxfxM9gw"/>
+    </multiRules>
+  </units>
+</henshin:Module>

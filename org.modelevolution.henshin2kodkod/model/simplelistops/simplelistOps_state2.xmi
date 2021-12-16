@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ccsl:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ccsl="http://ccsl.big.tuwien.ac.at" xsi:schemaLocation="http://ccsl.big.tuwien.ac.at simplelist.ecore" name="TestSys">
+  <threads modLists="//@lists.0" name="Thread1">
+    <exe xsi:type="ccsl:Append" val="1"/>
+  </threads>
+  <threads modLists="//@lists.0" name="Thread2">
+    <exe xsi:type="ccsl:Append" val="1">
+      <next xsi:type="ccsl:Append" val="2"/>
+    </exe>
+  </threads>
+  <lists name="List1">
+    <next xsi:type="ccsl:Cell"/>
+  </lists>
+</ccsl:System>

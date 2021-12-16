@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pacman:Game
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:pacman="http://pacman/array/1.0">
+  <fields neighbor="//@fields.1 //@fields.2"
+      id="1"/>
+  <fields neighbor="//@fields.0 //@fields.3"
+      id="2"/>
+  <fields neighbor="//@fields.3 //@fields.0"
+      id="3"/>
+  <fields neighbor="//@fields.1 //@fields.2"
+      id="4"
+      treasure="true"/>
+  <pacman on="//@fields.0"/>
+  <ghosts on="//@fields.2"/>
+  <ints>1</ints>
+  <ints>2</ints>
+  <ints>3</ints>
+</pacman:Game>

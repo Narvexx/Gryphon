@@ -1,0 +1,76 @@
+ * if p | m then (if p & mr then mr_eff & m else p_eff & !m) else else_eff
+ * 
+ * (p|m) => ((p&mr) => (mr_eff&m) & !(p&mr) => p_eff & !m) & !(p|m) => else_eff
+ * 
+ * !(p|m) | ((!(p&mr) | (mr_eff&m)) & ((p&mr) | p_eff & !m)) & ((p|m) | else_eff)
+ * 
+ * (!(p|m) | !(p&mr) | (mr_eff&m)) & (!(p|m) | (p&mr) | (p_eff & !m)) & ((p|m) | else_eff)
+ * 
+ * Note that multirule implies rule p, i.e., mr=>p because p \subseteq mr, and 
+ * mr_effects do not change elements in p's LHS.  
+
+
+premise: 
+
+ALL: contains no next state vars
+
+consequent:
+
+ITE: IF: contains no next state vars
+
+     THEN: a) contains no next state vars
+           b) contains one next state var
+           c) contains AND gate (conjunction) of next state vars
+              IF a&!b THEN a'&b'&!c' ELSE c' === (a&b! => a') & (a&b! => b') & (a&b! => !c') & (!(a&!b)=>c')
+           d) contains NEGATED OR gate of next state vars
+           e) contains OR gate (disjunction) with one next state var
+              Ex: IF a&!b THEN !c|!d|a' ELSE !a' === a&!b => (c=>d=>a') & !(a&!b) => (!a')
+           f) contains NEGATED AND gate with one next state var
+     ELSE: see a)-d) above
+
+AND: TOP: inputs are either OR gates or ITE gates
+     OTHERWISE: 
+
+
+
+a1' & a2' & !a3' ==> Note there are no commons, empty commons evaluate to TRUE; hence, we have three implications TRUE=>a1', TRUE=>a2', TRUE=>!a3'
+                     It follows that a1, a2 are always TRUE, i.e., their next state function is 1, while a3 is always FALSE, i.e., its next state
+                     function is 0. 
+
+a1 | a2 | !a' === !a1 => !a2 => !a' 
+              === (!a1 & !a2) => !a' === !(a1 | a2) => !a'
+              ==> if (!a1 & !a2) is true then a' is req to be set to false; thus, by negating (!a1 & !a2), which yields !(!a1 & !a2), we obtain 
+                  a term that reflects the value of a'.
+                  note that !(!a1 & !a2) === a1 | a2, i.e., if a1 | a2 evaluates to false a' is set to false.
+              ==> for a negative latch var form the disjunction of the commons
+                  for a positive latch var form the conjunction of the negated commons
+
+a1 | a2 | (a3 ? a4 : a5) | !a' === !a1 => !a2 => (a3 => a4 & !a3 => a5) => !a' 
+                               === !a1 => !a2 => a3 => a4  => !a' & !a1 => !a2 => !a3 => a5 => !a'
+                               === a1 | a2 | !a3 | !a4 | !a'
+                               ==> An ITE gate that is part of an OR gate may contribute only commons; in that case, all its THEN commons 
+                                   need to be negated for a negative latch var, 
+                                   while the IF commons need to be negated only for the latch condition for the THEN branch.
+
+a1 | a2 | (a3 ? a4' : !a5') | !a6  === !a1 => !a2 => a6 => a3 => a4' & !a1 => !a2 => a6 => !a3 => !a5'
+                                   === >>(!a1 & !a2 & a6 & a3)<< => a4' & (!a1 & !a2 & a6 & !a3) => !a5'
+                                   === !(!a1 & !a2 & a6 & a3) | a4' & >>!(!a1 & !a2 & a6 & !a3)<< | !a5'
+                                   === a1 | a2 | !a6 | !a3 | a4' & a1 | a2 | !a6 | a3 | !a5'
+                                   ==> form the conjunction of the negated non-if commons and the (unchanged) if-commons in case of a positive latch var;
+                                       form the disjunction of the commons and the negated if-commons in case of a negative latch var
+                                       NOTE: we can collapse the IF commons of an ITE chain into a conjunction
+
+a1 & (a2 ? a3 : !a4) & a5 === a1 & (!a2 | a3) & (a2 | !a4) & a5 
+                          ==> no primed vars; hence, translate as is into a common AigBuilder
+
+(a1|a1') & ((a2 & a3) ? !a2' : a2') & (!a3|a3') === (!a1 => a1') & (!(a2 & a3) | !a2') & ((a2 & a3) | a2') & (!a3|a3') 
+
+!((a1&a1') | ((a2 & a3) ? !a2' : a2') | (!a3&a3')) === !(a1&a1') & !((a2 & a3) ? !a2' : a2') & (!a3&a3')
+                                                   === (!a1|!a1') & ((a2 & a3) ? a2' : !a2') & (a3|!a3')
+
+
+negations are pushed inward and effect the translation immediatelty, i.e., a disjunction of literals becomes a conjunction of the negated literals.
+
+(If the THEN branch contains a primed var) the commons of the THEN branch must not be passed on to the ELSE branch.
+
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_YGpOgLkcEeSQvOP4dWWQ4g" type="Henshin" name="state.henshin_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_cZb5YLkcEeSQvOP4dWWQ4g" type="2001" fontName="Droid Serif" italic="true" lineColor="0">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_duRlYrkcEeSQvOP4dWWQ4g" source="defaultAction">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_duRlY7kcEeSQvOP4dWWQ4g" key="value" value="preserve"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_cZcgcLkcEeSQvOP4dWWQ4g" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_cZcgcbkcEeSQvOP4dWWQ4g" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_duSzgLkcEeSQvOP4dWWQ4g" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_duTakLkcEeSQvOP4dWWQ4g" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_duTakbkcEeSQvOP4dWWQ4g" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_duTakrkcEeSQvOP4dWWQ4g" type="7002">
+          <children xmi:type="notation:Node" xmi:id="_ecA1ILkcEeSQvOP4dWWQ4g" type="3002">
+            <element xmi:type="henshin:Attribute" href="state.henshin#_eb_nALkcEeSQvOP4dWWQ4g"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ecA1IbkcEeSQvOP4dWWQ4g"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_duTak7kcEeSQvOP4dWWQ4g"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_duTalLkcEeSQvOP4dWWQ4g"/>
+        </children>
+        <element xmi:type="henshin:Node" href="state.henshin#_duQ-ULkcEeSQvOP4dWWQ4g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_duSzgbkcEeSQvOP4dWWQ4g" x="52" y="33"/>
+      </children>
+    </children>
+    <element xmi:type="henshin:Rule" href="state.henshin#_cZbSULkcEeSQvOP4dWWQ4g"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cZb5YbkcEeSQvOP4dWWQ4g" x="441" y="198"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_mePmMLkcEeSQvOP4dWWQ4g" type="2001" fontName="Droid Serif" italic="true" lineColor="0">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_o6zvQrkcEeSQvOP4dWWQ4g" source="defaultAction">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_o6zvQ7kcEeSQvOP4dWWQ4g" key="value" value="preserve"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_meQNQLkcEeSQvOP4dWWQ4g" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_meQNQbkcEeSQvOP4dWWQ4g" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_o609YLkcEeSQvOP4dWWQ4g" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_o609YrkcEeSQvOP4dWWQ4g" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_o61kcLkcEeSQvOP4dWWQ4g" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_o61kcbkcEeSQvOP4dWWQ4g" type="7002">
+          <children xmi:type="notation:Node" xmi:id="_pfLAkLkcEeSQvOP4dWWQ4g" type="3002">
+            <element xmi:type="henshin:Attribute" href="state.henshin#_pfKZgLkcEeSQvOP4dWWQ4g"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_pfLAkbkcEeSQvOP4dWWQ4g"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_o61kcrkcEeSQvOP4dWWQ4g"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_o61kc7kcEeSQvOP4dWWQ4g"/>
+        </children>
+        <element xmi:type="henshin:Node" href="state.henshin#_o6zIMLkcEeSQvOP4dWWQ4g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o609YbkcEeSQvOP4dWWQ4g" x="57" y="37"/>
+      </children>
+    </children>
+    <element xmi:type="henshin:Rule" href="state.henshin#_meMi4LkcEeSQvOP4dWWQ4g"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mePmMbkcEeSQvOP4dWWQ4g" x="725" y="198"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_roxxYLkcEeSQvOP4dWWQ4g" type="2001" fontName="Droid Serif" italic="true" lineColor="0">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tifFALkcEeSQvOP4dWWQ4g" source="defaultAction">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tifFAbkcEeSQvOP4dWWQ4g" key="value" value="preserve"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_roxxYrkcEeSQvOP4dWWQ4g" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_roxxY7kcEeSQvOP4dWWQ4g" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_tigTILkcEeSQvOP4dWWQ4g" type="3001" fontName="Droid Serif">
+        <children xmi:type="notation:DecorationNode" xmi:id="_tigTIrkcEeSQvOP4dWWQ4g" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_tigTI7kcEeSQvOP4dWWQ4g" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_tigTJLkcEeSQvOP4dWWQ4g" type="7002">
+          <children xmi:type="notation:Node" xmi:id="_uLtBILkcEeSQvOP4dWWQ4g" type="3002">
+            <element xmi:type="henshin:Attribute" href="state.henshin#_uLrzALkcEeSQvOP4dWWQ4g"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_uLtBIbkcEeSQvOP4dWWQ4g"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_tigTJbkcEeSQvOP4dWWQ4g"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_tigTJrkcEeSQvOP4dWWQ4g"/>
+        </children>
+        <element xmi:type="henshin:Node" href="state.henshin#_tied8LkcEeSQvOP4dWWQ4g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tigTIbkcEeSQvOP4dWWQ4g" x="87" y="57"/>
+      </children>
+    </children>
+    <element xmi:type="henshin:Rule" href="state.henshin#_roxKULkcEeSQvOP4dWWQ4g"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_roxxYbkcEeSQvOP4dWWQ4g" x="678" y="479"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_YGpOgbkcEeSQvOP4dWWQ4g"/>
+  <element xmi:type="henshin:Module" href="state.henshin#_YGnZULkcEeSQvOP4dWWQ4g"/>
+</notation:Diagram>

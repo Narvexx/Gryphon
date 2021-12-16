@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pacman:Game xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pacman="http://pacman/colored/1.0" xsi:schemaLocation="http://pacman/colored/1.0 pacman_colored.ecore">
+  <fields neighbor="//@fields.1" treasure="true"/>
+  <fields neighbor="//@fields.0" id="1"/>
+  <pacman on="//@fields.0"/>
+  <ghosts on="//@fields.1"/>
+  <ghosts on="//@fields.1" color="Red"/>
+</pacman:Game>

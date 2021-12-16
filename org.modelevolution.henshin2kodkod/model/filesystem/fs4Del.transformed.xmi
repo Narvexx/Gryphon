@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fs:Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fs="http://filesystem/1.0" xsi:schemaLocation="http://filesystem/1.0 filesystem.ecore">
+  <dirs name="D1">
+    <subdirs name="D1S2"/>
+    <files name="F1"/>
+  </dirs>
+</fs:Root>

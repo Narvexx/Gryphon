@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_p50vUKLuEeS0ZOgaGeSDsg">
+  <imports href="pacman.ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_zhkFoKLuEeS0ZOgaGeSDsg" name="bad">
+    <lhs xmi:id="_zhmh4KLuEeS0ZOgaGeSDsg" name="Lhs">
+      <nodes xmi:id="_0cjHMKLuEeS0ZOgaGeSDsg" incoming="_1_C0sKLuEeS0ZOgaGeSDsg">
+        <type href="pacman.ecore#//Field"/>
+      </nodes>
+      <nodes xmi:id="_0vi7sKLuEeS0ZOgaGeSDsg" incoming="_1xFRMKLuEeS0ZOgaGeSDsg">
+        <type href="pacman.ecore#//Field"/>
+      </nodes>
+      <nodes xmi:id="_1Qz1sKLuEeS0ZOgaGeSDsg" outgoing="_1xFRMKLuEeS0ZOgaGeSDsg _1_C0sKLuEeS0ZOgaGeSDsg">
+        <type href="pacman.ecore#//Pacman"/>
+      </nodes>
+      <edges xmi:id="_1xFRMKLuEeS0ZOgaGeSDsg" source="_1Qz1sKLuEeS0ZOgaGeSDsg" target="_0vi7sKLuEeS0ZOgaGeSDsg">
+        <type href="pacman.ecore#//Pacman/on"/>
+      </edges>
+      <edges xmi:id="_1_C0sKLuEeS0ZOgaGeSDsg" source="_1Qz1sKLuEeS0ZOgaGeSDsg" target="_0cjHMKLuEeS0ZOgaGeSDsg">
+        <type href="pacman.ecore#//Pacman/on"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_zhmh4aLuEeS0ZOgaGeSDsg" name="Rhs">
+      <nodes xmi:id="_0cjHMaLuEeS0ZOgaGeSDsg" incoming="_1_DbwKLuEeS0ZOgaGeSDsg">
+        <type href="pacman.ecore#//Field"/>
+      </nodes>
+      <nodes xmi:id="_0vi7saLuEeS0ZOgaGeSDsg" incoming="_1xFRMaLuEeS0ZOgaGeSDsg">
+        <type href="pacman.ecore#//Field"/>
+      </nodes>
+      <nodes xmi:id="_1Qz1saLuEeS0ZOgaGeSDsg" outgoing="_1xFRMaLuEeS0ZOgaGeSDsg _1_DbwKLuEeS0ZOgaGeSDsg">
+        <type href="pacman.ecore#//Pacman"/>
+      </nodes>
+      <edges xmi:id="_1xFRMaLuEeS0ZOgaGeSDsg" source="_1Qz1saLuEeS0ZOgaGeSDsg" target="_0vi7saLuEeS0ZOgaGeSDsg">
+        <type href="pacman.ecore#//Pacman/on"/>
+      </edges>
+      <edges xmi:id="_1_DbwKLuEeS0ZOgaGeSDsg" source="_1Qz1saLuEeS0ZOgaGeSDsg" target="_0cjHMaLuEeS0ZOgaGeSDsg">
+        <type href="pacman.ecore#//Pacman/on"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_0cjHMqLuEeS0ZOgaGeSDsg" origin="_0cjHMKLuEeS0ZOgaGeSDsg" image="_0cjHMaLuEeS0ZOgaGeSDsg"/>
+    <mappings xmi:id="_0vi7sqLuEeS0ZOgaGeSDsg" origin="_0vi7sKLuEeS0ZOgaGeSDsg" image="_0vi7saLuEeS0ZOgaGeSDsg"/>
+    <mappings xmi:id="_1Q0cwKLuEeS0ZOgaGeSDsg" origin="_1Qz1sKLuEeS0ZOgaGeSDsg" image="_1Qz1saLuEeS0ZOgaGeSDsg"/>
+  </units>
+</henshin:Module>

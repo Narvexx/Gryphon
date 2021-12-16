@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pacman:Game
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:pacman="http://pacman/1.0">
+  <fields id="1"/>
+  <pacman on="//@fields.0"/>
+</pacman:Game>

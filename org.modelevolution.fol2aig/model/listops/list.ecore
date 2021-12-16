@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="concurrentlist" nsURI="http://ccl.big.tuwien.ac.at" nsPrefix="ccl">
+  <eClassifiers xsi:type="ecore:EClass" name="System">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="threads" lowerBound="1"
+        upperBound="-1" eType="#//Thread" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lists" lowerBound="1" upperBound="-1"
+        eType="#//List" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="locks" upperBound="-1"
+        eType="#//Lock" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Thread">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modLists" upperBound="-1"
+        eType="#//List"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="exe" eType="#//Command"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="init" eType="#//Command"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="List" eSuperTypes="#//ListObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cells" upperBound="-1"
+        eType="#//Cell" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Cell" eSuperTypes="#//ListObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="val" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Lock">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="list" eType="#//List"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Command" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="next" eType="#//Command"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pos" eType="#//ListObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="val" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Append" eSuperTypes="#//ContainsOrAppend"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Contains" eSuperTypes="#//ContainsOrAppend"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Delete" eSuperTypes="#//Command"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ListObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="next" eType="#//ListObject"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ContainsOrAppend" eSuperTypes="#//Command"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IdHaver"/>
+</ecore:EPackage>

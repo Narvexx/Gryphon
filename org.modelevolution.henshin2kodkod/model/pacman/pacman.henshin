@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_RuCFwEb4EeOLbpO6FwQSDg">
+  <imports href="pacman.ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_RuCFwUb4EeOLbpO6FwQSDg" name="movePacman">
+    <parameters xmi:id="_w-xg8G92EeSQp_kzetr0iA" name="x"/>
+    <lhs xmi:id="_RuCFwkb4EeOLbpO6FwQSDg" name="Lhs">
+      <nodes xmi:id="_RuCFw0b4EeOLbpO6FwQSDg" outgoing="_RuCs0kb4EeOLbpO6FwQSDg">
+        <type href="pacman.ecore#//Pacman"/>
+      </nodes>
+      <nodes xmi:id="_RuCFxEb4EeOLbpO6FwQSDg" name="f1" incoming="_RuCs0kb4EeOLbpO6FwQSDg" outgoing="_RuCs0Ub4EeOLbpO6FwQSDg">
+        <type href="pacman.ecore#//Field"/>
+        <attributes xmi:id="_RuCFxUb4EeOLbpO6FwQSDg" value="false">
+          <type href="pacman.ecore#//Field/treasure"/>
+        </attributes>
+        <attributes xmi:id="_8dlpoDKZEeSTt9rZX-VVFQ" value="x">
+          <type href="pacman.ecore#//Field/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_RuCs0Eb4EeOLbpO6FwQSDg" name="f2" incoming="_RuCs0Ub4EeOLbpO6FwQSDg">
+        <type href="pacman.ecore#//Field"/>
+      </nodes>
+      <edges xmi:id="_RuCs0Ub4EeOLbpO6FwQSDg" source="_RuCFxEb4EeOLbpO6FwQSDg" target="_RuCs0Eb4EeOLbpO6FwQSDg">
+        <type href="pacman.ecore#//Field/neighbor"/>
+      </edges>
+      <edges xmi:id="_RuCs0kb4EeOLbpO6FwQSDg" source="_RuCFw0b4EeOLbpO6FwQSDg" target="_RuCFxEb4EeOLbpO6FwQSDg">
+        <type href="pacman.ecore#//Pacman/on"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_RuCs00b4EeOLbpO6FwQSDg">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_RuCs1Eb4EeOLbpO6FwQSDg">
+          <conclusion xmi:id="_RuCs1Ub4EeOLbpO6FwQSDg">
+            <nodes xmi:id="_RuCs10b4EeOLbpO6FwQSDg" incoming="_h8vD8XHNEeSQp_kzetr0iA">
+              <type href="pacman.ecore#//Field"/>
+            </nodes>
+            <nodes xmi:id="_h8uc4HHNEeSQp_kzetr0iA" outgoing="_h8vD8HHNEeSQp_kzetr0iA">
+              <type href="pacman.ecore#//Pacman"/>
+            </nodes>
+            <nodes xmi:id="_h8uc4nHNEeSQp_kzetr0iA" name="f1" incoming="_h8vD8HHNEeSQp_kzetr0iA _jB8_kHHNEeSQp_kzetr0iA" outgoing="_h8vD8XHNEeSQp_kzetr0iA">
+              <type href="pacman.ecore#//Field"/>
+              <attributes xmi:id="_h8uc43HNEeSQp_kzetr0iA" value="false">
+                <type href="pacman.ecore#//Field/treasure"/>
+              </attributes>
+              <attributes xmi:id="_h8uc5HHNEeSQp_kzetr0iA" value="x">
+                <type href="pacman.ecore#//Field/id"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_h8rZkHHNEeSQp_kzetr0iA" outgoing="_jB8_kHHNEeSQp_kzetr0iA">
+              <type href="pacman.ecore#//Ghost"/>
+            </nodes>
+            <edges xmi:id="_h8vD8HHNEeSQp_kzetr0iA" source="_h8uc4HHNEeSQp_kzetr0iA" target="_h8uc4nHNEeSQp_kzetr0iA">
+              <type href="pacman.ecore#//Pacman/on"/>
+            </edges>
+            <edges xmi:id="_h8vD8XHNEeSQp_kzetr0iA" source="_h8uc4nHNEeSQp_kzetr0iA" target="_RuCs10b4EeOLbpO6FwQSDg">
+              <type href="pacman.ecore#//Field/neighbor"/>
+            </edges>
+            <edges xmi:id="_jB8_kHHNEeSQp_kzetr0iA" source="_h8rZkHHNEeSQp_kzetr0iA" target="_h8uc4nHNEeSQp_kzetr0iA">
+              <type href="pacman.ecore#//Ghost/on"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_RuCs2Ub4EeOLbpO6FwQSDg" origin="_RuCs0Eb4EeOLbpO6FwQSDg" image="_RuCs10b4EeOLbpO6FwQSDg"/>
+          <mappings xmi:id="_h8uc4XHNEeSQp_kzetr0iA" origin="_RuCFw0b4EeOLbpO6FwQSDg" image="_h8uc4HHNEeSQp_kzetr0iA"/>
+          <mappings xmi:id="_h8uc5XHNEeSQp_kzetr0iA" origin="_RuCFxEb4EeOLbpO6FwQSDg" image="_h8uc4nHNEeSQp_kzetr0iA"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_RuDT4Eb4EeOLbpO6FwQSDg" name="Rhs">
+      <nodes xmi:id="_RuDT4Ub4EeOLbpO6FwQSDg" outgoing="_RuDT5kb4EeOLbpO6FwQSDg">
+        <type href="pacman.ecore#//Pacman"/>
+      </nodes>
+      <nodes xmi:id="_RuDT4kb4EeOLbpO6FwQSDg" name="f1" outgoing="_RuDT5Ub4EeOLbpO6FwQSDg">
+        <type href="pacman.ecore#//Field"/>
+        <attributes xmi:id="_RuDT40b4EeOLbpO6FwQSDg" value="false">
+          <type href="pacman.ecore#//Field/treasure"/>
+        </attributes>
+        <attributes xmi:id="_8dlpoTKZEeSTt9rZX-VVFQ" value="x">
+          <type href="pacman.ecore#//Field/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_RuDT5Eb4EeOLbpO6FwQSDg" name="f2" incoming="_RuDT5Ub4EeOLbpO6FwQSDg _RuDT5kb4EeOLbpO6FwQSDg">
+        <type href="pacman.ecore#//Field"/>
+      </nodes>
+      <edges xmi:id="_RuDT5Ub4EeOLbpO6FwQSDg" source="_RuDT4kb4EeOLbpO6FwQSDg" target="_RuDT5Eb4EeOLbpO6FwQSDg">
+        <type href="pacman.ecore#//Field/neighbor"/>
+      </edges>
+      <edges xmi:id="_RuDT5kb4EeOLbpO6FwQSDg" source="_RuDT4Ub4EeOLbpO6FwQSDg" target="_RuDT5Eb4EeOLbpO6FwQSDg">
+        <type href="pacman.ecore#//Pacman/on"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_RuDT50b4EeOLbpO6FwQSDg" origin="_RuCFw0b4EeOLbpO6FwQSDg" image="_RuDT4Ub4EeOLbpO6FwQSDg"/>
+    <mappings xmi:id="_RuDT6Eb4EeOLbpO6FwQSDg" origin="_RuCFxEb4EeOLbpO6FwQSDg" image="_RuDT4kb4EeOLbpO6FwQSDg"/>
+    <mappings xmi:id="_RuDT6Ub4EeOLbpO6FwQSDg" origin="_RuCs0Eb4EeOLbpO6FwQSDg" image="_RuDT5Eb4EeOLbpO6FwQSDg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_RuDT6kb4EeOLbpO6FwQSDg" name="moveGhost" injectiveMatching="false">
+    <lhs xmi:id="_RuDT60b4EeOLbpO6FwQSDg" name="Lhs">
+      <nodes xmi:id="_RuD68Eb4EeOLbpO6FwQSDg" outgoing="_RuD690b4EeOLbpO6FwQSDg">
+        <type href="pacman.ecore#//Ghost"/>
+      </nodes>
+      <nodes xmi:id="_RuD68Ub4EeOLbpO6FwQSDg" name="f3" incoming="_RuD690b4EeOLbpO6FwQSDg">
+        <type href="pacman.ecore#//Field"/>
+      </nodes>
+      <edges xmi:id="_RuD690b4EeOLbpO6FwQSDg" source="_RuD68Eb4EeOLbpO6FwQSDg" target="_RuD68Ub4EeOLbpO6FwQSDg">
+        <type href="pacman.ecore#//Ghost/on"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_T90-IUb4EeOLbpO6FwQSDg">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_T90-Ikb4EeOLbpO6FwQSDg">
+          <conclusion xmi:id="_T90-I0b4EeOLbpO6FwQSDg">
+            <nodes xmi:id="_VHMZ8Eb4EeOLbpO6FwQSDg" incoming="_RuEiA0b4EeOLbpO6FwQSDg">
+              <type href="pacman.ecore#//Field"/>
+            </nodes>
+            <nodes xmi:id="_RuEiAUb4EeOLbpO6FwQSDg" outgoing="_RuEiA0b4EeOLbpO6FwQSDg">
+              <type href="pacman.ecore#//Pacman"/>
+            </nodes>
+            <edges xmi:id="_RuEiA0b4EeOLbpO6FwQSDg" source="_RuEiAUb4EeOLbpO6FwQSDg" target="_VHMZ8Eb4EeOLbpO6FwQSDg">
+              <type href="pacman.ecore#//Pacman/on"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_VHNBAEb4EeOLbpO6FwQSDg" origin="_RuD68Ub4EeOLbpO6FwQSDg" image="_VHMZ8Eb4EeOLbpO6FwQSDg"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_RuFJE0b4EeOLbpO6FwQSDg" name="Rhs">
+      <nodes xmi:id="_RuFJFEb4EeOLbpO6FwQSDg">
+        <type href="pacman.ecore#//Ghost"/>
+      </nodes>
+      <nodes xmi:id="_RuFJFUb4EeOLbpO6FwQSDg" name="f3">
+        <type href="pacman.ecore#//Field"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_RuFwIUb4EeOLbpO6FwQSDg" origin="_RuD68Eb4EeOLbpO6FwQSDg" image="_RuFJFEb4EeOLbpO6FwQSDg"/>
+    <mappings xmi:id="_RuFwIkb4EeOLbpO6FwQSDg" origin="_RuD68Ub4EeOLbpO6FwQSDg" image="_RuFJFUb4EeOLbpO6FwQSDg"/>
+    <multiRules xmi:id="_lvY2ECLEEeSS4bTtV6GFsg">
+      <lhs xmi:id="_lveVoCLEEeSS4bTtV6GFsg" name="Lhs">
+        <nodes xmi:id="_lvfjwSLEEeSS4bTtV6GFsg" outgoing="_lvgK0CLEEeSS4bTtV6GFsg">
+          <type href="pacman.ecore#//Ghost"/>
+        </nodes>
+        <nodes xmi:id="_lvfjwyLEEeSS4bTtV6GFsg" incoming="_lvgK0CLEEeSS4bTtV6GFsg" outgoing="_RuD69kb4EeOLbpO6FwQSDg">
+          <type href="pacman.ecore#//Field"/>
+        </nodes>
+        <nodes xmi:id="_RuD68kb4EeOLbpO6FwQSDg" name="m" incoming="_RuD69kb4EeOLbpO6FwQSDg">
+          <type href="pacman.ecore#//Field"/>
+        </nodes>
+        <edges xmi:id="_lvgK0CLEEeSS4bTtV6GFsg" source="_lvfjwSLEEeSS4bTtV6GFsg" target="_lvfjwyLEEeSS4bTtV6GFsg">
+          <type href="pacman.ecore#//Ghost/on"/>
+        </edges>
+        <edges xmi:id="_RuD69kb4EeOLbpO6FwQSDg" source="_lvfjwyLEEeSS4bTtV6GFsg" target="_RuD68kb4EeOLbpO6FwQSDg">
+          <type href="pacman.ecore#//Field/neighbor"/>
+        </edges>
+      </lhs>
+      <rhs xmi:id="_lveVoSLEEeSS4bTtV6GFsg" name="Rhs">
+        <nodes xmi:id="_lveVoiLEEeSS4bTtV6GFsg" outgoing="_RuFwIEb4EeOLbpO6FwQSDg">
+          <type href="pacman.ecore#//Ghost"/>
+        </nodes>
+        <nodes xmi:id="_RuFJFkb4EeOLbpO6FwQSDg" name="m" incoming="_RuFJGkb4EeOLbpO6FwQSDg _RuFwIEb4EeOLbpO6FwQSDg">
+          <type href="pacman.ecore#//Field"/>
+        </nodes>
+        <nodes xmi:id="_lvgK0iLEEeSS4bTtV6GFsg" outgoing="_RuFJGkb4EeOLbpO6FwQSDg">
+          <type href="pacman.ecore#//Field"/>
+        </nodes>
+        <edges xmi:id="_RuFJGkb4EeOLbpO6FwQSDg" source="_lvgK0iLEEeSS4bTtV6GFsg" target="_RuFJFkb4EeOLbpO6FwQSDg">
+          <type href="pacman.ecore#//Field/neighbor"/>
+        </edges>
+        <edges xmi:id="_RuFwIEb4EeOLbpO6FwQSDg" source="_lveVoiLEEeSS4bTtV6GFsg" target="_RuFJFkb4EeOLbpO6FwQSDg">
+          <type href="pacman.ecore#//Ghost/on"/>
+        </edges>
+      </rhs>
+      <mappings xmi:id="_lvgK0SLEEeSS4bTtV6GFsg" origin="_lvfjwSLEEeSS4bTtV6GFsg" image="_lveVoiLEEeSS4bTtV6GFsg"/>
+      <mappings xmi:id="_lvgx4yLEEeSS4bTtV6GFsg" origin="_lvfjwyLEEeSS4bTtV6GFsg" image="_lvgK0iLEEeSS4bTtV6GFsg"/>
+      <mappings xmi:id="_RuFwI0b4EeOLbpO6FwQSDg" origin="_RuD68kb4EeOLbpO6FwQSDg" image="_RuFJFkb4EeOLbpO6FwQSDg"/>
+      <multiMappings xmi:id="_lve8sCLEEeSS4bTtV6GFsg" origin="_RuFJFEb4EeOLbpO6FwQSDg" image="_lveVoiLEEeSS4bTtV6GFsg"/>
+      <multiMappings xmi:id="_lvfjwiLEEeSS4bTtV6GFsg" origin="_RuD68Eb4EeOLbpO6FwQSDg" image="_lvfjwSLEEeSS4bTtV6GFsg"/>
+      <multiMappings xmi:id="_lvfjxCLEEeSS4bTtV6GFsg" origin="_RuD68Ub4EeOLbpO6FwQSDg" image="_lvfjwyLEEeSS4bTtV6GFsg"/>
+      <multiMappings xmi:id="_lvgK0yLEEeSS4bTtV6GFsg" origin="_RuFJFUb4EeOLbpO6FwQSDg" image="_lvgK0iLEEeSS4bTtV6GFsg"/>
+    </multiRules>
+  </units>
+</henshin:Module>

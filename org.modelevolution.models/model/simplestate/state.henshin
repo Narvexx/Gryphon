@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_YGnZULkcEeSQvOP4dWWQ4g">
+  <imports href="state.ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_cZbSULkcEeSQvOP4dWWQ4g" name="changeState">
+    <lhs xmi:id="_cZdukLkcEeSQvOP4dWWQ4g" name="Lhs">
+      <nodes xmi:id="_duQ-ULkcEeSQvOP4dWWQ4g">
+        <type href="state.ecore#//StateMachine"/>
+        <attributes xmi:id="_eb_nALkcEeSQvOP4dWWQ4g" value="false">
+          <type href="state.ecore#//StateMachine/active"/>
+        </attributes>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_cZdukbkcEeSQvOP4dWWQ4g" name="Rhs">
+      <nodes xmi:id="_duRlYLkcEeSQvOP4dWWQ4g">
+        <type href="state.ecore#//StateMachine"/>
+        <attributes xmi:id="_eb_nAbkcEeSQvOP4dWWQ4g" value="true">
+          <type href="state.ecore#//StateMachine/active"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_duRlYbkcEeSQvOP4dWWQ4g" origin="_duQ-ULkcEeSQvOP4dWWQ4g" image="_duRlYLkcEeSQvOP4dWWQ4g"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_meMi4LkcEeSQvOP4dWWQ4g" name="badButGood">
+    <lhs xmi:id="_meSCcLkcEeSQvOP4dWWQ4g" name="Lhs">
+      <nodes xmi:id="_o6zIMLkcEeSQvOP4dWWQ4g">
+        <type href="state.ecore#//StateMachine"/>
+        <attributes xmi:id="_pfKZgLkcEeSQvOP4dWWQ4g" value="false">
+          <type href="state.ecore#//StateMachine/active"/>
+        </attributes>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_meSCcbkcEeSQvOP4dWWQ4g" name="Rhs">
+      <nodes xmi:id="_o6zvQLkcEeSQvOP4dWWQ4g">
+        <type href="state.ecore#//StateMachine"/>
+        <attributes xmi:id="_pfKZgbkcEeSQvOP4dWWQ4g" value="false">
+          <type href="state.ecore#//StateMachine/active"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_o6zvQbkcEeSQvOP4dWWQ4g" origin="_o6zIMLkcEeSQvOP4dWWQ4g" image="_o6zvQLkcEeSQvOP4dWWQ4g"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_roxKULkcEeSQvOP4dWWQ4g" name="badReallyBad" activated="false">
+    <parameters xmi:id="_zZhw4LkcEeSQvOP4dWWQ4g" name="x"/>
+    <lhs xmi:id="_rozmkLkcEeSQvOP4dWWQ4g" name="Lhs">
+      <nodes xmi:id="_tied8LkcEeSQvOP4dWWQ4g">
+        <type href="state.ecore#//StateMachine"/>
+        <attributes xmi:id="_uLrzALkcEeSQvOP4dWWQ4g" value="x">
+          <type href="state.ecore#//StateMachine/active"/>
+        </attributes>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_ro0NoLkcEeSQvOP4dWWQ4g" name="Rhs">
+      <nodes xmi:id="_tied8bkcEeSQvOP4dWWQ4g">
+        <type href="state.ecore#//StateMachine"/>
+        <attributes xmi:id="_uLrzAbkcEeSQvOP4dWWQ4g" value="x">
+          <type href="state.ecore#//StateMachine/active"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_tied8rkcEeSQvOP4dWWQ4g" origin="_tied8LkcEeSQvOP4dWWQ4g" image="_tied8bkcEeSQvOP4dWWQ4g"/>
+  </units>
+</henshin:Module>

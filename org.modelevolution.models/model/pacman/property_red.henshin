@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_Q_Am0KMKEeS0ZOgaGeSDsg">
+  <imports href="../../../org.modelevolution.fol2aig/model/pacman/pacman-red.ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_VAGLwKMMEeS0ZOgaGeSDsg" name="bad">
+    <lhs xmi:id="_VAIoAKMMEeS0ZOgaGeSDsg" name="Lhs">
+      <nodes xmi:id="_WJp00KMMEeS0ZOgaGeSDsg" incoming="_YTE_cKMMEeS0ZOgaGeSDsg">
+        <type href="../../../org.modelevolution.fol2aig/model/pacman/pacman-red.ecore#//Field"/>
+      </nodes>
+      <nodes xmi:id="_Wl2BkKMMEeS0ZOgaGeSDsg" incoming="_Yjdk0KMMEeS0ZOgaGeSDsg">
+        <type href="../../../org.modelevolution.fol2aig/model/pacman/pacman-red.ecore#//Field"/>
+      </nodes>
+      <nodes xmi:id="_XZqrMKMMEeS0ZOgaGeSDsg" outgoing="_YTE_cKMMEeS0ZOgaGeSDsg _Yjdk0KMMEeS0ZOgaGeSDsg">
+        <type href="../../../org.modelevolution.fol2aig/model/pacman/pacman-red.ecore#//Pacman"/>
+      </nodes>
+      <edges xmi:id="_YTE_cKMMEeS0ZOgaGeSDsg" source="_XZqrMKMMEeS0ZOgaGeSDsg" target="_WJp00KMMEeS0ZOgaGeSDsg">
+        <type href="../../../org.modelevolution.fol2aig/model/pacman/pacman-red.ecore#//Pacman/on"/>
+      </edges>
+      <edges xmi:id="_Yjdk0KMMEeS0ZOgaGeSDsg" source="_XZqrMKMMEeS0ZOgaGeSDsg" target="_Wl2BkKMMEeS0ZOgaGeSDsg">
+        <type href="../../../org.modelevolution.fol2aig/model/pacman/pacman-red.ecore#//Pacman/on"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_VAIoAaMMEeS0ZOgaGeSDsg" name="Rhs">
+      <nodes xmi:id="_WJp00aMMEeS0ZOgaGeSDsg" incoming="_YTE_caMMEeS0ZOgaGeSDsg">
+        <type href="../../../org.modelevolution.fol2aig/model/pacman/pacman-red.ecore#//Field"/>
+      </nodes>
+      <nodes xmi:id="_Wl2BkaMMEeS0ZOgaGeSDsg" incoming="_YjeL4KMMEeS0ZOgaGeSDsg">
+        <type href="../../../org.modelevolution.fol2aig/model/pacman/pacman-red.ecore#//Field"/>
+      </nodes>
+      <nodes xmi:id="_XZqrMaMMEeS0ZOgaGeSDsg" outgoing="_YTE_caMMEeS0ZOgaGeSDsg _YjeL4KMMEeS0ZOgaGeSDsg">
+        <type href="../../../org.modelevolution.fol2aig/model/pacman/pacman-red.ecore#//Pacman"/>
+      </nodes>
+      <edges xmi:id="_YTE_caMMEeS0ZOgaGeSDsg" source="_XZqrMaMMEeS0ZOgaGeSDsg" target="_WJp00aMMEeS0ZOgaGeSDsg">
+        <type href="../../../org.modelevolution.fol2aig/model/pacman/pacman-red.ecore#//Pacman/on"/>
+      </edges>
+      <edges xmi:id="_YjeL4KMMEeS0ZOgaGeSDsg" source="_XZqrMaMMEeS0ZOgaGeSDsg" target="_Wl2BkaMMEeS0ZOgaGeSDsg">
+        <type href="../../../org.modelevolution.fol2aig/model/pacman/pacman-red.ecore#//Pacman/on"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_WJp00qMMEeS0ZOgaGeSDsg" origin="_WJp00KMMEeS0ZOgaGeSDsg" image="_WJp00aMMEeS0ZOgaGeSDsg"/>
+    <mappings xmi:id="_Wl2BkqMMEeS0ZOgaGeSDsg" origin="_Wl2BkKMMEeS0ZOgaGeSDsg" image="_Wl2BkaMMEeS0ZOgaGeSDsg"/>
+    <mappings xmi:id="_XZqrMqMMEeS0ZOgaGeSDsg" origin="_XZqrMKMMEeS0ZOgaGeSDsg" image="_XZqrMaMMEeS0ZOgaGeSDsg"/>
+  </units>
+</henshin:Module>

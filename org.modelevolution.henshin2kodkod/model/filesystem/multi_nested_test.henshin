@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_VnLcEFxOEeSU4ccH1YVTaA">
+  <imports href="filesystem.ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_Wc3G4FxOEeSU4ccH1YVTaA" name="multi">
+    <lhs xmi:id="_Wc7_YFxOEeSU4ccH1YVTaA" name="Lhs">
+      <nodes xmi:id="_ZLfQUFxOEeSU4ccH1YVTaA">
+        <type href="filesystem.ecore#//Root"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_Wc7_YVxOEeSU4ccH1YVTaA" name="Rhs">
+      <nodes xmi:id="_ZLfQUVxOEeSU4ccH1YVTaA">
+        <type href="filesystem.ecore#//Root"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_ZLfQUlxOEeSU4ccH1YVTaA" origin="_ZLfQUFxOEeSU4ccH1YVTaA" image="_ZLfQUVxOEeSU4ccH1YVTaA"/>
+    <multiRules xmi:id="_UXuJ4FxPEeSU4ccH1YVTaA">
+      <lhs xmi:id="_UXvYAFxPEeSU4ccH1YVTaA" name="Lhs">
+        <nodes xmi:id="_UXv_ElxPEeSU4ccH1YVTaA" outgoing="_h9LIYFxOEeSU4ccH1YVTaA">
+          <type href="filesystem.ecore#//Root"/>
+        </nodes>
+        <nodes xmi:id="_h9KhUFxOEeSU4ccH1YVTaA" incoming="_h9LIYFxOEeSU4ccH1YVTaA">
+          <type href="filesystem.ecore#//Directory"/>
+        </nodes>
+        <edges xmi:id="_h9LIYFxOEeSU4ccH1YVTaA" source="_UXv_ElxPEeSU4ccH1YVTaA" target="_h9KhUFxOEeSU4ccH1YVTaA">
+          <type href="filesystem.ecore#//Root/dirs"/>
+        </edges>
+        <formula xsi:type="henshin:Not" xmi:id="_grWYgFxsEeSU4ccH1YVTaA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_grWYgVxsEeSU4ccH1YVTaA">
+            <conclusion xmi:id="_grWYglxsEeSU4ccH1YVTaA">
+              <nodes xmi:id="_grYNsFxsEeSU4ccH1YVTaA" outgoing="_grYNtFxsEeSU4ccH1YVTaA">
+                <type href="filesystem.ecore#//Root"/>
+              </nodes>
+              <nodes xmi:id="_grYNslxsEeSU4ccH1YVTaA" incoming="_grYNtFxsEeSU4ccH1YVTaA">
+                <type href="filesystem.ecore#//Directory"/>
+              </nodes>
+              <nodes xmi:id="_jJw3UFxOEeSU4ccH1YVTaA">
+                <type href="filesystem.ecore#//File"/>
+              </nodes>
+              <edges xmi:id="_grYNtFxsEeSU4ccH1YVTaA" source="_grYNsFxsEeSU4ccH1YVTaA" target="_grYNslxsEeSU4ccH1YVTaA">
+                <type href="filesystem.ecore#//Root/dirs"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_grYNsVxsEeSU4ccH1YVTaA" origin="_UXv_ElxPEeSU4ccH1YVTaA" image="_grYNsFxsEeSU4ccH1YVTaA"/>
+            <mappings xmi:id="_grYNs1xsEeSU4ccH1YVTaA" origin="_h9KhUFxOEeSU4ccH1YVTaA" image="_grYNslxsEeSU4ccH1YVTaA"/>
+          </child>
+        </formula>
+      </lhs>
+      <rhs xmi:id="_UXvYAVxPEeSU4ccH1YVTaA" name="Rhs">
+        <nodes xmi:id="_UXv_EFxPEeSU4ccH1YVTaA">
+          <type href="filesystem.ecore#//Root"/>
+        </nodes>
+      </rhs>
+      <mappings xmi:id="_UXv_F1xPEeSU4ccH1YVTaA" origin="_UXv_ElxPEeSU4ccH1YVTaA" image="_UXv_EFxPEeSU4ccH1YVTaA"/>
+      <multiMappings xmi:id="_UXv_EVxPEeSU4ccH1YVTaA" origin="_ZLfQUVxOEeSU4ccH1YVTaA" image="_UXv_EFxPEeSU4ccH1YVTaA"/>
+      <multiMappings xmi:id="_UXv_E1xPEeSU4ccH1YVTaA" origin="_ZLfQUFxOEeSU4ccH1YVTaA" image="_UXv_ElxPEeSU4ccH1YVTaA"/>
+    </multiRules>
+  </units>
+</henshin:Module>

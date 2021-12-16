@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_scWvQEAOEeS4RsegafoaNw" type="EcoreTools" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_sfxPoEAOEeS4RsegafoaNw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_sf9c4EAOEeS4RsegafoaNw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_sf-rAEAOEeS4RsegafoaNw" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_sf-rAUAOEeS4RsegafoaNw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_sf-rAkAOEeS4RsegafoaNw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_sf-rA0AOEeS4RsegafoaNw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_sf_SEEAOEeS4RsegafoaNw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_sf_SEUAOEeS4RsegafoaNw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_sf_SEkAOEeS4RsegafoaNw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_sf_SE0AOEeS4RsegafoaNw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_sfxPoUAOEeS4RsegafoaNw" fontColor="4210752" fontName="Droid Serif" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="diningphils.ecore#//Table"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sfxPokAOEeS4RsegafoaNw" x="105" y="15"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_sgBHQEAOEeS4RsegafoaNw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_sgBuUEAOEeS4RsegafoaNw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_sgBuUUAOEeS4RsegafoaNw" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_sgCVYEAOEeS4RsegafoaNw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="diningphils.ecore#//Philosopher/id"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_sgCVYUAOEeS4RsegafoaNw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_sgC8cEAOEeS4RsegafoaNw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="diningphils.ecore#//Philosopher/state"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_sgC8cUAOEeS4RsegafoaNw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_sgBuUkAOEeS4RsegafoaNw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_sgBuU0AOEeS4RsegafoaNw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_sgBuVEAOEeS4RsegafoaNw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_sgBuVUAOEeS4RsegafoaNw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_sgBuVkAOEeS4RsegafoaNw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_sgBuV0AOEeS4RsegafoaNw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_sgBuWEAOEeS4RsegafoaNw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_sgBHQUAOEeS4RsegafoaNw" fontColor="4210752" fontName="Droid Serif" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="diningphils.ecore#//Philosopher"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sgBHQkAOEeS4RsegafoaNw" x="6" y="95"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_sgC8ckAOEeS4RsegafoaNw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_sgC8dUAOEeS4RsegafoaNw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_sgDjgEAOEeS4RsegafoaNw" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_sgDjiEAOEeS4RsegafoaNw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="diningphils.ecore#//Fork/id"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_sgDjiUAOEeS4RsegafoaNw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_sgDjgUAOEeS4RsegafoaNw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_sgDjgkAOEeS4RsegafoaNw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_sgDjg0AOEeS4RsegafoaNw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_sgDjhEAOEeS4RsegafoaNw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_sgDjhUAOEeS4RsegafoaNw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_sgDjhkAOEeS4RsegafoaNw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_sgDjh0AOEeS4RsegafoaNw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_sgC8c0AOEeS4RsegafoaNw" fontColor="4210752" fontName="Droid Serif" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="diningphils.ecore#//Fork"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sgC8dEAOEeS4RsegafoaNw" x="228" y="95"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_sgExoEAOEeS4RsegafoaNw" type="1005">
+    <children xmi:type="notation:Node" xmi:id="_sgFYsEAOEeS4RsegafoaNw" type="4010"/>
+    <children xmi:type="notation:Node" xmi:id="_sgFYsUAOEeS4RsegafoaNw" type="5008">
+      <children xmi:type="notation:Node" xmi:id="_sgF_wEAOEeS4RsegafoaNw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="diningphils.ecore#//PhilState/thinking"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_sgF_wUAOEeS4RsegafoaNw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_sgF_wkAOEeS4RsegafoaNw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="diningphils.ecore#//PhilState/hungry"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_sgF_w0AOEeS4RsegafoaNw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_sgF_xEAOEeS4RsegafoaNw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="diningphils.ecore#//PhilState/eating"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_sgF_xUAOEeS4RsegafoaNw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_sgFYskAOEeS4RsegafoaNw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_sgFYs0AOEeS4RsegafoaNw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_sgFYtEAOEeS4RsegafoaNw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_sgExoUAOEeS4RsegafoaNw" fontColor="4210752" fontName="Droid Serif" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EEnum" href="diningphils.ecore#//PhilState"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sgExokAOEeS4RsegafoaNw" x="342" y="72" width="134"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_scWvQUAOEeS4RsegafoaNw"/>
+  <element xmi:type="ecore:EPackage" href="diningphils.ecore#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_sgH08EAOEeS4RsegafoaNw" type="3002" source="_sfxPoEAOEeS4RsegafoaNw" target="_sgBHQEAOEeS4RsegafoaNw">
+    <children xmi:type="notation:Node" xmi:id="_sgIcAEAOEeS4RsegafoaNw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sgIcAUAOEeS4RsegafoaNw" x="-4" y="-45"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_sgJDEEAOEeS4RsegafoaNw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sgJDEUAOEeS4RsegafoaNw" x="11" y="-16"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_sgH08UAOEeS4RsegafoaNw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_sgH08kAOEeS4RsegafoaNw" fontColor="4210752" fontName="Droid Serif" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="diningphils.ecore#//Table/philosophers"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sgH080AOEeS4RsegafoaNw" points="[0, 0, 58, -60]$[-65, 0, -7, -60]$[-65, 60, -7, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_shxawEAOEeS4RsegafoaNw" id="(0.0,0.5238095238095238)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_shxawUAOEeS4RsegafoaNw" id="(0.30158730158730157,0.015384615384615385)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_sgJDEkAOEeS4RsegafoaNw" type="3002" source="_sfxPoEAOEeS4RsegafoaNw" target="_sgC8ckAOEeS4RsegafoaNw">
+    <children xmi:type="notation:Node" xmi:id="_sgJqIEAOEeS4RsegafoaNw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sgJqIUAOEeS4RsegafoaNw" x="-1" y="19"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_sgJqIkAOEeS4RsegafoaNw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sgJqI0AOEeS4RsegafoaNw" x="14" y="14"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_sgJDE0AOEeS4RsegafoaNw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_sgJDFEAOEeS4RsegafoaNw" fontColor="4210752" fontName="Droid Serif" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="diningphils.ecore#//Table/forks"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sgJDFUAOEeS4RsegafoaNw" points="[5, 0, -90, -57]$[95, 0, 0, -57]$[95, 57, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_shzP8UAOEeS4RsegafoaNw" id="(0.9509803921568627,0.3333333333333333)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_shzP8kAOEeS4RsegafoaNw" id="(0.5588235294117647,0.02040816326530612)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_sgJqJEAOEeS4RsegafoaNw" type="3002" source="_sgBHQEAOEeS4RsegafoaNw" target="_sgC8ckAOEeS4RsegafoaNw">
+    <children xmi:type="notation:Node" xmi:id="_sgJqKEAOEeS4RsegafoaNw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sgJqKUAOEeS4RsegafoaNw" x="-2" y="-9"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_sgJqKkAOEeS4RsegafoaNw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sgJqK0AOEeS4RsegafoaNw" x="6" y="11"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_sgJqJUAOEeS4RsegafoaNw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_sgJqJkAOEeS4RsegafoaNw" fontColor="4210752" fontName="Droid Serif" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="diningphils.ecore#//Philosopher/left"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sgJqJ0AOEeS4RsegafoaNw" points="[0, 0, 0, 95]$[0, -95, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_shyB0EAOEeS4RsegafoaNw" id="(0.9603174603174603,0.2923076923076923)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_shyB0UAOEeS4RsegafoaNw" id="(0.049019607843137254,0.24489795918367346)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_sgJqLEAOEeS4RsegafoaNw" type="3002" source="_sgBHQEAOEeS4RsegafoaNw" target="_sgC8ckAOEeS4RsegafoaNw">
+    <children xmi:type="notation:Node" xmi:id="_sgKRMEAOEeS4RsegafoaNw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sgKRMUAOEeS4RsegafoaNw" x="-2" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_sgKRMkAOEeS4RsegafoaNw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sgKRM0AOEeS4RsegafoaNw" x="6" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_sgJqLUAOEeS4RsegafoaNw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_sgJqLkAOEeS4RsegafoaNw" fontColor="4210752" fontName="Droid Serif" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="diningphils.ecore#//Philosopher/right"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sgJqL0AOEeS4RsegafoaNw" points="[0, 0, 0, 95]$[0, -95, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_shyo4kAOEeS4RsegafoaNw" id="(0.9920634920634921,0.7538461538461538)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_shzP8EAOEeS4RsegafoaNw" id="(0.5,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_sgKRNEAOEeS4RsegafoaNw" type="3002" source="_sgBHQEAOEeS4RsegafoaNw" target="_sgC8ckAOEeS4RsegafoaNw">
+    <children xmi:type="notation:Node" xmi:id="_sgKROEAOEeS4RsegafoaNw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sgKROUAOEeS4RsegafoaNw" x="23" y="20"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_sgKROkAOEeS4RsegafoaNw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sgKRO0AOEeS4RsegafoaNw" x="35" y="19"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_sgKRNUAOEeS4RsegafoaNw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_sgKRNkAOEeS4RsegafoaNw" fontColor="4210752" fontName="Droid Serif" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="diningphils.ecore#//Philosopher/holds"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sgKRN0AOEeS4RsegafoaNw" points="[6, 4, -231, 17]$[6, 36, -231, 49]$[228, 36, -9, 49]$[228, -12, -9, 1]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_shyo4EAOEeS4RsegafoaNw" id="(0.5238095238095238,0.9384615384615385)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_shyo4UAOEeS4RsegafoaNw" id="(0.46078431372549017,0.9795918367346939)"/>
+  </edges>
+</notation:Diagram>
