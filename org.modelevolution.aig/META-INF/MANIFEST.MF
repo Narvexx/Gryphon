@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Aig
+Bundle-SymbolicName: org.modelevolution.aig
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-12
+Automatic-Module-Name: org.modelevolution.aig
+Export-Package: org.modelevolution.aig,
+ org.modelevolution.aig.builders
+Require-Bundle: org.modelevolution.kodkodmod

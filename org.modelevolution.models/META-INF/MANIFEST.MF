@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Models
+Bundle-SymbolicName: org.modelevolution.models
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-12
+Automatic-Module-Name: org.modelevolution.models

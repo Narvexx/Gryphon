@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Gryphon
+Bundle-SymbolicName: org.modelevolution.gryphon
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-12
+Automatic-Module-Name: org.modelevolution.gryphon
+Export-Package: org.modelevolution.gryphon,
+ org.modelevolution.gryphon.input,
+ org.modelevolution.gryphon.input.config,
+ org.modelevolution.gryphon.input.util,
+ org.modelevolution.gryphon.output,
+ org.modelevolution.gryphon.runners,
+ org.modelevolution.gryphon.solver
+Import-Package: org.modelevolution.gryphon.input.config
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.emf.henshin.model,
+ org.modelevolution.henshin2kodkod,
+ org.eclipse.emf.ecore.xmi,
+ org.modelevolution.kodkodmod,
+ org.modelevolution.aig,
+ org.modelevolution.fol2aig,
+ com.sun.jna
+
+
+
+

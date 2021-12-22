@@ -79,14 +79,15 @@ public final class BoolTranslation {
   // }
 
   public BooleanValue mapping(final Formula fol) {
-    if (fol2bool.containsKey(fol)) {
+	  if (fol2bool.containsKey(fol)) {
       BooleanValue gate = fol2bool.get(fol);
+
       return gate;
       // else
       // throw new IllegalArgumentException("Mapping found, "
       // + "but not a BooleanFormula.");
     } else
-      throw new IllegalArgumentException("No mapping found for " + "'relationFormula'.");
+      throw new IllegalArgumentException("No mapping found for " + fol + "'relationFormula'.");
   }
 
   public Map<Formula, BooleanValue> mappings() {

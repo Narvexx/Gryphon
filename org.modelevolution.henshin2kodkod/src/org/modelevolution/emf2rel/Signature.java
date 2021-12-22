@@ -62,7 +62,6 @@ import org.eclipse.emf.henshin.model.Rule;
 import org.modelevolution.gts2rts.ParamData;
 import org.modelevolution.gts2rts.ParamDataset;
 
-import edu.emory.mathcs.backport.java.util.Arrays;
 
 /**
  * This class represents a relational signature that consists of a set of

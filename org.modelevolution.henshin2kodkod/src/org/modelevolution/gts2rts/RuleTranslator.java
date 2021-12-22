@@ -35,9 +35,6 @@ import org.modelevolution.emf2rel.StateRelation;
 import org.modelevolution.rts.Transition;
 import org.modelevolution.rts.TransitionRelation;
 
-import com.google.inject.internal.Annotations;
-
-import edu.emory.mathcs.backport.java.util.Arrays;
 
 /**
  * Restrictions:

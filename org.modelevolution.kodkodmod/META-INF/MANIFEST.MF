@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Kodkodmod
+Bundle-SymbolicName: org.modelevolution.kodkodmod
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-12
+Automatic-Module-Name: org.modelevolution.kodkodmod
+Export-Package: kodkod.ast,
+ kodkod.ast.operator,
+ kodkod.ast.visitor,
+ kodkod.engine,
+ kodkod.engine.bool,
+ kodkod.engine.config,
+ kodkod.engine.fol2sat,
+ kodkod.engine.satlab,
+ kodkod.engine.ucore,
+ kodkod.instance,
+ kodkod.util.collections,
+ kodkod.util.ints,
+ kodkod.util.nodes,
+ kodkodmod.engine.fol2sat,
+ kodkodmod.engine.satlab,
+ kodkodmod.verification,
+ org.modelevolution.commons,
+ org.modelevolution.commons.logic,
+ org.modelevolution.commons.modifications
+

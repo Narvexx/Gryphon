@@ -26,8 +26,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import kodkod.engine.Statistics;
-
 /**
  * Beware that this implementation of {@link Statistics} is potentially unsafe
  * due to numeric overflows that might occur in the

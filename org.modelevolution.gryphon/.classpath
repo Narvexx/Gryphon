@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry including="**/*.java" kind="src" output="target/classes" path="src">
+	<classpathentry kind="src" output="target/classes" path="src">
 		<attributes>
-			<attribute name="optional" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="src" output="target/test-classes" path="test">
-		<attributes>
-			<attribute name="test" value="true"/>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
@@ -20,6 +13,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
-	<classpathentry kind="lib" path="lib/org.antlr.runtime_4.7.2.v20200218-0804.jar"/>
+	<classpathentry kind="lib" path="lib/jcommander-1.47.jar"/>
+	<classpathentry kind="lib" path="lib/ini4j-0.5.4.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Henshin2kodkod
+Bundle-SymbolicName: org.modelevolution.henshin2kodkod
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-12
+Automatic-Module-Name: org.modelevolution.henshin2kodkod
+Export-Package: org,
+ org.modelevolution,
+ org.modelevolution.emf2rel,
+ org.modelevolution.gts2rts,
+ org.modelevolution.gts2rts.attrexpr,
+ org.modelevolution.gts2rts.util,
+ org.modelevolution.henshin2kodkod,
+ org.modelevolution.rts
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.xmi,
+ org.eclipse.emf.henshin.model,
+ org.modelevolution.kodkodmod,
+ org.modelevolution.aig,
+ org.junit
+
