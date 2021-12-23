@@ -1,0 +1,11 @@
+Game_originalnoghost.xmi   3263  100%
+  Signature Creation         41    1%
+  Rule Translation           92    3%
+  Property Translation        7    0%
+  AIG (in-memory)           466   14%
+  AIG File                   22    1%
+  Solver                   2635   81%
+    GhostOnTwoFields         33    1%
+    PacmanOnNoField        1220   46%
+    MoreThanFourNeighbors  1358   52%
+    GhostOnNoField           24    1%

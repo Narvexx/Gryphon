@@ -396,7 +396,7 @@ public final class Translator {
 	 * be skolemized, or it can be skolemized but this.options.skolemDepth < 0
 	 */
 	private Translation translate()   {
-		final AnnotatedNode<Formula> annotated = logging ? annotateRoots(originalFormula) : annotate(originalFormula);
+		final AnnotatedNode<Formula> annotated = logging ? annotateRoots(originalFormula, null) : annotate(originalFormula);
 		// Remove bindings for unused relations/ints if this is not an incremental translation.  If it is
 		// an incremental translation, we have to keep all bindings since they may be used later on.
 		if (!incremental) {

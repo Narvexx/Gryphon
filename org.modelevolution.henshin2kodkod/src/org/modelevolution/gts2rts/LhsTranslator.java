@@ -377,7 +377,7 @@ public class LhsTranslator {
       
       assert info instanceof VarNodeInfo;
 
-      final Formula match = (pc != null) ? edgeMatch(src, tgt, src2tgt) : edgeMatch(src, tgt, src2tgt);
+      final Formula match = edgeMatch(src, tgt, src2tgt);
       premiseCollector.addPremise(match);
       if (pc != null) {
     	  premiseCollector.addPremise(pc);
@@ -410,7 +410,8 @@ public class LhsTranslator {
       
     
       assert tgtInfo instanceof VarNodeInfo;
-      final Formula match = (pc != null) ? edgeMatch(src, tgt, src2tgt) : edgeMatch(src, tgt, src2tgt);
+      
+      final Formula match = edgeMatch(src, tgt, src2tgt);
       premiseCollector.addPremise(match);
       if (pc != null) {
     	  premiseCollector.addPremise(pc);

@@ -61,6 +61,7 @@ import org.modelevolution.aig.builders.AigBuilder;
 import org.modelevolution.aig.builders.InputBuilder;
 import org.modelevolution.emf2rel.Signature;
 import org.modelevolution.emf2rel.StateRelation;
+import org.modelevolution.gts2rts.VariabilityRuleTranslator;
 import org.modelevolution.rts.Invariant;
 import org.modelevolution.rts.Property;
 import org.modelevolution.rts.StateChanger;
@@ -98,7 +99,7 @@ public final class AigTranslator {
      * together.
      */
     final Set<Formula> all = allConditions(transitions, properties);
-    final AnnotatedNode<Formula> annotated = annotateRoots(Formula.and(all));
+    final AnnotatedNode<Formula> annotated = annotateRoots(Formula.and(all), all);
     assert Nodes.roots(annotated.node()).containsAll(all);
     assert all.containsAll(Nodes.roots(annotated.node()));
     // final Set<Formula> logged = collectLogFormulas(all);
@@ -143,6 +144,10 @@ public final class AigTranslator {
    */
   private Set<Formula> allConditions(TransitionRelation transitions, Collection<Property> properties) {
     Set<Formula> allConditions = new HashSet<>(transitions.conditions());
+    
+    // Add Presence Conditions explicitly
+    allConditions.addAll(VariabilityRuleTranslator.getPresenceConditions());
+    
     for (Property p : properties) {
       if (p instanceof Invariant)
         allConditions.addAll(p.negate().conditions());

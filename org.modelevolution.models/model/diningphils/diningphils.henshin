@@ -1272,4 +1272,36 @@
     <mappings xmi:id="_NgDLkQCfEeWtFtKLGtJjRw" origin="_NgCkgACfEeWtFtKLGtJjRw" image="_NgDLkACfEeWtFtKLGtJjRw"/>
     <mappings xmi:id="_NywFIACfEeWtFtKLGtJjRw" origin="_NyveEACfEeWtFtKLGtJjRw" image="_NyveEQCfEeWtFtKLGtJjRw"/>
   </units>
+  <units xsi:type="henshin:Rule" xmi:id="_Nb-cMCHAEeyfg-df5vjheA" name="reach_PhilAlive">
+    <lhs xmi:id="_NcJbUCHAEeyfg-df5vjheA" name="Lhs">
+      <nodes xmi:id="_V0yhQCHAEeyfg-df5vjheA">
+        <type href="diningphils.ecore#//Philosopher"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_NcJbUSHAEeyfg-df5vjheA" name="Rhs">
+      <nodes xmi:id="_V0yhQSHAEeyfg-df5vjheA">
+        <type href="diningphils.ecore#//Philosopher"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_V0yhQiHAEeyfg-df5vjheA" origin="_V0yhQCHAEeyfg-df5vjheA" image="_V0yhQSHAEeyfg-df5vjheA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_imDGEGPTEeyNEtnQ00CGfw" name="reach_eating">
+    <lhs xmi:id="_imSWoGPTEeyNEtnQ00CGfw" name="Lhs">
+      <nodes xmi:id="_tAMJsGPTEeyNEtnQ00CGfw">
+        <type href="diningphils.ecore#//Philosopher"/>
+        <attributes xmi:id="_uyYgEGPTEeyNEtnQ00CGfw" value="eating">
+          <type href="diningphils.ecore#//Philosopher/state"/>
+        </attributes>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_imSWoWPTEeyNEtnQ00CGfw" name="Rhs">
+      <nodes xmi:id="_tAMwwGPTEeyNEtnQ00CGfw">
+        <type href="diningphils.ecore#//Philosopher"/>
+        <attributes xmi:id="_uyYgEWPTEeyNEtnQ00CGfw" value="eating">
+          <type href="diningphils.ecore#//Philosopher/state"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_tAMwwWPTEeyNEtnQ00CGfw" origin="_tAMJsGPTEeyNEtnQ00CGfw" image="_tAMwwGPTEeyNEtnQ00CGfw"/>
+  </units>
 </henshin:Module>

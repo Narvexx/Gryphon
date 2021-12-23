@@ -24,6 +24,7 @@ package kodkod.engine.fol2sat;
 import java.util.Collections;
 import java.util.Map;
 
+import kodkod.ast.BinaryFormula;
 import kodkod.ast.Formula;
 import kodkod.ast.LeafExpression;
 import kodkod.ast.Relation;
@@ -79,6 +80,12 @@ public final class BoolTranslation {
   // }
 
   public BooleanValue mapping(final Formula fol) {
+	  
+	if (fol instanceof BinaryFormula) {
+		return mapping(((BinaryFormula)fol).left());
+		//return mapping(((BinaryFormula)fol).right());
+	}
+	  
     if (fol2bool.containsKey(fol)) {
       BooleanValue gate = fol2bool.get(fol);
       return gate;

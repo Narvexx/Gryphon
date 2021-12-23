@@ -127,8 +127,13 @@ public final class AnnotatedNode<N extends Node> {
 	 * The root conjunction itself is mapped to the input formula.
 	 * @return { a: AnnotatedNode<Formula> | a.node = Formula.and(Nodes.roots(formula)) && a.source = (node.^components<:iden) + a.node->formula }
 	 */
-	public static AnnotatedNode<Formula> annotateRoots(Formula formula) { 
+	public static AnnotatedNode<Formula> annotateRoots(Formula formula, Set<Formula> formulas) {
 		final Formula flat = Formula.and(Nodes.roots(formula));
+		for (Formula f : formulas) {
+			if (f instanceof BinaryFormula) {
+				flat.and(f);
+			}
+		}
 		return new AnnotatedNode<Formula>(flat, Collections.singletonMap(flat, formula));
 	}
 	
