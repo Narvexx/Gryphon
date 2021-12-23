@@ -63,19 +63,25 @@ public class VariabilityRuleTranslator {
 //			    final Formula attrCondition = src.join(attrState.preState()).eq(attrExpr);
 //			    return attrCondition;
 //			  }
+		
+		
 	
-			
-
-			Relation v = Relation.unary(atom);
-			
-			TupleSet boolTuples = signature.univ().factory().range(signature.univ().factory().tuple(TRUE),
-					signature.univ().factory().tuple(FALSE));
-			signature.bounds().boundExactly(v, boolTuples);
-			
-			Relation t = Relation.unary(TRUE);
-			signature.bounds().boundExactly(t, signature.bounds().exactBound(0));
-			
-			return v.join(stateRel.preState()).eq(t);
+		// Create relational variable v from the atom
+		Relation v = Relation.unary(atom);
+		
+		TupleSet boolTuples = signature.univ().factory().range(signature.univ().factory().tuple(TRUE),
+				signature.univ().factory().tuple(FALSE));
+		
+		// Bound v by boolean values
+		signature.bounds().boundExactly(v, boolTuples);
+		
+		// Return the formula
+		return v.one();
+		
+//		Relation t = Relation.unary(TRUE);
+//		signature.bounds().boundExactly(t, signature.bounds().exactBound(0));
+		
+//		return v.join(stateRel.preState()).eq(t);
 			
 //			
 //			if (rel.name().contentEquals(atom)) {
