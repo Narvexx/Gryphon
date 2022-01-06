@@ -30,10 +30,12 @@ import kodkod.ast.IntConstant;
 import kodkod.ast.IntExpression;
 import kodkod.ast.IntToExprCast;
 import kodkod.ast.LeafExpression;
+import kodkod.ast.Node;
 import kodkod.ast.Relation;
 import kodkod.ast.Variable;
 import kodkod.ast.operator.IntCastOperator;
 import kodkod.engine.bool.BooleanValue;
+import kodkod.instance.Tuple;
 import kodkod.instance.TupleSet;
 import kodkod.instance.Universe;
 
@@ -53,6 +55,8 @@ public class VariabilityRuleTranslator {
 	private static final String FEATURE = "Feature";
 
 	public static Relation featureRelations = null;
+	
+	public static Set<Relation> features = new HashSet<Relation>();
 
 	public static StateRelation stateRel;
 	
@@ -90,19 +94,26 @@ public class VariabilityRuleTranslator {
 //		
 //		// Return the formula
 //		return pc;
-	
-		//NEW
 		
-		final Relation refRelation = signature.state(EcorePackage.Literals.EBOOLEAN).relation();
 		
-		Relation v = Relation.unary(atom);
-		// Bound v by boolean values
-		signature.bounds().bound(v, signature.bounds().lowerBound(refRelation));
-
+		// As Variable
+		final Relation binding = signature.pre(EcorePackage.Literals.EBOOLEAN);
+		final VarNodeInfo info = new VarNodeInfo(atom, null, binding);
+		final TupleSet upperBound = signature.bounds().upperBound(binding);
+	    signature.bounds().bound((Relation)info.variable(), upperBound);
+	    // End Variable
+	    
+	    // As Relation
+//		final Relation v = Relation.unary(atom);
+//		final Relation binding = signature.pre(EcorePackage.Literals.EBOOLEAN);
+//		final TupleSet upperBound = signature.bounds().upperBound(binding);
+//		signature.bounds().bound(v, upperBound);
+	    // End Relation
+	    
 		//final AttrExprParser parser = new AttrExprParser(null,);
 		final Expression preExpr = IntConstant.constant(0).cast(IntCastOperator.INTCAST);
 		
-		return v.join(stateRel.preState()).eq(preExpr);
+		return info.variable().join(stateRel.preState()).eq(preExpr);
 			
 
 	}
@@ -119,14 +130,15 @@ public class VariabilityRuleTranslator {
 	
 
 	public static void annotateFeatureBounds(Signature sig, Collection<Rule> transitionRules) {
-		//final List<String> varFeatures = getFeatures(transitionRules);
-
 		signature = sig;
+		List<String> features = getFeatures(transitionRules);
 		
-		//Register Upper Bounds on Features
-		final TupleSet featureUppers = sig.univ().factory().range(sig.univ().factory().tuple("f_left"),
-				sig.univ().factory().tuple("f_right"));
-		
+		final ArrayList<Tuple> tups = new ArrayList<Tuple>();
+		for (String f : features) {
+			tups.add(sig.univ().factory().tuple(f));
+		}
+		final TupleSet featureUppers = sig.univ().factory().setOf(tups);
+
 		final StateRelation hostRelation = StateRelation.create(FEATURE, 1);
 		
 		sig.bounds().bound(hostRelation.preState(), featureUppers);
@@ -163,6 +175,9 @@ public class VariabilityRuleTranslator {
 					}
 				}
 			}
+		}
+		for (final String f : features) {
+			VariabilityRuleTranslator.features.add(Relation.unary(f));
 		}
 		return features;
 	}

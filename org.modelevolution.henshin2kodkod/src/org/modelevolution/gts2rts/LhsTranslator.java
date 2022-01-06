@@ -374,7 +374,6 @@ public class LhsTranslator {
         
       final Formula pc = getPresenceCondition(outEdge.getAnnotations());
       
-      
       assert info instanceof VarNodeInfo;
 
       final Formula match = edgeMatch(src, tgt, src2tgt);

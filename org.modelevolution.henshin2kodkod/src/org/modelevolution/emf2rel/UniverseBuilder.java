@@ -24,6 +24,7 @@ package org.modelevolution.emf2rel;
 import java.util.ArrayList;
 import java.util.List;
 
+import kodkod.ast.Relation;
 import kodkod.instance.Universe;
 
 import org.eclipse.emf.ecore.EClass;

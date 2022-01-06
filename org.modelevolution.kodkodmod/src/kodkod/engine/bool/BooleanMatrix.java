@@ -559,6 +559,10 @@ public final class BooleanMatrix implements Iterable<IndexedEntry<BooleanValue>>
 			int i = e0.index();
 			BooleanValue iVal = e0.value();
 			int rowHead = (i % b)*c, rowTail = rowHead + c - 1;
+			
+			Iterator<IndexedEntry<BooleanValue>> test = other.cells.iterator(rowHead, rowTail);
+			System.out.println(test);
+			
 			for(Iterator<IndexedEntry<BooleanValue>> iter1 = other.cells.iterator(rowHead, rowTail); iter1.hasNext();) {
 				IndexedEntry<BooleanValue> e1 = iter1.next();
 				BooleanValue retVal = factory.and(iVal, e1.value());

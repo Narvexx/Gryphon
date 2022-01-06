@@ -324,8 +324,9 @@ public final class ArraySequence<V> extends AbstractSparseSequence<V> implements
 		}
 		
 		public boolean hasNext() {
-			while (cursor < entries.length && entries[cursor].value()==null)
+			while (cursor < entries.length && entries[cursor].value()==null) {
 				cursor++;
+			}
 			return cursor<=endIndex;
 		}
 
