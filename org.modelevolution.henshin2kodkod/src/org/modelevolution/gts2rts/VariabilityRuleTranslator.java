@@ -63,6 +63,7 @@ public class VariabilityRuleTranslator {
 	public static Signature signature = null;
 	
 	private static Set<Formula> pcs = new HashSet<Formula>();
+	private static StateRelation hostRel;
 
 	public static boolean isVariabilityBased() {
 		return features.size() > 0;
@@ -102,6 +103,8 @@ public class VariabilityRuleTranslator {
 		
 		// As Variable
 		final Relation binding = signature.pre(EcorePackage.Literals.EBOOLEAN);
+		
+		
 		final VarNodeInfo info = new VarNodeInfo(atom, null, binding);
 		final TupleSet upperBound = signature.bounds().upperBound(binding);
 	    signature.bounds().bound((Relation)info.variable(), upperBound);
@@ -118,6 +121,7 @@ public class VariabilityRuleTranslator {
 		final Expression preExpr = IntConstant.constant(0).cast(IntCastOperator.INTCAST);
 		
 		return info.variable().join(stateRel.preState()).eq(preExpr);
+		//return info.variable().override(stateRel.preState()).eq(preExpr);
 			
 
 	}
@@ -147,7 +151,9 @@ public class VariabilityRuleTranslator {
 		
 		sig.bounds().bound(hostRelation.preState(), featureUppers);
 		sig.bounds().bound(hostRelation.postState(), featureUppers);
-
+		
+		hostRel = hostRelation;
+		
 		stateRel = addFeatureVariableDeclBounds(sig, hostRelation.preState());
 		
 		featureRelations = stateRel.relation();
@@ -155,11 +161,11 @@ public class VariabilityRuleTranslator {
 	}	
 
 	private static StateRelation addFeatureVariableDeclBounds(Signature sig, Relation hostRelation) {
-		final Relation refRelation = sig.state(EcorePackage.Literals.EBOOLEAN).relation();
+		final Relation refRelation = sig.pre(EcorePackage.Literals.EBOOLEAN);
 		
         final TupleSet hostAtoms = sig.bounds().upperBound(hostRelation);
         final TupleSet refAtoms = sig.bounds().upperBound(refRelation);
-        final TupleSet upper = hostAtoms.product(refAtoms);
+        final TupleSet upper = refAtoms.product(hostAtoms);
         
         final StateRelation state = StateRelation.create("Feature_state", 2);
         sig.bounds().bound(state.preState(), upper);
