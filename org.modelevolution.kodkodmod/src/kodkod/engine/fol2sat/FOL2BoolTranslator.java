@@ -355,6 +355,10 @@ abstract class FOL2BoolTranslator implements ReturnVisitor<BooleanMatrix, Boolea
 		default : 
 			throw new IllegalArgumentException("Unknown operator: " + op);
 		}
+		
+		if (ret.density() == 0) {
+			System.out.println(binExpr.left().toString() + " has no cells");
+		}
 
 		return cache(binExpr, ret);
 	}

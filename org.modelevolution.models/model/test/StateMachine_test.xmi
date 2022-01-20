@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:state="http://state/1.0"
+    xsi:schemaLocation="http://state/1.0 state.ecore">
+<state:StateMachine active="true"/>
+<state:A/>
+<state:B/>
+</xmi:XMI>

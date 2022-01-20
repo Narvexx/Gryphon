@@ -64,6 +64,10 @@ public class VariabilityRuleTranslator {
 	
 	private static Set<Formula> pcs = new HashSet<Formula>();
 
+	public static boolean isVariabilityBased() {
+		return features.size() > 0;
+	}
+	
 	public static Formula getRelationByAtom(String atom) {
 		
 		

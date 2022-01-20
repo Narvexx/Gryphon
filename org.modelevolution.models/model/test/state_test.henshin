@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_YGnZULkcEeSQvOP4dWWQ4g" name="">
+  <imports href="state.ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_cZbSULkcEeSQvOP4dWWQ4g" name="changeState">
+    <lhs xmi:id="_cZdukLkcEeSQvOP4dWWQ4g" name="Lhs">
+      <nodes xmi:id="_duQ-ULkcEeSQvOP4dWWQ4g">
+        <type href="state.ecore#//StateMachine"/>
+        <attributes xmi:id="_eb_nALkcEeSQvOP4dWWQ4g" value="false">
+          <type href="state.ecore#//StateMachine/active"/>
+        </attributes>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_cZdukbkcEeSQvOP4dWWQ4g" name="Rhs">
+      <nodes xmi:id="_duRlYLkcEeSQvOP4dWWQ4g">
+        <type href="state.ecore#//StateMachine"/>
+        <attributes xmi:id="_eb_nAbkcEeSQvOP4dWWQ4g" value="true">
+          <type href="state.ecore#//StateMachine/active"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_duRlYbkcEeSQvOP4dWWQ4g" origin="_duQ-ULkcEeSQvOP4dWWQ4g" image="_duRlYLkcEeSQvOP4dWWQ4g"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_meMi4LkcEeSQvOP4dWWQ4g" name="badButGood">
+    <lhs xmi:id="_meSCcLkcEeSQvOP4dWWQ4g" name="Lhs">
+      <nodes xmi:id="_o6zIMLkcEeSQvOP4dWWQ4g">
+        <type href="state.ecore#//StateMachine"/>
+        <attributes xmi:id="_pfKZgLkcEeSQvOP4dWWQ4g" value="false">
+          <type href="state.ecore#//StateMachine/active"/>
+        </attributes>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_meSCcbkcEeSQvOP4dWWQ4g" name="Rhs">
+      <nodes xmi:id="_o6zvQLkcEeSQvOP4dWWQ4g">
+        <type href="state.ecore#//StateMachine"/>
+        <attributes xmi:id="_pfKZgbkcEeSQvOP4dWWQ4g" value="false">
+          <type href="state.ecore#//StateMachine/active"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_o6zvQbkcEeSQvOP4dWWQ4g" origin="_o6zIMLkcEeSQvOP4dWWQ4g" image="_o6zvQLkcEeSQvOP4dWWQ4g"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_L_qRkHnYEeyfDeUPHKasAQ" name="reach_AB">
+    <lhs xmi:id="_L_tU4HnYEeyfDeUPHKasAQ" name="Lhs">
+      <nodes xmi:id="_NfjXAHnYEeyfDeUPHKasAQ" outgoing="_a4JTUHnZEeyfDeUPHKasAQ">
+        <type href="state.ecore#//A"/>
+      </nodes>
+      <nodes xmi:id="_OVkZAHnYEeyfDeUPHKasAQ" incoming="_b7jREHnZEeyfDeUPHKasAQ">
+        <type href="state.ecore#//B"/>
+      </nodes>
+      <nodes xmi:id="_znNDgHnYEeyfDeUPHKasAQ" incoming="_a4JTUHnZEeyfDeUPHKasAQ" outgoing="_b7jREHnZEeyfDeUPHKasAQ">
+        <type href="state.ecore#//StateMachine"/>
+        <attributes xmi:id="_1MOgkHnYEeyfDeUPHKasAQ" value="true">
+          <type href="state.ecore#//StateMachine/active"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_a4JTUHnZEeyfDeUPHKasAQ" source="_NfjXAHnYEeyfDeUPHKasAQ" target="_znNDgHnYEeyfDeUPHKasAQ">
+        <type href="state.ecore#//A/pc_holder"/>
+      </edges>
+      <edges xmi:id="_b7jREHnZEeyfDeUPHKasAQ" source="_znNDgHnYEeyfDeUPHKasAQ" target="_OVkZAHnYEeyfDeUPHKasAQ">
+        <type href="state.ecore#//StateMachine/connector"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_L_tU4XnYEeyfDeUPHKasAQ" name="Rhs">
+      <nodes xmi:id="_Nfj-EHnYEeyfDeUPHKasAQ" outgoing="_a4J6YHnZEeyfDeUPHKasAQ">
+        <type href="state.ecore#//A"/>
+      </nodes>
+      <nodes xmi:id="_OVkZAXnYEeyfDeUPHKasAQ" incoming="_b7jREXnZEeyfDeUPHKasAQ">
+        <type href="state.ecore#//B"/>
+      </nodes>
+      <nodes xmi:id="_znNDgXnYEeyfDeUPHKasAQ" incoming="_a4J6YHnZEeyfDeUPHKasAQ" outgoing="_b7jREXnZEeyfDeUPHKasAQ">
+        <type href="state.ecore#//StateMachine"/>
+        <attributes xmi:id="_1MOgkXnYEeyfDeUPHKasAQ" value="true">
+          <type href="state.ecore#//StateMachine/active"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_a4J6YHnZEeyfDeUPHKasAQ" source="_Nfj-EHnYEeyfDeUPHKasAQ" target="_znNDgXnYEeyfDeUPHKasAQ">
+        <type href="state.ecore#//A/pc_holder"/>
+      </edges>
+      <edges xmi:id="_b7jREXnZEeyfDeUPHKasAQ" source="_znNDgXnYEeyfDeUPHKasAQ" target="_OVkZAXnYEeyfDeUPHKasAQ">
+        <type href="state.ecore#//StateMachine/connector"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_Nfj-EXnYEeyfDeUPHKasAQ" origin="_NfjXAHnYEeyfDeUPHKasAQ" image="_Nfj-EHnYEeyfDeUPHKasAQ"/>
+    <mappings xmi:id="_OVkZAnnYEeyfDeUPHKasAQ" origin="_OVkZAHnYEeyfDeUPHKasAQ" image="_OVkZAXnYEeyfDeUPHKasAQ"/>
+    <mappings xmi:id="_znNDgnnYEeyfDeUPHKasAQ" origin="_znNDgHnYEeyfDeUPHKasAQ" image="_znNDgXnYEeyfDeUPHKasAQ"/>
+  </units>
+</henshin:Module>
