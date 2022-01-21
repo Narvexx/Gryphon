@@ -69,6 +69,22 @@ final class InputCache {
         }
       }
     }
+    InputBuilder input = builderFactory.createInputBuilder(55);
+    inputCache.cache(input);
+    input = builderFactory.createInputBuilder(56);
+    inputCache.cache(input);
+    input = builderFactory.createInputBuilder(57);
+    inputCache.cache(input);
+    input = builderFactory.createInputBuilder(58);
+    inputCache.cache(input);
+    input = builderFactory.createInputBuilder(77);
+    inputCache.cache(input);
+    input = builderFactory.createInputBuilder(78);
+    inputCache.cache(input);
+    input = builderFactory.createInputBuilder(85);
+    inputCache.cache(input);
+    input = builderFactory.createInputBuilder(86);
+    inputCache.cache(input);
     return inputCache;
   }
 

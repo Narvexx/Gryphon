@@ -444,7 +444,7 @@ public class LhsTranslator {
 	  // get Relational Variable from VariabilityRuleTranslator	  
 	  //final Variable prescond = (!annotations.isEmpty() && !pc_val.isEmpty()) ?  : null;
 	  
-	  return pc_val.contentEquals("") ? null : VariabilityRuleTranslator.getRelationByAtom(pc_val);
+	  return pc_val.contentEquals("") ? null : VariabilityRuleTranslator.getRelationByAtom(pc_val, sig);
 	  //return prescond != null ? prescond.one() : null;
   }
 
