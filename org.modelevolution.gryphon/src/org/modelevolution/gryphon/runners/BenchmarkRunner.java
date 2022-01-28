@@ -133,7 +133,7 @@ public class BenchmarkRunner extends AbstractRunner implements Runner {
     // ic3.solve("/home/sgbmyr/tools/ic3/ic3ref2/IC3 -s " + propIdx
     // + " -f " + aigFilepath);
     final long start = System.currentTimeMillis(); /* System.nanoTime() */
-    VerificationResult res = iimc.solve("/Users/mitchellalbers/Tools/iimc/iimc " + aigFilepath);
+    VerificationResult res = iimc.solve("wsl D:\\Software Science Master\\Research Internship\\repos\\iimc " + aigFilepath);
     final long end = System.currentTimeMillis();
     
     solverStats.record(end - start /* System.nanoTime() */, propertyName);

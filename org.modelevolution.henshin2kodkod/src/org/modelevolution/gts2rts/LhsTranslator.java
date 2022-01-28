@@ -377,10 +377,15 @@ public class LhsTranslator {
       assert info instanceof VarNodeInfo;
 
       final Formula match = edgeMatch(src, tgt, src2tgt);
-      premiseCollector.addPremise(match);
+      
       if (pc != null) {
     	  premiseCollector.addPremise(pc);
+    	  premiseCollector.addPremise(pc.implies(match));
+      } else {
+    	  premiseCollector.addPremise(match);
       }
+      
+      
 
       if (isDeleted(outEdge))
         effectCollector.addDeleteMod(srcState, tuple(src, tgt));

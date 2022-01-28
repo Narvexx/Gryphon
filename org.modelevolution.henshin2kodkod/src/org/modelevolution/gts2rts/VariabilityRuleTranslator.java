@@ -116,7 +116,7 @@ public class VariabilityRuleTranslator {
 	    // End Relation
 	    
 		//final AttrExprParser parser = new AttrExprParser(null,);
-		final Expression preExpr = IntConstant.constant(-1).cast(IntCastOperator.INTCAST);
+		final Expression preExpr = IntConstant.constant(0).cast(IntCastOperator.INTCAST);
 		
 		return info.variable().join(stateRel.preState()).eq(preExpr);
 		//return info.variable().override(stateRel.preState()).eq(preExpr);

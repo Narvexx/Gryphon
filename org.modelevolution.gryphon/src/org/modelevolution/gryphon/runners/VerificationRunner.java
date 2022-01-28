@@ -103,14 +103,20 @@ public final class VerificationRunner extends AbstractRunner implements Runner {
     Stats solverStats = stats.addStatGroup("Solver");
     /* final long start = System.currentTimeMillis(); /* System.nanoTime() */
     final Solver iimc = new GenericSolver();
+    
+    //NOTE: ONLY use this filePath when using WSL
+    final String fileName = aigFilepath.split("/model/")[1].replace('\\', '/');
+    final String filePathWSL = "\"/mnt/d/Users/mitch/repos/Gryphon/org.modelevolution.models/model/" + fileName + "\"";
+    
     for (int propIdx = 0; propIdx < specification.size(); ++propIdx) {
       final Property property = specification.get(propIdx);
       // VerificationResult res =
       // ic3.solve("/home/sgbmyr/tools/ic3/ic3ref2/IC3 -s " + propIdx
       // + " -f " + aigFilepath);
       final long start = System.currentTimeMillis(); /* System.nanoTime() */
-      VerificationResult res = iimc.solve("/Users/mitchellalbers/Tools/iimc/iimc --pi " + propIdx
-          + " " + aigFilepath);
+      
+      VerificationResult res = iimc.solve("wsl \"/mnt/d/Software Science Master/Research Internship/repos/iimc/iimc\" --pi " + propIdx
+          + " " + filePathWSL);
       final long end = System.currentTimeMillis();
       final String propertyName = property.name();
       solverStats.record(end - start /* System.nanoTime() */, propertyName);
