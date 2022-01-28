@@ -35,6 +35,7 @@ import org.modelevolution.aig.builders.AbstractAigBuilder;
 import org.modelevolution.aig.builders.AigBuilder;
 import org.modelevolution.aig.builders.AigBuilderFactory;
 import org.modelevolution.aig.builders.InputBuilder;
+import org.modelevolution.gts2rts.VariabilityRuleTranslator;
 import org.modelevolution.rts.BadState;
 import org.modelevolution.rts.Property;
 import org.modelevolution.rts.StateChanger;
@@ -69,40 +70,12 @@ final class InputCache {
         }
       }
     }
-    InputBuilder input = builderFactory.createInputBuilder(55);
-    inputCache.cache(input);
-    input = builderFactory.createInputBuilder(56);
-    inputCache.cache(input);
-    input = builderFactory.createInputBuilder(57);
-    inputCache.cache(input);
-    input = builderFactory.createInputBuilder(58);
-    inputCache.cache(input);
-    input = builderFactory.createInputBuilder(77);
-    inputCache.cache(input);
-    input = builderFactory.createInputBuilder(78);
-    inputCache.cache(input);
-    input = builderFactory.createInputBuilder(85);
-    inputCache.cache(input);
-    input = builderFactory.createInputBuilder(86);
-    inputCache.cache(input);
     
-    input = builderFactory.createInputBuilder(71);
-    inputCache.cache(input);
-    input = builderFactory.createInputBuilder(72);
-    inputCache.cache(input);
-    input = builderFactory.createInputBuilder(79);
-    inputCache.cache(input);
-    input = builderFactory.createInputBuilder(80);
-    inputCache.cache(input);
-    
-    input = builderFactory.createInputBuilder(63);
-    inputCache.cache(input);
-    input = builderFactory.createInputBuilder(64);
-    inputCache.cache(input);
-    input = builderFactory.createInputBuilder(65);
-    inputCache.cache(input);
-    input = builderFactory.createInputBuilder(66);
-    inputCache.cache(input);
+    // Workaround: Cache the labels of the feature variables
+    for (int label : VariabilityRuleTranslator.labelsCache) {
+    	inputCache.cache(builderFactory.createInputBuilder(label));
+    }
+
     return inputCache;
   }
 
