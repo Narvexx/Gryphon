@@ -478,4 +478,36 @@
     <mappings xmi:id="_EOoXgmPaEey40cpRLK5PHQ" origin="_EOoXgGPaEey40cpRLK5PHQ" image="_EOoXgWPaEey40cpRLK5PHQ"/>
     <mappings xmi:id="_Qtfr8mPaEey40cpRLK5PHQ" origin="_Qtfr8GPaEey40cpRLK5PHQ" image="_Qtfr8WPaEey40cpRLK5PHQ"/>
   </units>
+  <units xsi:type="henshin:Rule" xmi:id="_Xk82kH3yEeyABo1K_4aKdg" name="reach_holdLeft">
+    <lhs xmi:id="_XlQ_oH3yEeyABo1K_4aKdg" name="Lhs">
+      <nodes xmi:id="_bB3CUH3yEeyABo1K_4aKdg" outgoing="_dVTroH3yEeyABo1K_4aKdg _eA3xIH3yEeyABo1K_4aKdg">
+        <type href="diningphils.ecore#//Philosopher"/>
+      </nodes>
+      <nodes xmi:id="_cv_YEH3yEeyABo1K_4aKdg" incoming="_dVTroH3yEeyABo1K_4aKdg _eA3xIH3yEeyABo1K_4aKdg">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <edges xmi:id="_dVTroH3yEeyABo1K_4aKdg" source="_bB3CUH3yEeyABo1K_4aKdg" target="_cv_YEH3yEeyABo1K_4aKdg">
+        <type href="diningphils.ecore#//Philosopher/holds"/>
+      </edges>
+      <edges xmi:id="_eA3xIH3yEeyABo1K_4aKdg" source="_bB3CUH3yEeyABo1K_4aKdg" target="_cv_YEH3yEeyABo1K_4aKdg">
+        <type href="diningphils.ecore#//Philosopher/left"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_XlQ_oX3yEeyABo1K_4aKdg" name="Rhs">
+      <nodes xmi:id="_bB3CUX3yEeyABo1K_4aKdg" outgoing="_dVUSsH3yEeyABo1K_4aKdg _eA3xIX3yEeyABo1K_4aKdg">
+        <type href="diningphils.ecore#//Philosopher"/>
+      </nodes>
+      <nodes xmi:id="_cv_YEX3yEeyABo1K_4aKdg" incoming="_dVUSsH3yEeyABo1K_4aKdg _eA3xIX3yEeyABo1K_4aKdg">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <edges xmi:id="_dVUSsH3yEeyABo1K_4aKdg" source="_bB3CUX3yEeyABo1K_4aKdg" target="_cv_YEX3yEeyABo1K_4aKdg">
+        <type href="diningphils.ecore#//Philosopher/holds"/>
+      </edges>
+      <edges xmi:id="_eA3xIX3yEeyABo1K_4aKdg" source="_bB3CUX3yEeyABo1K_4aKdg" target="_cv_YEX3yEeyABo1K_4aKdg">
+        <type href="diningphils.ecore#//Philosopher/left"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_bB3CUn3yEeyABo1K_4aKdg" origin="_bB3CUH3yEeyABo1K_4aKdg" image="_bB3CUX3yEeyABo1K_4aKdg"/>
+    <mappings xmi:id="_cv_YEn3yEeyABo1K_4aKdg" origin="_cv_YEH3yEeyABo1K_4aKdg" image="_cv_YEX3yEeyABo1K_4aKdg"/>
+  </units>
 </henshin:Module>

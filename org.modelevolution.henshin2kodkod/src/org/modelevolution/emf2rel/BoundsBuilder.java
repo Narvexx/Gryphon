@@ -52,6 +52,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.resource.Resource;
+import org.modelevolution.gts2rts.VariabilityRuleTranslator;
 
 /**
  * @author Sebastian Gabmeyer
@@ -116,7 +117,7 @@ final class BoundsBuilder {
       final TupleSet intTuples = factory.range(factory.tuple(1, 0), factory.tuple(1, numOfInts - 1));
       bounds.boundExactly(registry.ints(), intTuples);
     }
-    if (mdata.hasBools() || true) {
+    if (mdata.hasBools() || VariabilityRuleTranslator.isVariabilityBased()) {
       final TupleSet boolTuples = factory.range(factory.tuple(TRUE), factory.tuple(FALSE));
       bounds.boundExactly(registry.bools(), boolTuples);
     }

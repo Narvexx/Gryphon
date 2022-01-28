@@ -60,11 +60,14 @@ public class VariabilityRuleTranslator {
 
 	public static StateRelation stateRel;
 	
-	public static Signature signature = null;
-	
 	private static Set<Formula> pcs = new HashSet<Formula>();
+	private static StateRelation hostRel;
 
-	public static Formula getRelationByAtom(String atom) {
+	public static boolean isVariabilityBased() {
+		return features.size() > 0;
+	}
+	
+	public static Formula getRelationByAtom(String atom, Signature sig) {
 		
 		
 //		  public Formula translateToFormula(final Attribute attr, final Expression attrExpr) {
@@ -97,10 +100,12 @@ public class VariabilityRuleTranslator {
 		
 		
 		// As Variable
-		final Relation binding = signature.pre(EcorePackage.Literals.EBOOLEAN);
+		final Relation binding = sig.pre(EcorePackage.Literals.EBOOLEAN);
+		
+		
 		final VarNodeInfo info = new VarNodeInfo(atom, null, binding);
-		final TupleSet upperBound = signature.bounds().upperBound(binding);
-	    signature.bounds().bound((Relation)info.variable(), upperBound);
+		final TupleSet upperBound = sig.bounds().upperBound(binding);
+		sig.bounds().bound((Relation)info.variable(), upperBound);
 	    // End Variable
 	    
 	    // As Relation
@@ -114,6 +119,7 @@ public class VariabilityRuleTranslator {
 		final Expression preExpr = IntConstant.constant(0).cast(IntCastOperator.INTCAST);
 		
 		return info.variable().join(stateRel.preState()).eq(preExpr);
+		//return info.variable().override(stateRel.preState()).eq(preExpr);
 			
 
 	}
@@ -130,7 +136,6 @@ public class VariabilityRuleTranslator {
 	
 
 	public static void annotateFeatureBounds(Signature sig, Collection<Rule> transitionRules) {
-		signature = sig;
 		List<String> features = getFeatures(transitionRules);
 		
 		final ArrayList<Tuple> tups = new ArrayList<Tuple>();
@@ -143,7 +148,9 @@ public class VariabilityRuleTranslator {
 		
 		sig.bounds().bound(hostRelation.preState(), featureUppers);
 		sig.bounds().bound(hostRelation.postState(), featureUppers);
-
+		
+		hostRel = hostRelation;
+		
 		stateRel = addFeatureVariableDeclBounds(sig, hostRelation.preState());
 		
 		featureRelations = stateRel.relation();
@@ -151,11 +158,11 @@ public class VariabilityRuleTranslator {
 	}	
 
 	private static StateRelation addFeatureVariableDeclBounds(Signature sig, Relation hostRelation) {
-		final Relation refRelation = sig.state(EcorePackage.Literals.EBOOLEAN).relation();
+		final Relation refRelation = sig.pre(EcorePackage.Literals.EBOOLEAN);
 		
         final TupleSet hostAtoms = sig.bounds().upperBound(hostRelation);
         final TupleSet refAtoms = sig.bounds().upperBound(refRelation);
-        final TupleSet upper = hostAtoms.product(refAtoms);
+        final TupleSet upper = refAtoms.product(hostAtoms);
         
         final StateRelation state = StateRelation.create("Feature_state", 2);
         sig.bounds().bound(state.preState(), upper);

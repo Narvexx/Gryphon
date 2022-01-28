@@ -291,7 +291,9 @@ public abstract class AbstractRunner implements Runner {
 		/* Create the signature */
 		final Signature sig = createSignature(initialState, stats);
 		
-		VariabilityRuleTranslator.annotateFeatureBounds(sig, transitionRules);
+		if (VariabilityRuleTranslator.isVariabilityBased()) {
+			VariabilityRuleTranslator.annotateFeatureBounds(sig, transitionRules);
+		}
 		
 		/* Translate the graph transformation to (symbolic) transitions */
 		final TransitionRelation transitions = createTransitions(sig, stats);
