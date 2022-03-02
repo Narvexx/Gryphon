@@ -21,6 +21,11 @@
  */
 package org.modelevolution.gryphon.output;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -121,7 +126,7 @@ public class BaseStats extends AbstractStats {
   public List<StatRecord> records() {
     return Collections.unmodifiableList(records);
   }
-
+  
   @Override
   protected void printStats(final PrintStreamOrWriter p, int indentLevel, int[] columnWidths) {
     final String indent = indent(indentLevel);
@@ -154,14 +159,48 @@ public class BaseStats extends AbstractStats {
     final String childFormatString = new StringBuffer("%-").append(childNameWidth).append("s  %")
                                                            .append(timeWidth).append(".0f  %4s")
                                                            .toString();
+    
+    String input_model = "";
+    String total_runtime = "";
+    String solving_time = "";
+    
     for (final StatRecord r : records) {
       p.print(childIndent);
+      
+      if (r.name().contains("-philsInit.xmi")) {
+    	 input_model = r.name();
+    	 total_runtime = Double.toString(r.elapsedTime());
+      } else if (r.name().contains("eating")) {
+     	 solving_time = Double.toString(r.elapsedTime());
+      }
+      
+      
+      
       p.println(String.format(childFormatString, r.name(), r.elapsedTime(),
                               formatter().format(r.elapsedTime() / total)));
-      if (r instanceof AbstractStats) {
-        ((AbstractStats) r).printStats(p, indentLevel + 1, new int[] { nameWidth, timeWidth });
+      if (r instanceof AbstractStats && r.name().contains("Solver")) {
+          ((AbstractStats) r).printStats(p, indentLevel + 1, new int[] { nameWidth, timeWidth });
       }
+
     }
+    try(FileWriter fw = new FileWriter("D:\\Software Science Master\\Research Internship\\evaluation\\var_9-phil.txt", true);
+		    BufferedWriter bw = new BufferedWriter(fw);
+		    PrintWriter out = new PrintWriter(bw))
+		{
+    	
+    	if (!solving_time.isEmpty()) {
+    		out.print(solving_time + ",");
+    	}
+    	if (!input_model.isEmpty()) {
+    		out.print(total_runtime + "," + input_model + '\n');
+    		
+    	}
+    	
+  		
+		} catch (IOException e) {
+		    
+	}
+    
     // if (parent != null) {
     // p.print(childIndent);
     // p.println(String.format(formatString, "TOTAL", total,

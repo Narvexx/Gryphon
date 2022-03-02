@@ -1,9 +1,8 @@
-2-philsInit.xmi         682  100%
-  Signature Creation     45    7%
-  Rule Translation      102   15%
-  Property Translation    3    0%
-  AIG (in-memory)       107   16%
-  AIG File                1    0%
-  Solver                424   62%
-    Hungry              212   50%
-    eating              212   50%
+2-philsInit.xmi         502  100%
+  Signature Creation     49   10%
+  Rule Translation      106   21%
+  Property Translation    3    1%
+  AIG (in-memory)       115   23%
+  AIG File                2    0%
+  Solver                227   45%
+    eating              227  100%

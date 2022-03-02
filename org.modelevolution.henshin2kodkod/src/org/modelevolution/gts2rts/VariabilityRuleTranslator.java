@@ -34,6 +34,7 @@ import kodkod.ast.Node;
 import kodkod.ast.Relation;
 import kodkod.ast.Variable;
 import kodkod.ast.operator.IntCastOperator;
+import kodkod.engine.bool.BooleanConstant;
 import kodkod.engine.bool.BooleanValue;
 import kodkod.instance.Tuple;
 import kodkod.instance.TupleSet;
@@ -50,8 +51,8 @@ public class VariabilityRuleTranslator {
 		return instance;
 	}
 
-	private static final String TRUE = "0";
-	private static final String FALSE = "-1";
+	private static final int TRUE = 0;
+	private static final int FALSE = -1;
 	private static final String FEATURE = "Feature";
 
 	public static Relation featureRelations = null;
@@ -62,9 +63,15 @@ public class VariabilityRuleTranslator {
 	
 	private static Set<Formula> pcs = new HashSet<Formula>();
 	private static StateRelation hostRel;
+	
+	public static ArrayList<Integer> labelsCache = new ArrayList<Integer>();
 
 	public static boolean isVariabilityBased() {
 		return features.size() > 0;
+	}
+	
+	public static void cache(int label) {
+		labelsCache.add(Math.abs(label));
 	}
 	
 	public static Formula getRelationByAtom(String atom, Signature sig) {
@@ -116,9 +123,9 @@ public class VariabilityRuleTranslator {
 	    // End Relation
 	    
 		//final AttrExprParser parser = new AttrExprParser(null,);
-		final Expression preExpr = IntConstant.constant(0).cast(IntCastOperator.INTCAST);
+		final Expression preExpr = IntConstant.constant(TRUE).cast(IntCastOperator.INTCAST);
 		
-		return info.variable().join(stateRel.preState()).eq(preExpr);
+		return info.variable().eq(preExpr);
 		//return info.variable().override(stateRel.preState()).eq(preExpr);
 			
 
@@ -136,24 +143,24 @@ public class VariabilityRuleTranslator {
 	
 
 	public static void annotateFeatureBounds(Signature sig, Collection<Rule> transitionRules) {
-		List<String> features = getFeatures(transitionRules);
-		
-		final ArrayList<Tuple> tups = new ArrayList<Tuple>();
-		for (String f : features) {
-			tups.add(sig.univ().factory().tuple(f));
-		}
-		final TupleSet featureUppers = sig.univ().factory().setOf(tups);
-
-		final StateRelation hostRelation = StateRelation.create(FEATURE, 1);
-		
-		sig.bounds().bound(hostRelation.preState(), featureUppers);
-		sig.bounds().bound(hostRelation.postState(), featureUppers);
-		
-		hostRel = hostRelation;
-		
-		stateRel = addFeatureVariableDeclBounds(sig, hostRelation.preState());
-		
-		featureRelations = stateRel.relation();
+//		List<String> features = getFeatures(transitionRules);
+//		
+//		final ArrayList<Tuple> tups = new ArrayList<Tuple>();
+//		for (String f : features) {
+//			tups.add(sig.univ().factory().tuple(f));
+//		}
+//		final TupleSet featureUppers = sig.univ().factory().setOf(tups);
+//
+//		final StateRelation hostRelation = StateRelation.create(FEATURE, 1);
+//		
+//		sig.bounds().bound(hostRelation.preState(), featureUppers);
+//		sig.bounds().bound(hostRelation.postState(), featureUppers);
+//		
+//		hostRel = hostRelation;
+//		
+//		stateRel = addFeatureVariableDeclBounds(sig, hostRelation.preState());
+//		
+//		featureRelations = stateRel.relation();
 		
 	}	
 

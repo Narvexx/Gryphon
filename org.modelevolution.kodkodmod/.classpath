@@ -23,5 +23,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="src" path="/org.modelevolution.henshin2kodkod"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

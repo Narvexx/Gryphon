@@ -28,6 +28,7 @@ import java.util.Set;
 import org.modelevolution.commons.modifications.ModType;
 import org.modelevolution.commons.modifications.Modification;
 import org.modelevolution.commons.modifications.ModifiedBy;
+import org.modelevolution.gts2rts.VariabilityRuleTranslator;
 
 import kodkod.ast.BinaryExpression;
 import kodkod.ast.BinaryFormula;
@@ -126,6 +127,9 @@ abstract class FOL2BoolTranslator implements ReturnVisitor<BooleanMatrix, Boolea
 		final FOL2BoolTranslator translator = new FOL2BoolTranslator(cache, interpreter) {
 			BooleanValue cache(Formula formula, BooleanValue translation) {
 				logger.log(formula, translation, super.env);
+				if (formula.toString().contains("f_")) {
+					VariabilityRuleTranslator.cache(translation.label());
+				}
 				return super.cache(formula, translation);
 			}	
 		};

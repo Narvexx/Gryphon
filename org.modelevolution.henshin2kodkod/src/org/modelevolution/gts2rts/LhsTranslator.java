@@ -379,7 +379,6 @@ public class LhsTranslator {
       final Formula match = edgeMatch(src, tgt, src2tgt);
       
       if (pc != null) {
-    	  premiseCollector.addPremise(pc);
     	  premiseCollector.addPremise(pc.implies(match));
       } else {
     	  premiseCollector.addPremise(match);
