@@ -109,6 +109,11 @@ public class VariabilityRuleTranslator {
 		// As Variable
 		final Relation binding = sig.pre(EcorePackage.Literals.EBOOLEAN);
 		
+		boolean value = true;
+		if (atom.charAt(0) == '!') {
+			atom = atom.substring(1, atom.length());
+			value = false;
+		}
 		
 		final VarNodeInfo info = new VarNodeInfo(atom, null, binding);
 		final TupleSet upperBound = sig.bounds().upperBound(binding);
@@ -123,7 +128,13 @@ public class VariabilityRuleTranslator {
 	    // End Relation
 	    
 		//final AttrExprParser parser = new AttrExprParser(null,);
-		final Expression preExpr = IntConstant.constant(TRUE).cast(IntCastOperator.INTCAST);
+		
+		Expression preExpr = null;
+		if (value) {
+			preExpr = IntConstant.constant(TRUE).cast(IntCastOperator.INTCAST);
+		} else {
+			preExpr = IntConstant.constant(FALSE).cast(IntCastOperator.INTCAST);
+		}
 		
 		return info.variable().eq(preExpr);
 		//return info.variable().override(stateRel.preState()).eq(preExpr);
